@@ -8,6 +8,7 @@ import com.paneedah.weaponlib.compatibility.CompatibleExposureCapability;
 import com.paneedah.weaponlib.compatibility.CompatibleExtraEntityFlags;
 import com.paneedah.weaponlib.compatibility.CompatiblePlayerEntityTrackerProvider;
 import com.paneedah.weaponlib.config.BalancePackManager;
+import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.crafting.CraftingFileManager;
 import com.paneedah.weaponlib.electronics.ItemHandheld;
 import com.paneedah.mwc.network.messages.EntityInventorySyncMessage;
@@ -220,7 +221,12 @@ public class CommonEventHandler {
             final NonNullList<ItemStack> stackList = NonNullList.create();
             final ItemStack[] itemStacks = new ItemStack[]{equipmentInventory.getStackInSlot(1)};
             stackList.addAll(Arrays.asList(itemStacks));
-            event.setAmount((float) (event.getAmount() * (1 - ((ItemVest) equipmentInventory.getStackInSlot(1).getItem()).getDamageBlocked())));
+
+            if (ModernConfigManager.oldPlayerDamage) {
+                float amt = ISpecialArmor.ArmorProperties.applyArmor(livingHurtEvent.getEntityLiving(), stackList, livingHurtEvent.getSource(), livingHurtEvent.getAmount());
+                livingHurtEvent.setAmount(amt);
+            } else
+                event.setAmount((float) (event.getAmount() * (1 - ((ItemVest) equipmentInventory.getStackInSlot(1).getItem()).getDamageBlocked())));
         }
     }
 

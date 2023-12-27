@@ -118,6 +118,9 @@ public class ModernConfigManager {
 	@ConfigSync(category = CATEGORY_GAMEPLAY, comment = "Should players bleed when hit?")
 	public static double enableBleedingOnHit = 1.0F;
 
+	@ConfigSync(category = CATEGORY_GAMEPLAY, comment = "")
+	public static boolean oldPlayerDamage = true;
+
 	@ConfigSync(category = CATEGORY_GAMEPLAY, comment = "Should glass blocks be breakable by bullets?")
 	public static boolean bulletBreakGlass = true;
 
