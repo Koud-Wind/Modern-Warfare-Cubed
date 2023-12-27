@@ -20,7 +20,7 @@ public class TacticalTomahawkFactory implements MeleeFactory {
                 .withCreativeTab(MWC.WEAPONS_TAB)
                 .withTextureNames("tacticaltomahawk")
                 .withAttackDamage(5f)
-                .withHeavyAttackDamage(10f)
+                .withHeavyAttackDamage(14f)
                 .withPrepareStubTimeout(() -> 00)
                 .withPrepareHeavyStubTimeout(() -> 390)
                 .withAttackCooldownTimeout(() -> 0)
