@@ -131,7 +131,7 @@ public class ModernConfigManager {
 	public static boolean enableMuzzleEffects = true;
 
 	@ConfigSync(category = CATEGORY_GAMEPLAY, comment = "Whether entities should have knockback applied to them when shot.")
-	public static boolean knockbackOnHit = true;
+	public static boolean knockbackOnHit = false;
 
 	@ConfigSync(category = CATEGORY_GAMEPLAY, comment = "Should blur be applied when aiming?")
 	public static boolean enableBlurOnAim = true;

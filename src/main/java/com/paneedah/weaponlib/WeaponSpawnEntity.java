@@ -89,7 +89,10 @@ public class WeaponSpawnEntity extends EntityProjectile {
             //PostProcessPipeline.createDistortionPoint((float) position.hitVec.x,(float)  position.hitVec.y, (float) position.hitVec.z, 2f, 3000);
             Explosion.createServerSideExplosion(world, this.getThrower(), this, position.hitVec.x, position.hitVec.y, position.hitVec.z, explosionRadius, false, true, isDestroyingBlocks, explosionParticleAgeCoefficient, smokeParticleAgeCoefficient, explosionParticleScaleCoefficient, smokeParticleScaleCoefficient, weapon.getModContext().getRegisteredTexture(explosionParticleTextureId), weapon.getModContext().getRegisteredTexture(smokeParticleTextureId), weapon.getModContext().getExplosionSound());
         } else if (position.entityHit != null) {
-            position.entityHit.attackEntityFrom(new ProjectileDamageSource("gun", weapon.getName(), this, this.getThrower()), damage);
+            if (this.getThrower() != null)
+                position.entityHit.attackEntityFrom(DamageSource.causeArrowDamage(this, this.getThrower()), damage);
+            else
+                position.entityHit.attackEntityFrom(new DamageSource("arrow"), damage);
 
             position.entityHit.hurtResistantTime = 0;
             position.entityHit.prevRotationYaw -= 0.3;
@@ -186,37 +189,5 @@ public class WeaponSpawnEntity extends EntityProjectile {
 
     public Weapon getWeapon() {
         return weapon;
-    }
-
-    public static class ProjectileDamageSource extends DamageSource {
-
-        private final String gunName;
-        private final Entity projectile;
-        private final Entity shooter;
-
-        public ProjectileDamageSource(String damageTypeIn, String gunName, Entity projectile, Entity shooter) {
-            super(damageTypeIn);
-            this.gunName = gunName;
-            this.projectile = projectile;
-            this.shooter = shooter;
-        }
-
-        @Override
-        public Entity getTrueSource() {
-            return this.projectile;
-        }
-
-        @Override
-        public Entity getImmediateSource() {
-            return this.shooter;
-        }
-
-        @Override
-        public ITextComponent getDeathMessage(EntityLivingBase entityLivingBaseIn) {
-            if (this.shooter == null)
-                return new TextComponentTranslation("death.attack.gun.noshooter", entityLivingBaseIn.getDisplayName(), this.gunName);
-
-            return new TextComponentTranslation("death.attack.gun", entityLivingBaseIn.getDisplayName(), this.shooter.getDisplayName(), this.gunName);
-        }
     }
 }
