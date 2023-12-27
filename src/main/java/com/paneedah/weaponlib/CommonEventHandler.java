@@ -24,6 +24,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraftforge.common.ISpecialArmor;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -223,8 +224,8 @@ public class CommonEventHandler {
             stackList.addAll(Arrays.asList(itemStacks));
 
             if (ModernConfigManager.oldPlayerDamage) {
-                float amt = ISpecialArmor.ArmorProperties.applyArmor(livingHurtEvent.getEntityLiving(), stackList, livingHurtEvent.getSource(), livingHurtEvent.getAmount());
-                livingHurtEvent.setAmount(amt);
+                float amt = ISpecialArmor.ArmorProperties.applyArmor(event.getEntityLiving(), stackList, event.getSource(), event.getAmount());
+                event.setAmount(amt);
             } else
                 event.setAmount((float) (event.getAmount() * (1 - ((ItemVest) equipmentInventory.getStackInSlot(1).getItem()).getDamageBlocked())));
         }
