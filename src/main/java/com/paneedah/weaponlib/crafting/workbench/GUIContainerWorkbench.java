@@ -1,12 +1,11 @@
 package com.paneedah.weaponlib.crafting.workbench;
 
+import com.paneedah.mwc.network.messages.WorkbenchServerMessage;
 import com.paneedah.weaponlib.Weapon;
 import com.paneedah.weaponlib.animation.gui.GuiRenderUtil;
 import com.paneedah.weaponlib.crafting.CraftingGroup;
 import com.paneedah.weaponlib.crafting.CraftingRegistry;
 import com.paneedah.weaponlib.crafting.base.GUIContainerStation;
-import com.paneedah.mwc.network.messages.WorkbenchServerMessage;
-import com.paneedah.weaponlib.render.gui.GUIRenderHelper;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +16,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 import static com.paneedah.mwc.MWC.CHANNEL;
 
@@ -110,7 +108,7 @@ public class GUIContainerWorkbench extends GUIContainerStation<TileEntityWorkben
 		super.actionPerformed(button);
 		if (button == craftButton) {
 			if (hasSelectedCraftingPiece() && tileEntity.craftingTimer == -1) {
-				CHANNEL.sendToServer(new WorkbenchServerMessage(WorkbenchServerMessage.CRAFT, tileEntity.getPos(), 0, getCraftingMode() == 1 ? WorkbenchBlock.WORKBENCH_WEAPON_CRAFTING_TIME : WorkbenchBlock.WORKBENCH_ATTACHMENT_CRAFTING_TIME, CraftingGroup.getValue(getCraftingMode()), getSelectedCraftingPiece().getItem().getTranslationKey()));
+				CHANNEL.sendToServer(new WorkbenchServerMessage(WorkbenchServerMessage.CRAFT, tileEntity.getPos(), 0, getCraftingMode() == 1 ? WorkbenchBlock.WORKBENCH_WEAPON_CRAFTING_TIME : WorkbenchBlock.WORKBENCH_ATTACHMENT_CRAFTING_TIME, CraftingGroup.getValue(getCraftingMode()), getSelectedCraftingPiece().getItemStack().getTranslationKey()));
 			}
 
 		} else if (button == assaultSelector) {
@@ -178,9 +176,10 @@ public class GUIContainerWorkbench extends GUIContainerStation<TileEntityWorkben
 	
 	@Override
 	public void addCraftingInformationToTooltip(ArrayList<String> tooltip) {
-		int seconds = (tileEntity.craftingDuration - tileEntity.craftingTimer) / 20;
 		tooltip.add(TextFormatting.GOLD + "Crafting: " + TextFormatting.WHITE + I18n.format(tileEntity.craftingTargetName + ".name"));
-		tooltip.add(TextFormatting.GOLD + "Time remaining: " + TextFormatting.WHITE + GUIRenderHelper.formatTimeString(seconds, TimeUnit.SECONDS));
+
+		final int remainingTicks = tileEntity.craftingDuration - tileEntity.craftingTimer;
+		tooltip.add(TextFormatting.GOLD + "Time remaining: " + TextFormatting.WHITE + String.format("%.2f", remainingTicks / 20F) + "s");
 	}
 
 	/**
@@ -196,10 +195,10 @@ public class GUIContainerWorkbench extends GUIContainerStation<TileEntityWorkben
 	public void doCraftingModeOneRender(float partialTicks, int mouseX, int mouseY) {
 		
 		// This is just a backup check. This should only ever run if we are dealing
-		// with crafting mode one, so it will always be a weapons.
-		if(!(getSelectedCraftingPiece().getItem() instanceof Weapon)) return;
+		// with crafting mode one, so it will always be a weapon.
+		if(!(getSelectedCraftingPiece().getItemStack().getItem() instanceof Weapon)) return;
 	
-		Weapon weapon = (Weapon) getSelectedCraftingPiece().getItem();
+		Weapon weapon = (Weapon) getSelectedCraftingPiece().getItemStack().getItem();
         GuiRenderUtil.drawScaledString(fontRenderer, format(weapon.getTranslationKey()), this.guiLeft + 214, this.guiTop + 31, 1.2, 0xFDF17C);
         GuiRenderUtil.drawScaledString(fontRenderer, weapon.builder.getWeaponType(), this.guiLeft + 214, this.guiTop + 43, 0.75, 0xC8C49C);
         

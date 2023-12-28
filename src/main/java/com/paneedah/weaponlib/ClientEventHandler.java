@@ -296,77 +296,77 @@ public class ClientEventHandler {
         }
     }
 
-    public MWCFrameTimer frameTimer = new MWCFrameTimer();
+	public MWCFrameTimer frameTimer = new MWCFrameTimer();
 
-    @SubscribeEvent
-    public void onRenderWorldLastEvent(RenderWorldLastEvent event) {
-        // Fills the model view matrix & projection matrix. Only used for world rendering.
-        if (ModernConfigManager.enableAllShaders && ModernConfigManager.enableWorldShaders)
-            PostProcessPipeline.captureMatricesIntoBuffers();
+	@SubscribeEvent
+	public void onRenderWorldLastEvent(RenderWorldLastEvent event) {
+		// Fills the model view matrix & projection matrix. Only used for world rendering.
+		if (ModernConfigManager.enableAllShaders && ModernConfigManager.enableWorldShaders)
+			PostProcessPipeline.captureMatricesIntoBuffers();
 
-        // Replaces the weather renderer.
-        if (!ModernConfigManager.enableFancyRainAndSnow)
-            PostProcessPipeline.setWorldElements();
+		// Replaces the weather renderer.
+		PostProcessPipeline.setWorldElements();
 
-        // Marks the frame-timer
-        frameTimer.markFrame();
+		// Marks the frame-timer
+		frameTimer.markFrame();
 
-        // Todo: Optimize this
-        // Frame-timer syncs to 120
-        double divisor = 120 / frameTimer.getFramerate() * 0.05;
-        divisor = Math.min(0.08, divisor);
+		// Todo: Optimize this
+		// Frame-timer syncs to 120
+		double divisor = 120 / frameTimer.getFramerate() * 0.05;
+		divisor = Math.min(0.08, divisor);
 
-        BULLET_HOLE_RENDERER.render();
+		BULLET_HOLE_RENDERER.render();
 
-        // What is this and is it necessary
-        if (ClientModContext.getContext() != null && ClientModContext.getContext().getMainHeldWeapon() != null) {
-            final PlayerWeaponInstance pwi = ClientModContext.getContext().getMainHeldWeapon();
+		// What is this and is it necessary
+		if (ClientModContext.getContext() != null && ClientModContext.getContext().getMainHeldWeapon() != null) {
+			final PlayerWeaponInstance pwi = ClientModContext.getContext().getMainHeldWeapon();
 
-            if (pwi.getState() == WeaponState.READY) {
-                pwi.setDelayCompoundEnd(true);
-                pwi.getWeapon().getRenderer().setShouldDoEmptyVariant(false);
-            }
-        }
+			if (pwi.getState() == WeaponState.READY) {
+				pwi.setDelayCompoundEnd(true);
+				pwi.getWeapon().getRenderer().setShouldDoEmptyVariant(false);
+			}
+		}
 
-        // Hot swaps the Minecraft frame-buffer for an HDR one.
+		// Hot swaps the Minecraft frame-buffer for an HDR one.
 
-        if (ModernConfigManager.enableHDRFramebuffer) {
-            final Framebuffer current = MC.getFramebuffer();
-            if (!(current instanceof HDRFramebuffer)) {
-                // Create an EXACT match, but in the HDR format. This will break w/ other mods that try to do anything similar.
-                MC.framebuffer = new HDRFramebuffer(current.framebufferWidth, current.framebufferHeight, current.useDepth);
-            }
-        }
+		if (ModernConfigManager.enableHDRFramebuffer) {
+			final Framebuffer current = MC.getFramebuffer();
+			if (!(current instanceof HDRFramebuffer)) {
+				// Create an EXACT match, but in the HDR format. This will break w/ other mods that try to do anything similar.
+				MC.framebuffer = new HDRFramebuffer(current.framebufferWidth, current.framebufferHeight, current.useDepth);
+			}
+		}
 
-        if (getModContext() != null)
-            AnimationModeProcessor.getInstance().legacyMode = getModContext().getMainHeldWeapon() == null || !getModContext().getMainHeldWeapon().getWeapon().builder.isUsingNewSystem();
+		if (getModContext() != null)
+			AnimationModeProcessor.getInstance().legacyMode = getModContext().getMainHeldWeapon() == null || !getModContext().getMainHeldWeapon().getWeapon().builder.isUsingNewSystem();
 
-        final RenderingPhase phase = ClientProxy.renderingPhase;
+		final RenderingPhase phase = ClientProxy.renderingPhase;
 
-        if (phase == RenderingPhase.RENDER_PERSPECTIVE) {
-            // PostProcessPipeline.blitDepth();
-            return;
-        }
+		if (phase == RenderingPhase.RENDER_PERSPECTIVE) {
+			// PostProcessPipeline.blitDepth();
+			return;
+		}
 
-        SHELL_MANAGER.render();
+		SHELL_MANAGER.render();
 
-        if (AnimationModeProcessor.getInstance().getFPSMode()) {
-            MC.setIngameNotInFocus();
-            // MC.mouseHelper.ungrabMouseCursor();
-            AnimationModeProcessor.getInstance().onTick();
-            MC.player.inventory.currentItem = 0;
-            return;
-        }
+		if (AnimationModeProcessor.getInstance().getFPSMode()) {
+			MC.setIngameNotInFocus();
+			// MC.mouseHelper.ungrabMouseCursor();
+			AnimationModeProcessor.getInstance().onTick();
+			MC.player.inventory.currentItem = 0;
+			return;
+		}
 
-        if (ModernConfigManager.enableAllShaders && ModernConfigManager.enableWorldShaders) {
-            PostProcessPipeline.blitDepth();
-            // PostProcessPipeline.setupDistortionBufferEffects();
-            PostProcessPipeline.doWorldProcessing();
-        }
-    }
+		if (ModernConfigManager.enableAllShaders && ModernConfigManager.enableWorldShaders) {
+			if (PostProcessPipeline.shouldDoFog())
+				PostProcessPipeline.blitDepth();
+			// PostProcessPipeline.setupDistortionBufferEffects();
+			PostProcessPipeline.doWorldProcessing();
+		}
+	}
 
-    @SubscribeEvent
-    @SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
     protected void onPreRenderPlayerPreEvent(RenderPlayerEvent.Pre event) {
         if (event.getEntityPlayer().isRiding() && event.getEntityPlayer().getRidingEntity() instanceof EntityVehicle && event.getEntityPlayer().limbSwing != 39)
             event.setCanceled(true);

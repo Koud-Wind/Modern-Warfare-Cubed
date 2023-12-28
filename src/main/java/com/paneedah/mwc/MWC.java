@@ -14,17 +14,14 @@ import com.paneedah.weaponlib.command.BalancePackCommand;
 import com.paneedah.weaponlib.command.CraftingFileCommand;
 import com.paneedah.weaponlib.command.DebugCommand;
 import com.paneedah.weaponlib.config.BalancePackManager;
-import com.paneedah.weaponlib.crafting.CraftingFileManager;
-import dev.redstudio.redcore.utils.OptiNotFine;
+import io.redstudioragnarok.redcore.RedCore;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.FMLLaunchHandler;
@@ -120,6 +117,7 @@ public final class MWC {
         CHANNEL.registerMessage(new EntityInventorySyncMessageClientHandler(modContext), EntityInventorySyncMessage.class, -14, Side.CLIENT);
         CHANNEL.registerMessage(new ExposureMessageHandler(), ExposureMessage.class, -15, Side.CLIENT);
         CHANNEL.registerMessage(new EntityControlClientMessageHandler(), EntityControlClientMessage.class, -16, Side.CLIENT);
+        CHANNEL.registerMessage(new HeadshotSFXMessageHandler(), HeadshotSFXMessage.class, -17, Side.CLIENT);
 
         CHANNEL.registerMessage(new TryFireMessageHandler(modContext.getWeaponFireAspect()), TryFireMessage.class, 1, Side.SERVER);
         CHANNEL.registerMessage(new PermitMessageServerHandler((CommonModContext) modContext), PermitMessage.class, 2, Side.SERVER);
@@ -153,7 +151,6 @@ public final class MWC {
         serverStartingEvent.registerServerCommand(new BalancePackCommand());
         serverStartingEvent.registerServerCommand(new CraftingFileCommand());
         BalancePackManager.loadDirectory();
-        CraftingFileManager.getInstance().loadDirectory();
     }
 
     public static void updateDebugHandler() {
