@@ -74,77 +74,6 @@ public class MWCClassTransformer implements IClassTransformer {
         }
     }
 
-    public static void collideWithPlayer(Entity entityIn) {
-        System.out.println("Swapped");
-    }
-
-    private static class TestVisitor extends MethodVisitor {
-
-
-        public TestVisitor(MethodVisitor mv) {
-            super(Opcodes.ASM4, mv);
-            System.out.println("HI I AM TEST VISIRO!");
-        }
-
-        @Override
-        public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
-            super.visitMethodInsn(opcode, owner, name, desc, itf);
-
-        	/*
-        	Method other = null;
-			try {
-				other = MWCClassTransformer.class.getDeclaredMethod("collideWithPlayer", Entity.class);
-			} catch (NoSuchMethodException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SecurityException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-			System.out.println("OTHER: " + other);
-
-
-
-        	mv.visitMethodInsn(Opcodes.INVOKESTATIC,
-        			Type.getInternalName(MWCClassTransformer.class), other.getName(),
-        			Type.getMethodDescriptor(other), false);
-        			*/
-
-        }
-
-        @Override
-        public void visitLineNumber(int line, Label start) {
-            if (line == 2167) {
-
-                mv.visitVarInsn(Opcodes.ALOAD, 0);
-                mv.visitInsn(Opcodes.DUP);
-                mv.visitFieldInsn(Opcodes.GETFIELD, "net/minecraft/entity/EntityLivingBase", "motionY", "D");
-                //mv.visit
-                mv.visitLdcInsn(0.07);
-                mv.visitInsn(Opcodes.DADD);
-                mv.visitFieldInsn(Opcodes.PUTFIELD, "net/minecraft/entity/EntityLivingBase", "motionY", "D");
-                //mv.visitVarInsn(Opcodes.GOTO, 77);
-                //mv.visitVarInsn(Opcodes.LDC, 0.1);
-                // net/minecraft/entity/EntityLivingBase
-
-                //	mv.visitVarInsn(Opcodes.DUP, 0);
-                //System.out.println("Found line!");
-                //super.visitLineNumber(line, start);
-            } else {
-                super.visitLineNumber(line, start);
-            }
-
-            //System.out.println(line);
-        }
-
-        @Override
-        public void visitJumpInsn(int opcode, Label label) {
-            super.visitJumpInsn(opcode, label);
-
-        }
-    }
-
     public static void debugPrint(String fileName, String classFile, byte[] byteCode) {
         ClassReader reader = new ClassReader(byteCode);
 
@@ -166,6 +95,7 @@ public class MWCClassTransformer implements IClassTransformer {
 
     }
 
+    @Override
     public byte[] transform(String par1, String className, byte[] bytecode) {
 
 
@@ -268,8 +198,7 @@ public class MWCClassTransformer implements IClassTransformer {
     		System.out.println("here's your stupider thing: " + playSoundClassInfo.classMatches(className));
 
     	}*/
-
-        if ("net.minecraft.entity.EntityLivingBase".equals(className) || entityRendererClassInfo.classMatches(className) ||
+        if (entityRendererClassInfo.classMatches(className) ||
                 (renderBipedClassInfo != null && renderBipedClassInfo.classMatches(className)) ||
                 (modelBipedClassInfo != null && modelBipedClassInfo.classMatches(className)) ||
                 (modelPlayerClassInfo != null && modelPlayerClassInfo.classMatches(className)) ||
@@ -283,15 +212,12 @@ public class MWCClassTransformer implements IClassTransformer {
         ) {
             ClassReader cr = new ClassReader(bytecode);
             ClassWriter cw = new ClassWriter(cr, 1);
-            CVTransform cv = new CVTransform(cw);
-            cr.accept(cv, 0);
-            byte[] array = cw.toByteArray();
-
             if (className.equals("net.minecraft.entity.EntityLivingBase")) {
-                //	debugPrint("joe.txt", className, array);
+                cr.accept(new KnockBackTransform(cw), ClassReader.EXPAND_FRAMES);
+            } else {
+                cr.accept(new CVTransform(cw), 0);
             }
-
-            return array;
+            return cw.toByteArray();
         } else {
             return bytecode;
         }
@@ -320,9 +246,7 @@ public class MWCClassTransformer implements IClassTransformer {
         private boolean visited;
 
         public SoundInterceptorMethodVistor(MethodVisitor mv) {
-
             super(Opcodes.ASM4, mv);
-
         }
 
         @Override
@@ -579,16 +503,6 @@ public class MWCClassTransformer implements IClassTransformer {
         }
 
         @Override
-        public void visitLdcInsn(Object cst) {
-            if (cst instanceof Float && cst.equals(0.4f)) {
-                mv.visitVarInsn(Opcodes.ALOAD, 1);
-                mv.visitMethodInsn(Opcodes.INVOKESTATIC, "com/paneedah/mwc/asm/ServerInterceptors", "getKnockback", "(Lnet/minecraft/util/DamageSource;)F", false);
-            } else {
-                super.visitLdcInsn(cst);
-            }
-        }
-
-        @Override
         public void visitFieldInsn(int opcode, String owner, String name, String desc) {
 
             super.visitFieldInsn(opcode, owner, name, desc);
@@ -611,6 +525,69 @@ public class MWCClassTransformer implements IClassTransformer {
         }
     }
 
+    public static class KnockBackTransform extends ClassVisitor {
+
+        String classname;
+
+        public KnockBackTransform(ClassWriter classWriter) {
+            super(Opcodes.ASM4, classWriter);
+        }
+
+        @Override
+        public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
+            this.classname = name;
+            super.visit(version, access, name, signature, superName, interfaces);
+        }
+
+        @Override
+        public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
+            if (entityLivingBaseClassInfo.methodMatches("attackEntityFrom", "(Lnet/minecraft/util/DamageSource;F)Z", classname, name, desc)) {
+                return new MethodVisitor(Opcodes.ASM4, cv.visitMethod(access, name, desc, signature, exceptions)) {
+
+                    @Override
+                    public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf) {
+                        if (opcode == Opcodes.INVOKEVIRTUAL && owner.equals("net/minecraft/entity/EntityLivingBase") && name.equals("knockBack") && desc.equals("(Lnet/minecraft/entity/Entity;FDD)V")) {
+                            mv.visitVarInsn(Opcodes.ALOAD, 1);
+                            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "net/minecraft/entity/EntityLivingBase", "knockBack", "(Lnet/minecraft/entity/Entity;FDDLnet/minecraft/util/DamageSource;)V", false);
+                        } else {
+                            super.visitMethodInsn(opcode, owner, name, desc, itf);
+                        }
+                    }
+
+                };
+            }
+            return super.visitMethod(access, name, desc, signature, exceptions);
+        }
+
+        @Override
+        public void visitEnd() {
+            MethodVisitor mv = cv.visitMethod(Opcodes.ACC_PUBLIC, "knockBack", "(Lnet/minecraft/entity/Entity;FDDLnet/minecraft/util/DamageSource;)V", null, null);
+            mv.visitCode();
+            /*  New Code
+            public void knockBack(DamageSource source, Entity entityIn, float strength, double xRatio, double zRatio) {
+                if (!(source instanceof com.paneedah.weaponlib.WeaponSpawnEntity.ProjectileDamageSource)) {
+                    knockBack(entityIn, strength, xRatio, zRatio);
+                }
+            }   */
+            Label l = new Label();
+            mv.visitVarInsn(Opcodes.ALOAD, 7);
+            mv.visitTypeInsn(Opcodes.INSTANCEOF, "com/paneedah/weaponlib/WeaponSpawnEntity$ProjectileDamageSource");
+            mv.visitJumpInsn(Opcodes.IFNE, l);
+            mv.visitVarInsn(Opcodes.ALOAD, 0);
+            mv.visitVarInsn(Opcodes.ALOAD, 1);
+            mv.visitVarInsn(Opcodes.FLOAD, 2);
+            mv.visitVarInsn(Opcodes.DLOAD, 3);
+            mv.visitVarInsn(Opcodes.DLOAD, 5);
+            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "net/minecraft/entity/EntityLivingBase", "knockBack", "(Lnet/minecraft/entity/Entity;FDD)V", false);
+            mv.visitFrame(Opcodes.F_SAME, 2, new Object[]{Opcodes.DOUBLE, Opcodes.DOUBLE}, 0, null);
+            mv.visitLabel(l);
+            mv.visitInsn(Opcodes.RETURN);
+            mv.visitMaxs(7, 8);
+            mv.visitEnd();
+            super.visitEnd();
+        }
+    }
+
     private static class CVTransform extends ClassVisitor {
 
         String classname;
@@ -619,6 +596,7 @@ public class MWCClassTransformer implements IClassTransformer {
             super(Opcodes.ASM4, cv);
         }
 
+        @Override
         public void visit(int version, int access, String name, String signature, String superName,
                           String[] interfaces) {
             this.classname = name;
@@ -657,6 +635,7 @@ public class MWCClassTransformer implements IClassTransformer {
 //            super.visitSource(source, debug);
 //        }
 
+        @Override
         public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
 
             //System.out.println("VISIT LOL 2");

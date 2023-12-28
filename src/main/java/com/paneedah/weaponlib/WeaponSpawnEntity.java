@@ -13,11 +13,10 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.EntityDamageSourceIndirect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.RayTraceResult.Type;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 
@@ -90,7 +89,7 @@ public class WeaponSpawnEntity extends EntityProjectile {
             Explosion.createServerSideExplosion(world, this.getThrower(), this, position.hitVec.x, position.hitVec.y, position.hitVec.z, explosionRadius, false, true, isDestroyingBlocks, explosionParticleAgeCoefficient, smokeParticleAgeCoefficient, explosionParticleScaleCoefficient, smokeParticleScaleCoefficient, weapon.getModContext().getRegisteredTexture(explosionParticleTextureId), weapon.getModContext().getRegisteredTexture(smokeParticleTextureId), weapon.getModContext().getExplosionSound());
         } else if (position.entityHit != null) {
             if (this.getThrower() != null)
-                position.entityHit.attackEntityFrom(DamageSource.causeArrowDamage(this, this.getThrower()), damage);
+                position.entityHit.attackEntityFrom(new ProjectileDamageSource(this, this.getThrower()), damage);
             else
                 position.entityHit.attackEntityFrom(new DamageSource("arrow"), damage);
 
@@ -189,5 +188,12 @@ public class WeaponSpawnEntity extends EntityProjectile {
 
     public Weapon getWeapon() {
         return weapon;
+    }
+
+    public static class ProjectileDamageSource extends EntityDamageSourceIndirect {
+        public ProjectileDamageSource(Entity projectile, Entity shooter) {
+            super("arrow", projectile, shooter);
+            this.setProjectile();
+        }
     }
 }

@@ -13,7 +13,6 @@ public class MWCPlugin implements IFMLLoadingPlugin, IEarlyMixinLoader {
     @Override
     public String[] getASMTransformerClass() {
         return new String[]{
-                KnockBackVisitor.class.getName(),
                 MWCClassTransformer.class.getName()
         };
     }
