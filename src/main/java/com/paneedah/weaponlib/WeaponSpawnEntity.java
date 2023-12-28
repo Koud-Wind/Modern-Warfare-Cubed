@@ -11,12 +11,16 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityDamageSourceIndirect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.RayTraceResult.Type;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 
@@ -194,6 +198,15 @@ public class WeaponSpawnEntity extends EntityProjectile {
         public ProjectileDamageSource(Entity projectile, Entity shooter) {
             super("arrow", projectile, shooter);
             this.setProjectile();
+        }
+
+        @Override
+        public ITextComponent getDeathMessage(EntityLivingBase entityLivingBaseIn) {
+            ITextComponent itextcomponent = getTrueSource() == null ? this.damageSourceEntity.getDisplayName() : getTrueSource().getDisplayName();
+            ItemStack itemstack = getTrueSource() instanceof EntityLivingBase ? ((EntityLivingBase)getTrueSource()).getHeldItemMainhand() : ItemStack.EMPTY;
+            String s = "death.attack." + this.damageType;
+            String s1 = s + ".item";
+            return new TextComponentTranslation(s1, entityLivingBaseIn.getDisplayName(), itextcomponent, itemstack.getTextComponent());
         }
     }
 }
