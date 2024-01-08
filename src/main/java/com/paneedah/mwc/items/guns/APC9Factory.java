@@ -30,7 +30,7 @@ public class APC9Factory implements GunFactory {
                 .withShellType(Type.PISTOL)
                 .hasFlashPedals()
                 .withMaxShots(1, Integer.MAX_VALUE)
-                .withMuzzlePosition(new Vec3d(-.1, -1.2, -3.7))
+                .withMuzzlePosition(new Vec3d(-.1, -1.1, -3.7))
                 .withShootSound("apc9")
                 .withSilencedShootSound("mp5_silenced")
                 .withDrawSound("noaction_draw")
@@ -54,7 +54,7 @@ public class APC9Factory implements GunFactory {
                 ))
                 .withScreenShaking(RenderableState.SHOOTING,
                         2f,
-                        1f,
+                        2f,
                         1f)
 
                 .withModernRecipe(new
@@ -359,8 +359,10 @@ public class APC9Factory implements GunFactory {
                         .setupModernMagazineAnimations("apc9",
                                 Magazines.APC9Mag)
 
-                        .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.APC9Action.getRenderablePart(), (renderContext) -> {
-                            GL11.glTranslatef(0f, 0f, 0.6f);
+                        .withFirstPersonCustomPositioning(AuxiliaryAttachments.APC9Action.getRenderablePart(), (renderContext) -> {
+                            if (renderContext.getWeaponInstance().getAmmo() == 0) {
+                                GL11.glTranslatef(0F, 0F, 0.55F);
+                            }
                         })
 
                         .withThirdPersonPositioningReloading(
@@ -449,81 +451,38 @@ public class APC9Factory implements GunFactory {
                         )
 
                         .withFirstPersonPositioningZooming((renderContext) -> {
-                            GL11.glTranslatef(0.178f+(float)com.paneedah.weaponlib.config.ModernConfigManager.x11, 0.27f+(float)com.paneedah.weaponlib.config.ModernConfigManager.x22, 0.25f+(float)com.paneedah.weaponlib.config.ModernConfigManager.x33);
+                            GL11.glTranslatef(0.178f, 0.27f, 0.25f);
 
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider))
                                 GL11.glTranslatef(-0.007F, 0.04f, 0.5f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
-                                GL11.glTranslatef(-0.004F, 0.08f, 0.7f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG))
+                                GL11.glTranslatef(-0.004F, 0.08f, 0.75f);
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1))
                                 GL11.glTranslatef(0F, 0.07f, 0.5f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5))
                                 GL11.glTranslatef(0F, 0.07f, 0.5f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM2)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM2))
                                 GL11.glTranslatef(0F, 0.27f, 1.3f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter))
                                 GL11.glTranslatef(-0.006F, 0.01f, 0.6f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex))
                                 GL11.glTranslatef(0F, 0.015f, 0.4f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex))
                                 GL11.glTranslatef(0F, -0.015f, 0.5f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex))
                                 GL11.glTranslatef(-0.005F, 0.065f, 0.2f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic))
                                 GL11.glTranslatef(-0.005F, 0.055f, 0.3f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt))
                                 GL11.glTranslatef(-0.005F, 0.055f, 0.3f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2))
                                 GL11.glTranslatef(-0.005F, 0.075f, 0.6f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux))
                                 GL11.glTranslatef(-0.005F, 0.11f, 0.2f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra))
                                 GL11.glTranslatef(-0.005F, 0.085f, 0.3f);
-                            }
-
-
-                            if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+                            else if (Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3))
                                 GL11.glTranslatef(-0.005F, 0.085f, 0.3f);
-                            }
                         })
 
                         .withFirstPersonPositioningModifying((renderContext) -> {
