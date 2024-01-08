@@ -45,7 +45,7 @@ public final class MWC {
 
     public static final SimpleNetworkWrapper CHANNEL = NetworkRegistry.INSTANCE.newSimpleChannel(ID);
 
-    public static final CreativeTabs EQUIPMENT_TAB = new ArmorTab(CreativeTabs.getNextID(), "equipments");
+    public static final CreativeTabs EQUIPMENT_TAB = new ArmorTab(CreativeTabs.getNextID(), "equipment");
 	public static final CreativeTabs WEAPONS_TAB = new AssaultRiflesTab(CreativeTabs.getNextID(), "weapons");
 	public static final CreativeTabs AMMUNITION_AND_MAGAZINES_TAB = new AmmoTab(CreativeTabs.getNextID(), "ammunitionAndMagazines");
 	public static final CreativeTabs ATTACHMENTS_TAB = new AttachmentsTab(CreativeTabs.getNextID(), "attachments");
@@ -117,7 +117,6 @@ public final class MWC {
         CHANNEL.registerMessage(new EntityInventorySyncMessageClientHandler(modContext), EntityInventorySyncMessage.class, -14, Side.CLIENT);
         CHANNEL.registerMessage(new ExposureMessageHandler(), ExposureMessage.class, -15, Side.CLIENT);
         CHANNEL.registerMessage(new EntityControlClientMessageHandler(), EntityControlClientMessage.class, -16, Side.CLIENT);
-        CHANNEL.registerMessage(new HeadshotSFXMessageHandler(), HeadshotSFXMessage.class, -17, Side.CLIENT);
 
         CHANNEL.registerMessage(new TryFireMessageHandler(modContext.getWeaponFireAspect()), TryFireMessage.class, 1, Side.SERVER);
         CHANNEL.registerMessage(new PermitMessageServerHandler((CommonModContext) modContext), PermitMessage.class, 2, Side.SERVER);
@@ -143,7 +142,7 @@ public final class MWC {
     @Mod.EventHandler
     @SideOnly(Side.CLIENT)
     public void postInitClient(FMLPostInitializationEvent postInitializationEvent) {
-        OptiNotFine.forceOptiFineFastRenderOff();
+        RedCore.forceOptiFineFastRenderOff();
     }
 
     @Mod.EventHandler

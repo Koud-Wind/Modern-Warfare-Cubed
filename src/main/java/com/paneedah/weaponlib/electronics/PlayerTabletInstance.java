@@ -1,9 +1,9 @@
 package com.paneedah.weaponlib.electronics;
 
-import com.paneedah.mwc.network.TypeRegistry;
-import com.paneedah.mwc.rendering.perspective.Perspective;
-import com.paneedah.mwc.rendering.perspective.WirelessCameraPerspective;
 import com.paneedah.weaponlib.PlayerItemInstance;
+import com.paneedah.mwc.network.TypeRegistry;
+import com.paneedah.weaponlib.perspective.Perspective;
+import com.paneedah.weaponlib.perspective.WirelessCameraPerspective;
 import com.paneedah.weaponlib.tracking.LivingEntityTracker;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.EntityLivingBase;
@@ -33,8 +33,8 @@ public class PlayerTabletInstance extends PlayerItemInstance<TabletState> {
 	}
 	
 	@Override
-	public Perspective getRequiredPerspectiveType() {
-	    return new WirelessCameraPerspective();
+	public Class<? extends Perspective<?>> getRequiredPerspectiveType() {
+	    return WirelessCameraPerspective.class;
 	}
 	
 	@Override

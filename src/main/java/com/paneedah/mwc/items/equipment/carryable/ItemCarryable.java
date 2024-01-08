@@ -1,8 +1,8 @@
 package com.paneedah.mwc.items.equipment.carryable;
 
-import com.paneedah.mwc.rendering.IEquipmentModelSource;
-import com.paneedah.mwc.rendering.ModelSourceTransforms;
+import com.paneedah.mwc.renderer.ModelSourceTransforms;
 import com.paneedah.weaponlib.Weapon;
+import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.config.BalancePackManager;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import com.paneedah.weaponlib.crafting.CraftingGroup;
@@ -16,6 +16,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 import static com.paneedah.mwc.utils.ModReference.RED_LOG;
@@ -26,12 +27,20 @@ public class ItemCarryable extends Item implements IModernCraftingRecipe {
 
         protected static final int DEFAULT_GUI_TEXTURE_WIDTH = 176;
 
-        protected static String subPath = "";
-
         protected String name;
         protected String modelName;
         protected String textureName;
-        protected ModelSourceTransforms.ModelSourceTransformsBuilder transforms = ModelSourceTransforms.builder();
+        protected ModelSourceTransforms transforms = ModelSourceTransforms.builder()
+                .entityPositioning(() -> new Transform()
+                        .withPosition(-0.5, -1.75, 0.4)
+                        .withScale(1, 1, 1)
+                        .doGLDirect())
+                .inventoryPositioning(() -> new Transform()
+                        .withPosition(-0.15, -4.15, 0.35)
+                        .withRotation(18, -50, 0)
+                        .withScale(2.9, 2.9, 2.9)
+                        .doGLDirect())
+                .build();
 
         protected int size;
         protected int guiTextureWidth = DEFAULT_GUI_TEXTURE_WIDTH;
@@ -91,7 +100,6 @@ public class ItemCarryable extends Item implements IModernCraftingRecipe {
          * This method is particularly useful when there's a need to strictly control the types or specific items in an inventory.
          *
          * @param validItemPredicate The Predicate function that defines the criteria for item validity
-         *
          * @return Returns the Builder instance for method chaining
          */
         public T withValidItemPredicate(Predicate<Item> validItemPredicate) {
@@ -100,12 +108,63 @@ public class ItemCarryable extends Item implements IModernCraftingRecipe {
         }
 
         public T withModel(String model) {
-            this.modelName = "com.paneedah.mwc.models.equipments." + subPath + model;
+            this.modelName = "com.paneedah.mwc.models." + model;
             return self();
         }
 
         public T withTexture(String textureName) {
             this.textureName = addFileExtension(textureName, ".png");
+            return self();
+        }
+
+        public T withEntityPositioning(Runnable entityPositioning) {
+            transforms.setEntityPositioning(entityPositioning);
+            return self();
+        }
+
+        public T withInventoryPositioning(Runnable inventoryPositioning) {
+            transforms.setInventoryPositioning(inventoryPositioning);
+            return self();
+        }
+
+        public T withThirdPersonPositioning(Runnable thirdPersonPositioning) {
+            transforms.setThirdPersonPositioning(thirdPersonPositioning);
+            return self();
+        }
+
+        public T withCustomEquippedPositioning(Runnable customEquippedPositioning) {
+            transforms.setCustomEquippedPositioning(customEquippedPositioning);
+            return self();
+        }
+
+        public T withFirstPersonPositioning(Runnable firstPersonPositioning) {
+            transforms.setFirstPersonPositioning(firstPersonPositioning);
+            return self();
+        }
+
+        public T withFirstPersonModelPositioning(Consumer<ModelBase> firstPersonModelPositioning) {
+            transforms.setFirstPersonModelPositioning(firstPersonModelPositioning);
+            return self();
+        }
+
+        public T withEntityModelPositioning(Consumer<ModelBase> entityModelPositioning) {
+            transforms.setEntityModelPositioning(entityModelPositioning);
+            return self();
+        }
+
+        public T withInventoryModelPositioning(Consumer<ModelBase> inventoryModelPositioning) {
+            transforms.setInventoryModelPositioning(inventoryModelPositioning);
+            return self();
+        }
+
+        public T withThirdPersonModelPositioning(Consumer<ModelBase> thirdPersonModelPositioning) {
+            transforms.setThirdPersonModelPositioning(thirdPersonModelPositioning);
+            return self();
+        }
+
+        public T withFirstPersonHandPositioning(Runnable leftHand, Runnable rightHand) {
+            transforms.setFirstPersonLeftHandPositioning(leftHand);
+            transforms.setFirstPersonRightHandPositioning(rightHand);
             return self();
         }
 
@@ -141,8 +200,8 @@ public class ItemCarryable extends Item implements IModernCraftingRecipe {
         return customEquippedPositioning;
     }
 
-    private final String modelName;
-    private final String textureName;
+    public final String modelName;
+    public final String textureName;
 
     public ItemCarryable(int size, Predicate<Item> validItemPredicate, ResourceLocation guiTextureLocation, int guiTextureWidth, String modelName, String textureName) {
         this.validItemPredicate = validItemPredicate;
@@ -223,15 +282,5 @@ public class ItemCarryable extends Item implements IModernCraftingRecipe {
     @Override
     public void setCraftingGroup(CraftingGroup group) {
         this.craftGroup = group;
-    }
-
-    @Override
-    public String getModelName() {
-        return modelName;
-    }
-
-    @Override
-    public String getTextureName() {
-        return textureName;
     }
 }

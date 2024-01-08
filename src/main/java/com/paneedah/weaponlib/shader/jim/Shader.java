@@ -25,15 +25,14 @@ public class Shader {
 	}
 	
 	public void use() {
-		if(!ShaderLoader.enableShaders)
-			return;
+		if(!ShaderLoader.enableShaders) return;
 		
-		if(!ModernConfigManager.enableAllShaders)
+		if(!ModernConfigManager.enableAllShaders) {
 			return;
+		}
 		
 		GL20.glUseProgram(shader);
-
-		for(final Uniform uniform : uniforms) {
+		for(Uniform uniform : uniforms) {
 			uniform.apply(shader);
 		}
 	}

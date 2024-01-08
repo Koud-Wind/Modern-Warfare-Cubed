@@ -1,9 +1,8 @@
 package com.paneedah.weaponlib.electronics;
 
-import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.rendering.perspective.Perspective;
-import com.paneedah.mwc.rendering.perspective.PerspectiveRenderer;
 import com.paneedah.weaponlib.*;
+import com.paneedah.weaponlib.perspective.Perspective;
+import com.paneedah.weaponlib.perspective.PerspectiveRenderer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -14,20 +13,16 @@ implements PlayerItemInstanceFactory<PlayerHandheldInstance, HandheldState>, Upd
     private final int DEFAULT_MAX_STACK_SIZE = 1;
         
     public static final class Builder<T> extends AttachmentBuilder<T> {
-
-        {
-            creativeTab = MWC.EQUIPMENT_TAB;
-        }
         
         private Runnable screenPositioning;
-        private Perspective perspectiveClass;
+        private Class<? extends Perspective<?>> perspectiveClass;
         
         public Builder<T> withScreenPositioning(Runnable screenPositioning) {
             this.screenPositioning = screenPositioning;
             return this;
         }
         
-        public Builder<T> withScreenPerspectiveType(Perspective perspectiveClass) {
+        public Builder<T> withScreenPerspectiveType(Class<? extends Perspective<?>> perspectiveClass) {
             this.perspectiveClass = perspectiveClass;
             return this;
         } 
@@ -44,8 +39,8 @@ implements PlayerItemInstanceFactory<PlayerHandheldInstance, HandheldState>, Upd
         }
         
         @Override
-        public ItemAttachment<T> build() {
-            return super.build();
+        public ItemAttachment<T> build(ModContext modContext) {
+            return super.build(modContext);
         }
     }
     
@@ -54,7 +49,7 @@ implements PlayerItemInstanceFactory<PlayerHandheldInstance, HandheldState>, Upd
     private Builder<T> builder;
     
     private ItemHandheld(Builder<T> builder) {
-        super(AttachmentCategory.SCOPE, builder.getModel(), builder.getTextureName(),
+        super(AttachmentCategory.SCOPE, builder.getModel(), builder.getTextureName(), null,
                 null, null);
         this.builder = builder;
         
@@ -72,7 +67,7 @@ implements PlayerItemInstanceFactory<PlayerHandheldInstance, HandheldState>, Upd
         return instance;
     }
 
-    public Perspective getRequiredPespectiveType() {
+    public Class<? extends Perspective<?>> getRequiredPespectiveType() {
         return builder.perspectiveClass;
     }
 }

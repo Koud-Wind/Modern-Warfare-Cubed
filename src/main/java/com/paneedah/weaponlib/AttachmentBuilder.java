@@ -1,16 +1,15 @@
 package com.paneedah.weaponlib;
 
-import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.rendering.ModelSourceTransforms;
-import com.paneedah.mwc.rendering.renderer.StaticModelSourceRenderer;
-import com.paneedah.mwc.rendering.TexturedModel;
+import com.paneedah.mwc.renderer.ModelSourceTransforms;
+import com.paneedah.mwc.renderer.StaticModelSourceRenderer;
 import com.paneedah.weaponlib.ItemAttachment.ApplyHandler;
 import com.paneedah.weaponlib.ItemAttachment.ApplyHandler2;
+import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.crafting.*;
-import dev.redstudio.redcore.vectors.Vector3F;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
@@ -29,11 +28,16 @@ public class AttachmentBuilder<T> {
     protected String name;
     protected ModelBase model;
     protected String textureName;
-    protected ModelSourceTransforms.ModelSourceTransformsBuilder transforms = ModelSourceTransforms.builder();
+    protected ModelSourceTransforms transforms = ModelSourceTransforms.builder()
+            .entityPositioning(() -> new Transform()
+                    .withScale(0.17, 0.17, 0.17)
+                    .withPosition(-0.5, -0.5, 0.6)
+                    .doGLDirect())
+            .build();
 
-    protected Vector3F rotationPoint;
+    protected Vec3d rotationPoint;
 
-    protected CreativeTabs creativeTab = MWC.ATTACHMENTS_TAB;
+    protected CreativeTabs tab;
     protected AttachmentCategory attachmentCategory;
     protected ApplyHandler<T> apply;
     protected ApplyHandler<T> remove;
@@ -41,8 +45,7 @@ public class AttachmentBuilder<T> {
     protected ApplyHandler2<T> remove2;
     private String crosshair;
     private List<CustomRenderer<?>> postRenderer = new ArrayList<>();
-    protected List<TexturedModel> texturedModels = new ArrayList<>();
-    protected List<TexturedModel> onWeaponTexturedModels = new ArrayList<>();
+    private List<Tuple<ModelBase, String>> texturedModels = new ArrayList<>();
     private boolean isRenderablePart;
     private int maxStackSize = 1;
     private Function<ItemStack, String> informationProvider;
@@ -76,8 +79,13 @@ public class AttachmentBuilder<T> {
         return this;
     }
 
-    public AttachmentBuilder<T> withRotationPoint(final float x, final float y, final float z) {
-        this.rotationPoint = new Vector3F(x, y, z);
+    public AttachmentBuilder<T> withCreativeTab(CreativeTabs tab) {
+        this.tab = tab;
+        return this;
+    }
+
+    public AttachmentBuilder<T> withRotationPoint(double x, double y, double z) {
+        this.rotationPoint = new Vec3d(x, y, z);
         return this;
     }
 
@@ -94,8 +102,64 @@ public class AttachmentBuilder<T> {
         return this;
     }
 
+    public AttachmentBuilder<T> withModel(ModelBase model) {
+        this.model = model;
+        return this;
+    }
+
+    public AttachmentBuilder<T> withTextureName(String textureName) {
+        this.textureName = textureName.toLowerCase();
+        return this;
+    }
+
     public AttachmentBuilder<T> withMaxStackSize(int maxStackSize) {
         this.maxStackSize = maxStackSize;
+        return this;
+    }
+
+    public AttachmentBuilder<T> withEntityPositioning(Runnable entityPositioning) {
+        transforms.setEntityPositioning(entityPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withInventoryPositioning(Runnable inventoryPositioning) {
+        transforms.setInventoryPositioning(inventoryPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withThirdPersonPositioning(Runnable thirdPersonPositioning) {
+        transforms.setThirdPersonPositioning(thirdPersonPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withFirstPersonPositioning(Runnable firstPersonPositioning) {
+        transforms.setFirstPersonPositioning(firstPersonPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withFirstPersonModelPositioning(Consumer<ModelBase> firstPersonModelPositioning) {
+        transforms.setFirstPersonModelPositioning(firstPersonModelPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withEntityModelPositioning(Consumer<ModelBase> entityModelPositioning) {
+        transforms.setEntityModelPositioning(entityModelPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withInventoryModelPositioning(Consumer<ModelBase> inventoryModelPositioning) {
+        transforms.setInventoryModelPositioning(inventoryModelPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withThirdPersonModelPositioning(Consumer<ModelBase> thirdPersonModelPositioning) {
+        transforms.setThirdPersonModelPositioning(thirdPersonModelPositioning);
+        return this;
+    }
+
+    public AttachmentBuilder<T> withFirstPersonHandPositioning(Runnable leftHand, Runnable rightHand) {
+        transforms.setFirstPersonLeftHandPositioning(leftHand);
+        transforms.setFirstPersonRightHandPositioning(rightHand);
         return this;
     }
 
@@ -111,15 +175,7 @@ public class AttachmentBuilder<T> {
     }
 
     public AttachmentBuilder<T> withModel(ModelBase model, String textureName) {
-        this.texturedModels.add(new TexturedModel(model, addFileExtension(textureName.toLowerCase(), ".png")));
-        return this;
-    }
-
-    /**
-     * OnWeaponModel's are models that will only be rendered when the attachment is on a weapons.
-     */
-    public AttachmentBuilder<T> withOnWeaponModel(ModelBase model, String textureName) {
-        this.onWeaponTexturedModels.add(new TexturedModel(model, addFileExtension(textureName.toLowerCase(), ".png")));
+        this.texturedModels.add(new Tuple<>(model, textureName.toLowerCase()));
         return this;
     }
 
@@ -180,15 +236,13 @@ public class AttachmentBuilder<T> {
     }
 
     protected ItemAttachment<T> createAttachment(ModContext modContext) {
-        return new ItemAttachment<T>(attachmentCategory, apply, remove);
+        return new ItemAttachment<T>(attachmentCategory, crosshair, apply, remove);
     }
 
-    public ItemAttachment<T> build() {
-        final ModContext modContext = MWC.modContext;
-
+    public ItemAttachment<T> build(ModContext modContext) {
         ItemAttachment<T> attachment = createAttachment(modContext);
         attachment.setTranslationKey(ID + "_" + name);
-        attachment.setCreativeTab(creativeTab);
+        attachment.setCreativeTab(tab);
         attachment.setPostRenderer(postRenderer);
         attachment.setName(name);
         attachment.apply2 = apply2;
@@ -221,16 +275,16 @@ public class AttachmentBuilder<T> {
         }
 
         if (getModel() != null) {
-            attachment.addModel(new TexturedModel(getModel(), addFileExtension(getTextureName(), ".png")));
+            attachment.addModel(getModel(), addFileExtension(getTextureName(), ".png"));
         }
 
-        attachment.texturedModels = texturedModels;
-        attachment.onWeaponTexturedModels = onWeaponTexturedModels;
+        texturedModels.forEach(tm -> attachment.addModel(tm.getU(), addFileExtension(tm.getV(), ".png")));
 
-        compatibleAttachments.values().forEach(attachment::addCompatibleAttachment);
+        compatibleAttachments.values().forEach(a -> attachment.addCompatibleAttachment(a));
 
-        if ((getModel() != null || !texturedModels.isEmpty() || !onWeaponTexturedModels.isEmpty()))
-            modContext.registerRenderableItem(name, attachment, FMLCommonHandler.instance().getSide() == Side.CLIENT ? new StaticModelSourceRenderer(transforms.build()) : null);
+        if ((getModel() != null || !texturedModels.isEmpty())) {
+            modContext.registerRenderableItem(name, attachment, FMLCommonHandler.instance().getSide() == Side.CLIENT ? new StaticModelSourceRenderer(transforms) : null);
+        }
 
         if (craftingRecipe != null && craftingRecipe.length >= 2) {
 //		    ItemStack itemStack = new ItemStack(attachment);
@@ -281,8 +335,8 @@ public class AttachmentBuilder<T> {
         return str.endsWith(extension) ? str.substring(0, str.length() - extension.length()) : str;
     }
 
-    public <V extends ItemAttachment<T>> V build(Class<V> target) {
-        return target.cast(build());
+    public <V extends ItemAttachment<T>> V build(ModContext modContext, Class<V> target) {
+        return target.cast(build(modContext));
     }
 
     public ModelBase getModel() {
