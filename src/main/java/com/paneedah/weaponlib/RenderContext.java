@@ -5,6 +5,7 @@ import com.paneedah.weaponlib.animation.MatrixHelper;
 import com.paneedah.weaponlib.animation.PartPositionProvider;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import org.lwjgl.util.vector.Matrix4f;
 
@@ -13,7 +14,7 @@ import java.util.Map;
 
 public class RenderContext<RS> implements PartPositionProvider {
 
-	private EntityLivingBase entityLiving;
+	private EntityLivingBase player;
 	private ItemStack itemStack;
 	private float limbSwing;
 	private float flimbSwingAmount;
@@ -30,8 +31,8 @@ public class RenderContext<RS> implements PartPositionProvider {
 
 	private Map<Part, Matrix4f> attachablePartPositions;
 
-	public RenderContext(EntityLivingBase entityLiving, ItemStack itemStack) {
-		this.entityLiving = entityLiving;
+	public RenderContext(EntityLivingBase player, ItemStack itemStack) {
+		this.player = player;
 		this.itemStack = itemStack;
 		this.attachablePartPositions = new HashMap<>();
 	}
@@ -92,16 +93,16 @@ public class RenderContext<RS> implements PartPositionProvider {
 		this.scale = scale;
 	}
 
-	public void setEntityLiving(EntityLivingBase entityLiving) {
-		this.entityLiving = entityLiving;
+	public void setPlayer(EntityPlayer player) {
+		this.player = player;
 	}
 
-	public void setItemStack(ItemStack itemStack) {
-		this.itemStack = itemStack;
+	public void setWeapon(ItemStack weapon) {
+		this.itemStack = weapon;
 	}
 
-	public EntityLivingBase getEntityLiving() {
-		return entityLiving;
+	public EntityLivingBase getPlayer() {
+		return player;
 	}
 
 	public ItemStack getWeapon() {
@@ -153,7 +154,7 @@ public class RenderContext<RS> implements PartPositionProvider {
 			return (PlayerWeaponInstance) playerItemInstance;
 		}
 		PlayerItemInstance<?> itemInstance = MWC.modContext.getPlayerItemInstanceRegistry()
-				.getItemInstance(entityLiving, itemStack);
+				.getItemInstance(player, itemStack);
 		if(itemInstance instanceof PlayerWeaponInstance) {
 			return (PlayerWeaponInstance) itemInstance;
 		}

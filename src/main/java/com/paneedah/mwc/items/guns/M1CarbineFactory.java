@@ -1,7 +1,7 @@
 package com.paneedah.mwc.items.guns;
 
 import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.models.weapons.*;
+import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
@@ -12,6 +12,7 @@ import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
+import java.util.Arrays;
 
 public class M1CarbineFactory {
 
@@ -24,18 +25,30 @@ public class M1CarbineFactory {
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.RIFLES)
         .withMaxShots(1)
+        //.withMaxShots(5)
         .withShootSound("m1carbine")
         .withReloadSound("m1carbine_reload")
         .withUnloadSound("m1carbine_unload")
         .withInspectSound("inspection")
         .withDrawSound("noaction_draw")
         .withReloadingTime(45)
+        .withCrosshair("gun")
+        .withCrosshairRunning("Running")
+        .withCrosshairZoomed("Sight")
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.1f)
         .withInaccuracy(1f)
         .withCreativeTab(MWC.WEAPONS_TAB)
+        .withInformationProvider(stack -> Arrays.asList(
+        "Type: Semi-Automatic Rifle",
+        "Damage: 6", 
+        "Cartridge: .30 Carbine",
+        "Fire Rate: SEMI",
+        "Rate of Fire: 55/100",
+        "Magazines:",
+        "15rnd .30 Carbine Magazine"))
          
          .withScreenShaking(RenderableState.SHOOTING, 
                  1f, // x 
@@ -58,6 +71,8 @@ public class M1CarbineFactory {
          })
          .withCompatibleAttachment(Attachments.M1CarbineScoutHandguard, (model) -> {
              if(model instanceof M1ScoutCarbineHandguard) {
+//                 GL11.glTranslatef(0.125F, -1.8F, -0.5F);
+//                 GL11.glScaled(0F, 0F, 0F);
              } else if(model instanceof AKRail) {
                  GL11.glTranslatef(-0.224F, -1.15F, -4.3F);
                  GL11.glScaled(0.75F, 0.8F, 0.9F);
@@ -114,7 +129,7 @@ public class M1CarbineFactory {
                 GL11.glScaled(0F, 0F, 0F);
             }
         })
-         .withCompatibleAttachment(Attachments.NightRaider, () -> {
+         .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
              GL11.glTranslatef(-0.21F, -1.25F, -3.5F);
              GL11.glScaled(0.75F, 0.75F, 0.75F);
          },(model) -> {
@@ -123,7 +138,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.03F, 0.03F, 0.03F);
              }
          })
-         .withCompatibleAttachment(Attachments.ACOG, () -> {
+         .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
              GL11.glTranslatef(-0.29F, -1.25F, -2.2F);
              GL11.glScaled(0.7F, 0.7F, 0.7F);
          },(model) -> {
@@ -136,7 +151,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.03F, 0.03F, 0.03F);
              }
          })
-         .withCompatibleAttachment(Attachments.Specter, () -> {
+         .withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
              GL11.glTranslatef(-0.18F, -0.95F, -2.5F);
              GL11.glScaled(0.4F, 0.4F, 0.4F);
          },(model) -> {
@@ -145,7 +160,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.1F, 0.1F, 0.1F);
              }
          })
-         .withCompatibleAttachment(Attachments.Reflex, () -> {
+         .withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
                  GL11.glTranslatef(-0.066F, -1.05F, -3F);
                  GL11.glScaled(0.45F, 0.45F, 0.45F);
          },(model) -> {
@@ -154,7 +169,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.15F, 0.15F, 0.15F);
              }
          })
-         .withCompatibleAttachment(Attachments.BijiaReflex, () -> {
+         .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
              GL11.glTranslatef(-0.055F, -1F, -3F);
              GL11.glScaled(0.55F, 0.55F, 0.55F);
          },(model) -> {
@@ -163,7 +178,7 @@ public class M1CarbineFactory {
              GL11.glScaled(0.15F, 0.15F, 0.15F);
          }
          })
-         .withCompatibleAttachment(Attachments.RMR, () -> {
+         .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
              GL11.glTranslatef(-0.171F, -1.25F, -2.5F);
              GL11.glScaled(0.33F, 0.33F, 0.33F);
          },(model) -> {
@@ -172,7 +187,7 @@ public class M1CarbineFactory {
              GL11.glScaled(0.2F, 0.2F, 0.2F);
          }
          })
-         .withCompatibleAttachment(Attachments.Holographic, () -> {
+         .withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
                  GL11.glTranslatef(-0.041F, -1.1F, -2.8F);
                  GL11.glScaled(0.65F, 0.65F, 0.65F);
              },(model) -> {
@@ -181,7 +196,7 @@ public class M1CarbineFactory {
                      GL11.glScaled(0.1F, 0.1F, 0.1F);
                  }
              })
-         .withCompatibleAttachment(Attachments.HolographicAlt, () -> {
+         .withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
              GL11.glTranslatef(-0.041F, -1.1F, -2.8F);
              GL11.glScaled(0.65F, 0.65F, 0.65F);
          },(model) -> {
@@ -190,7 +205,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.1F, 0.1F, 0.1F);
              }
          })
-         .withCompatibleAttachment(Attachments.EotechHybrid2, () -> {
+         .withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
              GL11.glTranslatef(-0.041F, -1.1F, -2.8F);
              GL11.glScaled(0.65F, 0.65F, 0.65F);
          },(model) -> {
@@ -203,7 +218,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.05F, 0.05F, 0.05F);
              }
          })
-//         .withCompatibleAttachment(Attachments.Vortex, () -> {
+//         .withCompatibleAttachment(Attachments.Vortex, (player, stack) -> {
 //                 GL11.glTranslatef(-0.28F, -1.3F, -3F);
 //                 GL11.glScaled(0.4F, 0.4F, 0.5F);
 //             },(model) -> {
@@ -212,7 +227,7 @@ public class M1CarbineFactory {
 //                     GL11.glScaled(0.15F, 0.15F, 0.15F);
 //                 }
 //             })
-         .withCompatibleAttachment(Attachments.Kobra, () -> {
+         .withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
                  GL11.glTranslatef(-0.041F, -1.08F, -2.8F);
                  GL11.glScaled(0.65F, 0.65F, 0.65F);
          },(model) -> {
@@ -221,7 +236,7 @@ public class M1CarbineFactory {
                  GL11.glScaled(0.15F, 0.15F, 0.15F);
              }
          })
-         .withCompatibleAttachment(Attachments.MicroT1, () -> {
+         .withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
                  GL11.glTranslatef(-0.18F, -1.25F, -2.5F);
                  GL11.glScaled(0.4F, 0.4F, 0.4F);
              },(model) -> {
@@ -230,7 +245,7 @@ public class M1CarbineFactory {
                      GL11.glScaled(0.15F, 0.15F, 0.15F);
                  }
              })
-         .withCompatibleAttachment(Attachments.AimpointCompM5, () -> {
+         .withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
              GL11.glTranslatef(-0.18F, -1.25F, -2.5F);
              GL11.glScaled(0.4F, 0.4F, 0.4F);
          },(model) -> {
@@ -243,9 +258,12 @@ public class M1CarbineFactory {
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new M1Carbine())
+            //.withTextureName("AK47")
+            //.withWeaponProximity(0.99F)
+            //.withYOffsetZoom(5F)
             .withEntityPositioning(itemStack -> {
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
-                GL11.glRotatef(0F, 0f, 0f, 4f);
+                GL11.glRotatef(-90F, 0f, 0f, 4f);
             })
             .withInventoryPositioning(itemStack -> {
                 GL11.glScaled(0.28F, 0.28F, 0.28F);
@@ -371,6 +389,7 @@ public class M1CarbineFactory {
                     GL11.glRotatef(-1.000000f, 1f, 0f, 0f);
                     GL11.glTranslatef(0.105000f, 0.975000f, -0.125000f);
                 }, 120, 0)
+//                }, 100, 0)
             )
             
             .withFirstPersonPositioningUnloading(
@@ -414,6 +433,8 @@ public class M1CarbineFactory {
                         )
                         
             .withFirstPersonCustomPositioningUnloading(AuxiliaryAttachments.M1CarbineAction.getRenderablePart(),
+//                    new Transition((renderContext) -> {
+//                    }, 500, 1000),
                     new Transition((renderContext) -> {
                     }, 500, 1000),
                     new Transition((renderContext) -> {
@@ -442,6 +463,8 @@ public class M1CarbineFactory {
                     )
                     
             .withFirstPersonCustomPositioningUnloading(Magazines.M1CarbineMag,
+//                    new Transition((renderContext) -> {
+//                    }, 250, 1000),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -472,6 +495,13 @@ public class M1CarbineFactory {
                     )
                     
             .withThirdPersonPositioningReloading(
+//                    new Transition((renderContext) -> { // Reload position
+//                        GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
+//                        GL11.glRotatef(-10.000000f, 1f, 0f, 0f);
+//                        GL11.glRotatef(45.000000f, 0f, 1f, 0f);
+//                        GL11.glRotatef(65.000000f, 0f, 0f, 1f);
+//                        GL11.glTranslatef(0.150000f, 1.149999f, 0.175000f);
+//                    }, 200, 200),
                     new Transition((renderContext) -> { // Reload position
                         GL11.glScaled(0.5F, 0.5F, 0.5F);
                         GL11.glTranslatef(-2F, -2.5F, 2.7F);
@@ -535,6 +565,7 @@ public class M1CarbineFactory {
                     GL11.glRotatef(90F, 1f, 0f, 0f);
                     GL11.glRotatef(12F, 0f, 0f, 1f);
                 }, 120, 0)
+//                }, 100, 0)
             )
                     
             .withFirstPersonPositioningDrawing(
@@ -657,7 +688,8 @@ public class M1CarbineFactory {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.27f, 1f);
                 } 
-
+                
+                // Everything else
                 else {
                 }
                 
@@ -748,7 +780,8 @@ public class M1CarbineFactory {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.27f, 1f);
                 } 
-
+                
+                // Everything else
                 else {
                 }
                 
@@ -1083,6 +1116,13 @@ public class M1CarbineFactory {
                     }, 250, 50))
                     
             .withThirdPersonLeftHandPositioningReloading(
+//                    new Transition((renderContext) -> { // Reload position
+//                        GL11.glScalef(3.5f, 3.5f, 3.5f);
+//                        GL11.glRotatef(-100.000000f, 1f, 0f, 0f);
+//                        GL11.glRotatef(-45.000000f, 0f, 1f, 0f);
+//                        GL11.glRotatef(30.000000f, 0f, 0f, 1f);
+//                        GL11.glTranslatef(0.250000f, -0.175000f, 0.225000f);
+//                    }, 50, 200),
                     new Transition((renderContext) -> { // Reload position
                         GL11.glScalef(1.000000f, 1.000000f, 1.000000f);
                         GL11.glRotatef(-40.000000f, 1f, 0f, 0f);
@@ -1148,6 +1188,13 @@ public class M1CarbineFactory {
                     }, 280, 0))
                     
             .withThirdPersonRightHandPositioningReloading(
+//                    new Transition((renderContext) -> { // Reload position
+//                        GL11.glScalef(4f, 4f, 5f);
+//                        GL11.glRotatef(-100.000000f, 1f, 0f, 0f);
+//                        GL11.glRotatef(10.000000f, 0f, 1f, 0f);
+//                        GL11.glRotatef(-55.000000f, 0f, 0f, 1f);
+//                        GL11.glTranslatef(0.375000f, -0.500000f, 0.150000f);
+//                    }, 250, 1000),
                     new Transition((renderContext) -> { // Reload position
                         GL11.glScalef(1.000000f, 1.000000f, 1.000000f);
                         GL11.glRotatef(-50.000000f, 1f, 0f, 0f);
@@ -1299,3 +1346,4 @@ public class M1CarbineFactory {
         .build(MWC.modContext);
     }
 }
+

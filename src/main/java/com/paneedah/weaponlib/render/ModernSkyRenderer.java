@@ -194,7 +194,7 @@ GlStateManager.disableCull();
 		skyShader.use();
 		
 		GlStateManager.setActiveTexture(GL13.GL_TEXTURE0+4);
-		ResourceLocation loc = new ResourceLocation(ID + ":textures/reticles/okp.png");
+		ResourceLocation loc = new ResourceLocation(ID + ":textures/crosshairs/okp.png");
 	
 		MC.getTextureManager().bindTexture(loc);
 		GlStateManager.setActiveTexture(GL13.GL_TEXTURE0);
