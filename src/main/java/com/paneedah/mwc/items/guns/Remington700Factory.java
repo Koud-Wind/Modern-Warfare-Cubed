@@ -1,7 +1,7 @@
 package com.paneedah.mwc.items.guns;
 
 import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.models.weapons.*;
+import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
@@ -15,6 +15,7 @@ import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
+import java.util.Arrays;
 
 public class Remington700Factory implements GunFactory {
 
@@ -38,12 +39,24 @@ public class Remington700Factory implements GunFactory {
         .withInspectSound("inspection")
         .withDrawSound("ax50_draw")
         .withReloadingTime(40)
+        .withCrosshair("gun")
+        .withCrosshairRunning("Running")
+        .withCrosshairZoomed("Sight")
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.8f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.14f)
         .withShellCasingEjectEnabled(false)
         .withCreativeTab(MWC.WEAPONS_TAB)
+        .withInformationProvider(stack -> Arrays.asList(
+        "Type: Precision Sniper Rifle",
+        "Damage: 14", 
+        "Cartridge: 7.62x54mm",
+        "Fire Rate: BOLT ACTION",
+        "Rate of Fire: 16/100",
+        "Magazines:",
+        "5rnd 7.62x54mm M700 Magazine",
+        "10rnd 7.62x54mm M700 Magazine"))
          
          .withScreenShaking(RenderableState.SHOOTING, 
                  2f, // x 
@@ -53,22 +66,36 @@ public class Remington700Factory implements GunFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         .withCompatibleAttachment(Magazines.R700Mag, (model) -> {
+//        	GL11.glTranslatef(0f, 0.2f, 0f);
+//        	GL11.glRotatef(-20f, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Magazines.R700Mag10rnd, (model) -> {
+//        	GL11.glTranslatef(0f, 0.2f, 0f);
+//        	GL11.glRotatef(-20f, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(AuxiliaryAttachments.Remington700BoltAction, true, (model) -> {
+//        	GL11.glTranslatef(-0.105F, -0.585F, 0.63F);
+//            GL11.glScalef(0.62f, 0.62f, 0.5f);
         })
         .withCompatibleAttachment(AuxiliaryAttachments.Remington700BoltActionMain, true, (model) -> {
+//        	GL11.glTranslatef(-0.105F, -0.585F, 0.63F);
+//            GL11.glScalef(0.62f, 0.62f, 0.5f);
         })
         .withCompatibleAttachment(Attachments.Remington700Chassis, true, (model) -> {
+//          GL11.glTranslatef(-1.39f, -1.13f, 1.5f);
+//          GL11.glRotatef(70f, 0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.Remington700APACChassis, (model) -> {
+//          GL11.glTranslatef(-1.39f, -1.13f, 1.5f);
+//          GL11.glRotatef(70f, 0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.Remington700MDTXRSChassis, (model) -> {
+//          GL11.glTranslatef(-1.39f, -1.13f, 1.5f);
+//          GL11.glRotatef(70f, 0f, 0f, 1f);
         })
 
 
-		.withCompatibleAttachment(Attachments.NightRaider, () -> {
+		.withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
 		            GL11.glTranslatef(-0.155F, -0.75F, -0.8F);
 		            GL11.glScaled(0.65F, 0.65F, 0.65F);
 		},(model) -> {
@@ -78,7 +105,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.ACOG, () -> {
+		.withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
 		            GL11.glTranslatef(-0.225F, -0.77F, 0.3F);
 		            GL11.glScaled(0.6F, 0.6F, 0.6F);
 		},(model) -> {
@@ -92,7 +119,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.Specter, () -> {
+		.withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
 		            GL11.glTranslatef(-0.135F, -0.5F, -0.1F);
 		            GL11.glScaled(0.35F, 0.35F, 0.35F);
 		},(model) -> {
@@ -102,7 +129,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.LeupoldRailScope, () -> {
+		.withCompatibleAttachment(Attachments.LeupoldRailScope, (player, stack) -> {
 		            GL11.glTranslatef(-0.105F, -0.62F, -0.6F);
 		            GL11.glScaled(0.35F, 0.35F, 0.35F);
 		},(model) -> {
@@ -112,7 +139,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.MicroReflex, () -> {
+		.withCompatibleAttachment(Attachments.MicroReflex, (player, stack) -> {
 		    GL11.glTranslatef(-0.1F, -1.12F, -0.2F);
 		    GL11.glScaled(0.25F, 0.25F, 0.25F);
 		    },(model) -> {
@@ -120,10 +147,12 @@ public class Remington700Factory implements GunFactory {
 		            GL11.glTranslatef(0.08F, 0.97F, -0.4F);
 		            GL11.glScaled(0.15F, 0.15F, 0.15F);
 		        } else if (model instanceof SightMount) {
+		//        	GL11.glTranslatef(-0.15F, -1.82F, -1F);
+		//            GL11.glScaled(0.4F, 0.4F, 0.4F);
 		        }
 		    })
 
-		.withCompatibleAttachment(Attachments.Reflex, () -> {
+		.withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
 		            GL11.glTranslatef(-0.036F, -0.6F, -0.2F);
 		            GL11.glScaled(0.35F, 0.35F, 0.35F);
 		},(model) -> {
@@ -132,7 +161,7 @@ public class Remington700Factory implements GunFactory {
 		        GL11.glScaled(0.15F, 0.15F, 0.15F);
 			}
 		})
-		.withCompatibleAttachment(Attachments.BijiaReflex, () -> {
+		.withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
 		                GL11.glTranslatef(-0.036F, -0.585F, -0.2F);
 		                GL11.glScaled(0.38F, 0.38F, 0.38F);
 			},(model) -> {
@@ -142,7 +171,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 			})
 		
-		.withCompatibleAttachment(Attachments.Holographic, () -> {
+		.withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
 		            GL11.glTranslatef(-0.01F, -0.63F, -0.1F);
 		            GL11.glScaled(0.55F, 0.55F, 0.55F);
 			},(model) -> {
@@ -152,7 +181,7 @@ public class Remington700Factory implements GunFactory {
 		        }
 		    })
 		
-		.withCompatibleAttachment(Attachments.HolographicAlt, () -> {
+		.withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
 			GL11.glTranslatef(-0.01F, -0.63F, -0.1F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
 		},(model) -> {
@@ -162,7 +191,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.EotechHybrid2, () -> {
+		.withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
 			GL11.glTranslatef(-0.01F, -0.63F, -0.3F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
 		},(model) -> {
@@ -176,7 +205,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.VortexRedux, () -> {
+		.withCompatibleAttachment(Attachments.VortexRedux, (player, stack) -> {
 		    GL11.glTranslatef(-0.22F, -0.8F, -0.2F);
 		    GL11.glScaled(0.35F, 0.35F, 0.35F);
 		},(model) -> {
@@ -186,7 +215,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.Kobra, () -> {
+		.withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
 		            GL11.glTranslatef(-0.015F, -0.63F, -0F);
 		            GL11.glScaled(0.55F, 0.55F, 0.55F);
 		},(model) -> {
@@ -196,7 +225,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.KobraGen3, () -> {
+		.withCompatibleAttachment(Attachments.KobraGen3, (player, stack) -> {
 		        	 GL11.glTranslatef(-0.015F, -0.63F, -0F);
 			            GL11.glScaled(0.55F, 0.55F, 0.55F);
 		},(model) -> {
@@ -206,7 +235,7 @@ public class Remington700Factory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.MicroT1, () -> {
+		.withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
 		            GL11.glTranslatef(-0.12F, -0.77F, -0F);
 		            GL11.glScaled(0.28F, 0.28F, 0.28F);
 		    },(model) -> {
@@ -216,7 +245,7 @@ public class Remington700Factory implements GunFactory {
 		        }
 		    })
 		
-		.withCompatibleAttachment(Attachments.AimpointCompM5, () -> {
+		.withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
 			GL11.glTranslatef(-0.12F, -0.77F, -0F);
             GL11.glScaled(0.28F, 0.28F, 0.28F);
 		},(model) -> {
@@ -225,7 +254,7 @@ public class Remington700Factory implements GunFactory {
 		        GL11.glScaled(0.15F, 0.15F, 0.15F);
 		    }
 		})
-		.withCompatibleAttachment(Attachments.AimpointCompM2, () -> {
+		.withCompatibleAttachment(Attachments.AimpointCompM2, (player, stack) -> {
             GL11.glTranslatef(-0.08F, -0.26F, 0.3F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -238,10 +267,12 @@ public class Remington700Factory implements GunFactory {
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new Remington700())
+            //.withTextureName("AWP")
+            //.withWeaponProximity(0.99F)
+            //.withYOffsetZoom(5F)
             .withEntityPositioning(itemStack -> {
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
-                GL11.glTranslatef(0, 0f, 3f);
-                GL11.glRotatef(0F, 0f, 0f, 4f);
+                GL11.glRotatef(-90F, 0f, 0f, 4f);
             })
             .withInventoryPositioning(itemStack -> {
                 GL11.glScaled(0.28F, 0.28F, 0.28F);
@@ -286,6 +317,15 @@ public class Remington700Factory implements GunFactory {
                 })
             
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.Remington700BoltAction.getRenderablePart(), (renderContext) -> {
+            
+//            	GL11.glTranslatef(-0.59F, -0.43F, -0.01F);
+//                GL11.glRotatef(90F, 0f, 0f, 1f);
+//                GL11.glScalef(1f, 1f, 1f); 
+                
+//            	  GL11.glTranslatef(-0.59F, -0.43F, 0.5F);
+//                  GL11.glRotatef(90F, 0f, 0f, 1f);
+//                  GL11.glScalef(1f, 1f, 1f);
+            
             })
                 
             .withFirstPersonPositioningEjectSpentRound(
@@ -1291,6 +1331,8 @@ public class Remington700Factory implements GunFactory {
                     	 GL11.glRotatef(20.000000f, 0f, 1f, 0f);
                     	 GL11.glRotatef(-65.000000f, 0f, 0f, 1f);
                     	 GL11.glTranslatef(0.650000f, -0.900000f, 0.175000f);
+                    	 
+//                    	 GL11.glScalef(3f, 3f, 3f);
                      })
                      
             .withFirstPersonHandPositioningProning(

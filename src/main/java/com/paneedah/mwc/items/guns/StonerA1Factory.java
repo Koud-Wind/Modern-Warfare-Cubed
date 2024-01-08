@@ -1,7 +1,7 @@
 package com.paneedah.mwc.items.guns;
 
 import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.models.weapons.*;
+import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
@@ -15,6 +15,7 @@ import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
+import java.util.Arrays;
 
 public class StonerA1Factory {
 
@@ -34,12 +35,24 @@ public class StonerA1Factory {
         .withUnloadSound("mg42_unload")
         .withInspectSound("inspection")
         .withDrawSound("mg42_draw")
+//        .withDrawSound("mg42_reload")
         .withReloadingTime(45)
+        .withCrosshair("gun")
+        .withCrosshairRunning("Running")
+        .withCrosshairZoomed("Sight")
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.15f)
         .withCreativeTab(MWC.WEAPONS_TAB)
+        .withInformationProvider(stack -> Arrays.asList(
+        "Type: Light Machine Gun",
+        "Damage: 6", 
+        "Cartridge: 5.56x45mm",
+        "Fire Rate: SEMI, AUTO",
+        "Rate of Fire: 75/100",
+        "Magazines:",
+        "100rnd 5.56x45mm Stoner Magazine"))
          
          .withScreenShaking(RenderableState.SHOOTING, 
                  2.5f, // x 
@@ -82,17 +95,27 @@ public class StonerA1Factory {
              GL11.glScaled(0F, 0F, 0F);
          })
         .withCompatibleAttachment(AuxiliaryAttachments.M249Action, true, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(AuxiliaryAttachments.StonerHATCH, true, (model) -> {
             if(model instanceof StonerA1HATCH) {
+//            	GL11.glTranslatef(-0F, 2.45F, 3.8F);
+//                GL11.glRotatef(90F, 1f, 0f, 0f);
             } else if(model instanceof M27rearsight) {
                 GL11.glTranslatef(0f, -1.05f, 5.8f);
                 GL11.glScaled(0F, 0F, 0F);
             }
         })
         .withCompatibleAttachment(AuxiliaryAttachments.StonerBELT, true, (model) -> {
+//            GL11.glTranslatef(0.3F, 0.1F, 0F);
+//          GL11.glRotatef(-15F, 0f, 0f, 1f);
         })
         .withCompatibleAttachment(Magazines.StonerMag, (model) -> {
+//            GL11.glTranslatef(0.3F, 0.1F, 0F);
+//            GL11.glRotatef(-15F, 0f, 0f, 1f);
+            
+//            GL11.glTranslatef(0.15F, 0.9F, 0F);
+//            GL11.glRotatef(10F, 0f, 0f, 1f);
         })
         .withCompatibleAttachment(AuxiliaryAttachments.M4Rail, true, (model) -> {
             if(model instanceof AKRail) {
@@ -200,7 +223,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0F, 0F, 0F); 
             }
         })
-        .withCompatibleAttachment(Attachments.NightRaider, () -> {
+        .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.05F, -0.95F, 3.8F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
@@ -209,7 +232,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.ACOG, () -> {
+        .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.155F, -1F, 5.3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
         },(model) -> {
@@ -222,7 +245,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.Specter, () -> {
+        .withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
             GL11.glTranslatef(-0.035F, -0.6F, 4.7F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
@@ -231,7 +254,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.Reflex, () -> {
+        .withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
             GL11.glTranslatef(0.1F, -0.78F, 4.6F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
@@ -240,7 +263,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.BijiaReflex, () -> {
+        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(0.1F, -0.74F, 4.6F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
@@ -249,7 +272,7 @@ public class StonerA1Factory {
             GL11.glScaled(0.15F, 0.15F, 0.15F);
         }
         })
-        .withCompatibleAttachment(Attachments.Holographic, () -> {
+        .withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
             GL11.glTranslatef(0.12F, -0.8F, 4.6F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
             },(model) -> {
@@ -258,7 +281,7 @@ public class StonerA1Factory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
                 }
             })
-        .withCompatibleAttachment(Attachments.HolographicAlt, () -> {
+        .withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
             GL11.glTranslatef(0.12F, -0.8F, 4.6F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -267,7 +290,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.EotechHybrid2, () -> {
+        .withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
             GL11.glTranslatef(0.12F, -0.8F, 4.8F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -280,7 +303,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.05F, 0.05F, 0.05F);
             }
         })
-//        .withCompatibleAttachment(Attachments.Vortex, () -> {
+//        .withCompatibleAttachment(Attachments.Vortex, (player, stack) -> {
 //            GL11.glTranslatef(-0.12F, -1F, 4.3F);
 //            GL11.glScaled(0.4F, 0.4F, 0.5F);
 //            },(model) -> {
@@ -289,7 +312,7 @@ public class StonerA1Factory {
 //                    GL11.glScaled(0.15F, 0.15F, 0.15F);
 //                }
 //            })
-        .withCompatibleAttachment(Attachments.Kobra, () -> {
+        .withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
             GL11.glTranslatef(0.125F, -0.83F, 4.8F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
@@ -298,7 +321,7 @@ public class StonerA1Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.MicroT1, () -> {
+        .withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
             GL11.glTranslatef(-0.04F, -1.05F, 4.7F);
             GL11.glScaled(0.48F, 0.48F, 0.48F);
             },(model) -> {
@@ -307,7 +330,7 @@ public class StonerA1Factory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.AimpointCompM5, () -> {
+        .withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
             GL11.glTranslatef(-0.04F, -1.05F, 4.7F);
             GL11.glScaled(0.48F, 0.48F, 0.48F);
             },(model) -> {
@@ -336,12 +359,12 @@ public class StonerA1Factory {
         	GL11.glTranslatef(-0.05F, 0.83F, 0.9F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Laser2, () -> {
+        .withCompatibleAttachment(Attachments.Laser2, (p, s) -> {
             GL11.glTranslatef(-0.06F, -0.6F, 1.5F);
             GL11.glScaled(0.85F, 0.85F, 0.85F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.Laser, () -> {
+        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
             GL11.glTranslatef(-0.06F, -0.62F, 1.5F);
             GL11.glScaled(0.85F, 0.85F, 0.85F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
@@ -350,10 +373,12 @@ public class StonerA1Factory {
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new StonerA1())
+            //.withTextureName("AK47")
+            //.withWeaponProximity(0.99F)
+            //.withYOffsetZoom(5F)
             .withEntityPositioning(itemStack -> {
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
-                GL11.glTranslatef(0, 0f, 3f);
-                GL11.glRotatef(0F, 0f, 0f, 4f);
+                GL11.glRotatef(-90F, 0f, 0f, 4f);
             })
             .withInventoryPositioning(itemStack -> {
                 GL11.glScaled(0.28F, 0.28F, 0.28F);
@@ -410,6 +435,7 @@ public class StonerA1Factory {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {
                     GL11.glTranslatef(-0.5F, -0.4F, 0F);
                     GL11.glRotatef(40F, 0f, 0f, 1f);
+//                    GL11.glRotatef(30F, 1f, 0f, 0f);
                 }
             })
             
@@ -1561,6 +1587,8 @@ public class StonerA1Factory {
                          GL11.glRotatef(-60.000000f, 0f, 1f, 0f);
                          GL11.glRotatef(35.000000f, 0f, 0f, 1f);
                          GL11.glTranslatef(-0.425000f, -1.199999f, 0.075000f);
+                         
+//                         GL11.glScalef(4f, 4f, 4f);
                      }, 
                      (renderContext) -> {
                          GL11.glScalef(4f, 4f, 4f);
@@ -2673,3 +2701,4 @@ public class StonerA1Factory {
         .build(MWC.modContext);
     }
 }
+

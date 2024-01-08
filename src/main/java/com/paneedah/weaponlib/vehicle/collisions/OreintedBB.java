@@ -13,7 +13,6 @@ import javax.vecmath.Vector3d;
 
 import static com.paneedah.mwc.proxies.ClientProxy.MC;
 
-//Todo: Try to use this on the player for the proning
 public class OreintedBB {
 	
 	// designed according to Morgan Kaufmann's Real Time Collision

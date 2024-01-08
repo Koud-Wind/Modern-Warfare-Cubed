@@ -1,9 +1,9 @@
 package com.paneedah.mwc.items.guns;
 
 import com.paneedah.mwc.MWC;
-import com.paneedah.mwc.models.weapons.MP43E;
-import com.paneedah.mwc.models.weapons.Shotgun12Gauge;
-import com.paneedah.mwc.models.weapons.Shotgun12Gauge2;
+import com.paneedah.mwc.models.MP43E;
+import com.paneedah.mwc.models.Shotgun12Gauge;
+import com.paneedah.mwc.models.Shotgun12Gauge2;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
@@ -16,6 +16,7 @@ import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
+import java.util.Arrays;
 
 public class MP43EFactory implements GunFactory {
 
@@ -36,7 +37,10 @@ public class MP43EFactory implements GunFactory {
         .withDrawSound("noaction_draw")
         .withAllReloadIterationsCompletedSound("mp43ereloadfin")
         .withReloadingTime(15)
+        .withCrosshair("gun")
+        .withCrosshairRunning("Running")    
         .withShellCasingEjectEnabled(false)
+        .withCrosshairZoomed("Sight")
         .withInaccuracy(10)
         .withPellets(10)
         .withFlashIntensity(0.5f)
@@ -44,6 +48,13 @@ public class MP43EFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.09f)
         .withCreativeTab(MWC.WEAPONS_TAB)
+        .withInformationProvider(stack -> Arrays.asList(
+        "Type: Shotgun",
+        "Damage per Pellet: 6",
+        "Pellets per Shot: 10", 
+        "Cartridge: 12 Gauge Shotgun Shell",
+        "Fire Rate: SEMI ACTION",
+        "Rate of Fire: 30/100"))
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 5f, // x 
@@ -73,10 +84,12 @@ public class MP43EFactory implements GunFactory {
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new MP43E())
+            //.withTextureName("Remington900")
+            //.withWeaponProximity(0.99F)
+            //.withYOffsetZoom(5F)
             .withEntityPositioning(itemStack -> {
                 GL11.glScaled(0.5F, 0.5F, 0.5F);
-                GL11.glTranslatef(0, 0f, 3f);
-                GL11.glRotatef(0F, 0f, 0f, 4f);
+                GL11.glRotatef(-90F, 0f, 0f, 4f);
             })
             .withInventoryPositioning(itemStack -> {
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
@@ -95,6 +108,12 @@ public class MP43EFactory implements GunFactory {
                 GL11.glRotatef(5F, 0f, 0f, 1f);
                 GL11.glScalef(2.500000f, 2.500000f, 2.500000f);
                 GL11.glTranslatef(-0.150000f, 0.275000f, -1.249999f);
+                
+//                GL11.glScalef(2.500000f, 2.500000f, 2.500000f);
+//                GL11.glRotatef(-10.000000f, 1f, 0f, 0f);
+//                GL11.glRotatef(35.000000f, 0f, 1f, 0f);
+//                GL11.glRotatef(0.000000f, 0f, 0f, 1f);
+//                GL11.glTranslatef(-0.150000f, 0.350000f, -0.950000f);
                 })
                 
             .withFirstPersonPositioningRecoiled((renderContext) -> {
@@ -110,6 +129,7 @@ public class MP43EFactory implements GunFactory {
                 GL11.glScalef(4.000000f, 4.000000f, 4.000000f);
                 GL11.glTranslatef(0.2f, 0.23f, -0.8f);
                 GL11.glRotatef(-5F, 1f, 0f, 1f);
+//                GL11.glRotatef(-2.5F, 0f, 1f, 0f);
                 
 //              // Holo Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
@@ -123,9 +143,35 @@ public class MP43EFactory implements GunFactory {
                 })
                 
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.MP43Edoublebarrel.getRenderablePart(), (renderContext) -> {
+//            	GL11.glTranslatef(0f, -0.1f, 0f);
+//                GL11.glRotatef(35F, 1f, 0f, 0f);
+//                GL11.glScalef(1f, 1f, 1f);
                 })
             
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.ShotgunShellDouble.getRenderablePart(), (renderContext) -> {
+            	// inserted
+            	
+//            	GL11.glTranslatef(0f, -0.125f, 0.005f);
+//                GL11.glRotatef(35F, 1f, 0f, 0f);
+//                GL11.glScalef(1f, 1f, 1f);
+                
+            	// about to insert
+            	
+//                GL11.glTranslatef(0f, -0.28f, 0.23f);
+//                GL11.glRotatef(35F, 1f, 0f, 0f);
+//                GL11.glScalef(1f, 1f, 1f);
+            	
+            	// being carried by left hand
+            	
+//            	GL11.glTranslatef(0.5f, 0.2f, 0.6f);
+//                GL11.glRotatef(25F, 1f, 1f, 0f);
+//                GL11.glScalef(1f, 1f, 1f);
+                
+                // being carried by left hand PT 2
+                
+//                GL11.glTranslatef(0.35f, -0.15f, 0.5f);
+//                GL11.glRotatef(25F, 1f, 1f, 0f);
+//                GL11.glScalef(1f, 1f, 1f);
                 })
                 
             .withFirstPersonPositioningReloading(
@@ -691,12 +737,12 @@ public class MP43EFactory implements GunFactory {
                 GL11.glScalef(4.000000f, 4.000000f, 4.000000f);
                 GL11.glTranslatef(0.250000f, 0.23f, -1.5f);
                 
-              // Holo Zoom
+//              // Holo Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
                     //System.out.println("Position me for Holo");
                 } 
                 
-
+                // Everything else
                 else {
                 }
                 

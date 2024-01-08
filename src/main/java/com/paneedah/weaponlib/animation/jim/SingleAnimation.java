@@ -57,9 +57,9 @@ public class SingleAnimation {
 		for(Entry<String, AnimationData> i : dataMap.entrySet()) {
 			
 			//Also assign the time
-			i.getValue().appointedDuration = getDuration();
+			i.getValue().setAppointedDuration(getDuration());
 			
-			ArrayList<Float> subList = i.getValue().timestamps;
+			ArrayList<Float> subList = i.getValue().getTimestamps();
 			for(float f : subList) {
 				if(!timestamps.contains(f)) timestamps.add(f);
 			}
@@ -71,7 +71,7 @@ public class SingleAnimation {
 		// Bake keyframes
 		for(Entry<String, AnimationData> i : dataMap.entrySet()) {
 			for(float f : timestamps) {
-				if(!i.getValue().timestamps.contains(f)) {
+				if(!i.getValue().getTimestamps().contains(f)) {
 					i.getValue().bakeKeyframes(f);
 				}
 			}
@@ -84,12 +84,12 @@ public class SingleAnimation {
 			
 			for(int t = 0; t < getTimestamps().size(); ++t) {
 				if(t == 0) {
-					data.bbTransition.get(getTimestamps().get(t)).timestamp = 1;
+					data.bbTransition.get(getTimestamps().get(t)).setTimestamp(1.0f);
 				} else {
 					float trueDelta = AnimationData.PACE*(getTimestamps().get(t) - getTimestamps().get(t - 1));
 					
 					//System.out.println("(" + getTimestamps().get(t-1) + ") -> (" + getTimestamps().get(t) + ") " + trueDelta);
-					data.bbTransition.get(getTimestamps().get(t)).timestamp = trueDelta;
+					data.bbTransition.get(getTimestamps().get(t)).setTimestamp(trueDelta);
 				}
 			}
 			

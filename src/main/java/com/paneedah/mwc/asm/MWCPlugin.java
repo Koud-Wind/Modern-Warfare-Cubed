@@ -13,7 +13,7 @@ public class MWCPlugin implements IFMLLoadingPlugin, IEarlyMixinLoader {
     @Override
     public String[] getASMTransformerClass() {
         return new String[]{
-                MWCClassTransformer.class.getName()
+                "com.paneedah.mwc.asm.MWCClassTransformer"
         };
     }
 
@@ -30,6 +30,7 @@ public class MWCPlugin implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
     public void injectData(Map<String, Object> data) {
+
     }
 
     @Override

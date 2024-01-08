@@ -23,9 +23,8 @@ public class BalancePackManager {
 	private static File INDEX_FILE;
 
 	// JSON LOOKUP KEYS FOR PACK MANAGER VERSION 1.0v
-	private static final String PACK_MANAGER_VERSION = "1.2";
+	private static final String PACK_MANAGER_VERSION = "1.3";
 
-	private static final String HEADSHOT_MULTIPLIER_KEY = "headshotMultiplier";
 	private static final String DAMAGE_MULTIPLIER_KEY = "damageMultiplier";
 	private static final String RECOIL_MULTIPLIER_KEY = "recoilMultiplier";
 	private static final String HIP_FIRE_SPREAD_KEY = "hipFireSpread";
@@ -87,7 +86,8 @@ public class BalancePackManager {
 		private double recoilMultiplier = 1.0;
 		private double hipFireSpreadMultiplier = 1.0;
 
-		public GunCategoryBalanceConfiguration(GunConfigurationGroup group, double damageMultiplier, double recoilMultiplier, double hipFireSpread) {
+		public GunCategoryBalanceConfiguration(GunConfigurationGroup group, double damageMultiplier,
+				double recoilMultiplier, double hipFireSpread) {
 			this.group = group;
 			this.damageMultiplier = damageMultiplier;
 			this.recoilMultiplier = recoilMultiplier;
@@ -332,7 +332,6 @@ public class BalancePackManager {
 		private String name;
 		private String version;
 
-		private double headshotMultiplier = 2.5;
 		private double globalRecoilMultiplier = 1.0;
 		private double globalDamageMultiplier = 1.0;
 		private double globalHipFireSpread = 7.5;
@@ -342,10 +341,10 @@ public class BalancePackManager {
 		private HashMap<String, GunBalanceConfiguration> gunConfigurations = new HashMap<>();
 		private HashMap<GunConfigurationGroup, GunCategoryBalanceConfiguration> gunCategoryConfigurations = new HashMap<>();
 
-		public BalancePack(String name, String version, double headshotMult, double globalRecoilMultiplier, double globalDamageMultiplier, double globalHipFireSpread) {
+		public BalancePack(String name, String version, double globalRecoilMultiplier,
+				double globalDamageMultiplier, double globalHipFireSpread) {
 			this.name = name;
 			this.version = version;
-			this.headshotMultiplier = headshotMult;
 			this.globalDamageMultiplier = globalDamageMultiplier;
 			this.globalRecoilMultiplier = globalRecoilMultiplier;
 			this.globalHipFireSpread = globalHipFireSpread;
@@ -382,9 +381,6 @@ public class BalancePackManager {
 				globalDamage = globalParameters.get(DAMAGE_MULTIPLIER_KEY).getAsDouble();
 				globalRecoil = globalParameters.get(RECOIL_MULTIPLIER_KEY).getAsDouble();
 				globalHipFireSpread = globalParameters.get(HIP_FIRE_SPREAD_KEY).getAsDouble();
-				if (globalParameters.has(HEADSHOT_MULTIPLIER_KEY)) {
-					headshotMultiplier = globalParameters.get(HEADSHOT_MULTIPLIER_KEY).getAsDouble();
-				}
 			} else {
 				globalRecoil = 1.0;
 				globalDamage = 1.0;
@@ -392,12 +388,12 @@ public class BalancePackManager {
 
 			}
 
-			BalancePack bp = new BalancePack(packName, packVersion, headshotMultiplier, globalRecoil, globalDamage, globalHipFireSpread);
+			BalancePack bp = new BalancePack(packName, packVersion, globalRecoil, globalDamage, globalHipFireSpread);
 
 			if (jsonObject.has(GUN_CONFIG_LIST)) {
 
 				JsonArray array = jsonObject.get(GUN_CONFIG_LIST).getAsJsonArray();
-				LOG.debug("Found weapons config list with {} entries.", array.size());
+				LOG.debug("Found weapon config list with {} entries.", array.size());
 				for (int i = 0; i < array.size(); ++i) {
 					GunBalanceConfiguration balanceConfig = GunBalanceConfiguration
 							.fromJSONObject(array.get(i).getAsJsonObject());
@@ -436,11 +432,10 @@ public class BalancePackManager {
 			JsonObject globalParameters = new JsonObject();
 			globalParameters.addProperty(DAMAGE_MULTIPLIER_KEY, this.globalDamageMultiplier);
 			globalParameters.addProperty(RECOIL_MULTIPLIER_KEY, this.globalRecoilMultiplier);
-			globalParameters.addProperty(HEADSHOT_MULTIPLIER_KEY, this.headshotMultiplier);
 			globalParameters.addProperty(HIP_FIRE_SPREAD_KEY, this.globalHipFireSpread);
 			obj.add(GLOBAL_PARAMETERS_KEY, globalParameters);
 
-			// Write the individual weapons keys
+			// Write the individual weapon keys
 			JsonArray gunObj = new JsonArray();
 			for (Entry<String, GunBalanceConfiguration> gbc : this.gunConfigurations.entrySet())
 				gunObj.add(gbc.getValue().toJSONObject());
@@ -787,17 +782,8 @@ public class BalancePackManager {
 
 	}
 
-	public static double getHeadshotMultiplier() {
-		if (!hasActiveBalancePack()) {
-			return 2.5;
-		} else {
-			return getActiveBalancePack().headshotMultiplier;
-		}
-
-	}
-
 	public static void createDefaultBalancePack() {
-		BalancePack defaultPack = new BalancePack("default", "1.0", 2.5, 1.0, 1.0, 7.5);
+		BalancePack defaultPack = new BalancePack("default", "1.0", 1.0, 1.0, 7.5);
 		defaultPack.addWeaponConfig(new GunBalanceConfiguration("exampleWeapon", true, 8.0, 1.0, 0.5f, 0.0f));
 		for (GunConfigurationGroup i : GunConfigurationGroup.values()) {
 			defaultPack.addBalancingCategory(new GunCategoryBalanceConfiguration(i, 1.0, 1.0, 1.0));

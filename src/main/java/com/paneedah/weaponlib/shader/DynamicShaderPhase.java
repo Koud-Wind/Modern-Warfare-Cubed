@@ -1,6 +1,6 @@
 package com.paneedah.weaponlib.shader;
 
-import com.paneedah.mwc.mixininterfaces.IModernEntityRenderer;
+import com.paneedah.weaponlib.compatibility.CompatibleWorldRenderer;
 import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.shader.ShaderGroup;
@@ -55,7 +55,7 @@ public interface DynamicShaderPhase {
 
         @Override
         public void apply(DynamicShaderContext context, DynamicShaderGroup shaderGroup) {
-            Object target = context.getEntityRenderer();
+            Object target = context.getTarget();
             
             if(target instanceof EntityRenderer) {
                 EntityRenderer entityRenderer = (EntityRenderer) target;
@@ -70,7 +70,7 @@ public interface DynamicShaderPhase {
 
         @Override
         public void remove(DynamicShaderContext context, DynamicShaderGroup shaderGroup) {
-            Object target = context.getEntityRenderer();
+            Object target = context.getTarget();
             if(target instanceof EntityRenderer) {
                 EntityRenderer entityRenderer = (EntityRenderer) target;
                 ShaderGroup currentShaderGroup = entityRenderer.getShaderGroup();
@@ -91,37 +91,39 @@ public interface DynamicShaderPhase {
 
     public static class CompatibleWorldRendererTarget implements DynamicShaderPhase {
 
-        //private Supplier<EntityRenderer> entityRendererSupplier;
+        //private Supplier<CompatibleWorldRenderer> entityRendererSupplier;
 
-//        public CompatibleWorldRendererTarget(Supplier<EntityRenderer> entityRendererSupplier) {
+//        public CompatibleWorldRendererTarget(Supplier<CompatibleWorldRenderer> entityRendererSupplier) {
 //            this.entityRendererSupplier = entityRendererSupplier;
 //        }
 
         @Override
         public void apply(DynamicShaderContext context, DynamicShaderGroup shaderGroup) {
-        	EntityRenderer entityRenderer = context.getEntityRenderer();
-
-            if(((IModernEntityRenderer) entityRenderer).mwc$getRenderHand()) {
+           
+        	
+        	
+        	Object target = context.getTarget();
+            if(target instanceof CompatibleWorldRenderer) {
+                CompatibleWorldRenderer entityRenderer = (CompatibleWorldRenderer) target;
                 ShaderGroup currentShaderGroup = entityRenderer.getShaderGroup();
-
                 if(currentShaderGroup != shaderGroup) {
                     //remove(context, null);
-
-                    ((IModernEntityRenderer) entityRenderer).mwc$setShaderGroup(shaderGroup);
-                    ((IModernEntityRenderer) entityRenderer).mwc$setUseShader(true);
+                	
+                	entityRenderer.setShaderGroup(shaderGroup);
+                    entityRenderer.useShader(true);
                 }
             }
         }
 
         @Override
         public void remove(DynamicShaderContext context, DynamicShaderGroup shaderGroup) {
-            Object target = context.getEntityRenderer();
-            if(target instanceof IModernEntityRenderer) {
-                EntityRenderer entityRenderer = (EntityRenderer) target;
+            Object target = context.getTarget();
+            if(target instanceof CompatibleWorldRenderer) {
+                CompatibleWorldRenderer entityRenderer = (CompatibleWorldRenderer) target;
                 ShaderGroup currentShaderGroup = entityRenderer.getShaderGroup();
                 if(currentShaderGroup instanceof DynamicShaderGroup) {
                     currentShaderGroup.deleteShaderGroup();
-                    ((IModernEntityRenderer)entityRenderer).mwc$setShaderGroup(null);
+                    entityRenderer.setShaderGroup(null);
                 }
             }
 
