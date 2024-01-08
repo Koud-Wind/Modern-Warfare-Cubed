@@ -86,7 +86,6 @@ and this project follows to [Ragnarök Versioning Convention](https://gist.githu
 - Bullets collision has been enhanced to work better with mods
 - Updated `MCmod.info` description and credits
 - Migrated the config setting for bullets breaking glass into the new config file (ModernWarfareCubed.cfg)
-- Forge configuration `Emissive Item Rendering` is now forced to be off (This does not influence Optifine emissive item rendering)
 - OptiFine configuration `Fast Render` is now forced to be off
 - Changed categories of some weapons
 - Magazines are created empty
@@ -110,10 +109,27 @@ and this project follows to [Ragnarök Versioning Convention](https://gist.githu
 - The weapon stats in the modification GUI are now updated instantly
 - Terrorist spawns are now lower by default
 - Flashbangs do not flash trough walls anymore
+- New Model for Suppresor .50 BMG
+- Change the name from NGSW-R to SIG XM7
+- Renewed M200 Intervention
+- Renewed M79(WIP)
+- Renewed Colt M1911
+- Renewed M60E4(WIP)
+- Renewed Saiga12(WIP)
+- Renewed Uzi
+- Renewed APC9
+- Renewed S7-10 Tricun
+- Renewed AS50(WIP)
+- Renewed AUG(WIP)
+- Renewed MP-40(WIP)
+- Removed the small tilt on handguns such as the Desert Eagle and some Revolvers
 - Moved recipe registration from server starting to Registryevent<IRecipes>
 
 ### Fixed
 
+- Fix the aiming position and flame position of all v2 weapons
+- Fix some misplaced attachment for v2 weapons
+- Fix some v2 weapon attachment that cannot be installed/uninstalled
 - Fixed modifying the number of bullets through memory
 - Fixed some issues with incorrect weapon shell throwing
 - Fixed the perspective issue with MP7ironsightsstanding
@@ -205,6 +221,8 @@ and this project follows to [Ragnarök Versioning Convention](https://gist.githu
 - Fixed spectators being able to shoot weapons
 - Fixed the spawning position of the shells
 - Bullet spawning maths which was making the bullets spawn in inaccurate position
+- Fixed compatibility with Forge `Emissive Item Rendering`
+- Fixed bad position during aiming in handguns
 
 ### Removed
 
