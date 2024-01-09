@@ -22,6 +22,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.GunCase")
         .withTextureName("textures/models/gun_case.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(3.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -56,6 +57,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.GunCaseSmall")
         .withTextureName("textures/models/gun_case_small.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(3.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -158,6 +160,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.GunRack")
         .withTextureName("textures/models/gunrack.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.6f, 0.6f, 0.6f);
             GL11.glTranslatef(0.4f, 1.15f, 0.6f);
@@ -171,6 +174,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.FridgeOpen")
         .withTextureName("textures/models/fridge.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -205,6 +209,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.FridgeClosed")
         .withTextureName("textures/models/fridge.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -239,6 +244,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.ArtilleryProp20")
         .withTextureName("textures/models/artilleryprop.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.8f, 0.8f, 0.8f);
             GL11.glTranslatef(0.55f, 0.6f, 0.55f);
@@ -252,6 +258,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.SupplyDrop")
         .withTextureName("textures/models/supplydrop.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.5f, 0.5f, 0.5f);
             GL11.glTranslatef(0.2f, 1.63f, 1.7f);
@@ -265,6 +272,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.MedicalCrate")
         .withTextureName("textures/models/medicalcrate.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(3.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -299,6 +307,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Locker")
         .withTextureName("textures/models/locker.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -333,6 +342,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.SCPLocker")
         .withTextureName("textures/models/scplocker.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -369,6 +379,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Barrel")
         .withTextureName("textures/models/barrel.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
         	GL11.glScalef(0.9f, 0.8f, 0.9f);
             GL11.glTranslatef(0.55f, 0.4f, 0.55f);
@@ -381,6 +392,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Barrel")
         .withTextureName("textures/models/barrel_explosive.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
         	GL11.glScalef(0.9f, 0.8f, 0.9f);
             GL11.glTranslatef(0.55f, 0.4f, 0.55f);
@@ -393,6 +405,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.PC")
         .withTextureName("textures/models/pc.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(5)
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.9f, 0.9f, 0.9f);
             GL11.glTranslatef(0.7f, 0.25f, 0.6f);
@@ -405,6 +418,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Laptop")
         .withTextureName("textures/models/pc.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(5)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -439,6 +453,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Monitor")
         .withTextureName("textures/models/pc.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(5)
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.9f, 0.9f, 0.9f);
             GL11.glTranslatef(0.7f, 0.25f, 0.6f);
@@ -451,6 +466,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.FilingCabinet")
         .withTextureName("textures/models/filingcabinetopened.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0f, 0.5f);
@@ -464,6 +480,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.FilingCabinetOpened")
         .withTextureName("textures/models/filingcabinetopened.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(22.5f)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0f, 0.5f);
@@ -477,6 +494,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.ShelfRight")
         .withTextureName("textures/models/shelf.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(2)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0f, 0.5f);
@@ -490,6 +508,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.ShelfLeft")
         .withTextureName("textures/models/shelf.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(2)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0f, 0.5f);
@@ -503,6 +522,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.ShelfTop")
         .withTextureName("textures/models/shelf.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(2)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -538,6 +558,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.TV")
         .withTextureName("textures/models/tv.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(5)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -573,6 +594,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.CeilingTV")
         .withTextureName("textures/models/ceilingtv.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(5)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0.4f, 0.5f);
@@ -599,6 +621,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.OfficeChair2")
         .withTextureName("textures/models/officechair.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(2)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -634,6 +657,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.OfficeChair")
         .withTextureName("textures/models/officechair.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(2)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
@@ -1746,6 +1770,28 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.PropaneTank")
         .withTextureName("textures/models/propanetank.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withBoundingBox(
+        		blockState -> {
+        			AxisAlignedBB boundingBox = null;
+        			EnumFacing facing = blockState.getValue(CustomTileEntityBlock.FACING);
+        			switch(facing) {
+        			case WEST:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.9, 1);
+        				break;
+        			case EAST:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.9, 1);
+        				break;
+        			case NORTH:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.9, 1);
+        				break;
+        			case SOUTH:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.9, 1);
+        				break;
+        			default:
+        			}
+        			return boundingBox;
+        		}
+        )
         .withPositioning(tileEntity -> {
             GL11.glScalef(0.6f, 0.6f, 0.6f);
             GL11.glTranslatef(0.85f, 1f, 0.85f);
@@ -1759,6 +1805,28 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.TowableFloodLight")
         .withTextureName("textures/models/towablefloodlight.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withBoundingBox(
+        		blockState -> {
+        			AxisAlignedBB boundingBox = null;
+        			EnumFacing facing = blockState.getValue(CustomTileEntityBlock.FACING);
+        			switch(facing) {
+        			case WEST:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 1, 1);
+        				break;
+        			case EAST:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 1, 1);
+        				break;
+        			case NORTH:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 1, 1);
+        				break;
+        			case SOUTH:
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 1, 1);
+        				break;
+        			default:
+        			}
+        			return boundingBox;
+        		}
+        )
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.3f, 0f, 0.5f);
@@ -1772,22 +1840,23 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.Sandbag")
         .withTextureName("textures/models/sandbag.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(1)
         .withBoundingBox(
         		blockState -> {
         			AxisAlignedBB boundingBox = null;
         			EnumFacing facing = blockState.getValue(CustomTileEntityBlock.FACING);
         			switch(facing) {
         			case WEST:
-        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.4, 1);
         				break;
         			case EAST:
-        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.4, 1);
         				break;
         			case NORTH:
-        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.4, 1);
         				break;
         			case SOUTH:
-        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
+        				boundingBox = new AxisAlignedBB(0, 0, 0, 1, 0.4, 1);
         				break;
         			default:
         			}
@@ -1807,6 +1876,7 @@ public class TileEntities {
         .withModelClassName("com.paneedah.mwc.models.weapons.SandbagWall")
         .withTextureName("textures/models/sandbag.png")
         .withCreativeTab(MWC.PROPS_TAB)
+        .withHardness(1)
         .withPositioning(tileEntity -> {
             GL11.glScalef(1f, 1f, 1f);
             GL11.glTranslatef(0.5f, 0f, 0.5f);

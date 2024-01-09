@@ -7,6 +7,7 @@ import com.paneedah.weaponlib.crafting.CraftingGroup;
 import com.paneedah.weaponlib.crafting.IModernCrafting;
 import com.paneedah.weaponlib.grenade.GrenadeRenderableState;
 import com.paneedah.weaponlib.melee.MeleeRenderableState;
+
 import com.paneedah.weaponlib.melee.PlayerMeleeInstance;
 import dev.redstudio.redcore.vectors.Vector3F;
 import net.minecraft.client.model.ModelBase;
@@ -253,10 +254,10 @@ public class ItemAttachment<T> extends Item implements IModelSource, IModernCraf
 		this.postRenderer = postRenderer2;
 
 	}
-	
+
 	@Override
-	public Item getItem() {
-		return this;
+	public ItemStack getItemStack() {
+		return new ItemStack(this);
 	}
 
 	@Override
