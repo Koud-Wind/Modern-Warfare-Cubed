@@ -42,7 +42,6 @@ public class ModernConfigManager {
 	@ConfigSync(category = CATEGORY_ORES, comment = "Spawns per chunk for graphite ore.")
 	public static int graphiteSpawnsPerChunk = 9;
 
-
 	@RequiresMcRestart
 	@RangeDouble(min=0.1, max=5.0)
 	@ConfigSync(category = CATEGORY_ENTITIES, comment = "How much health should terrorists have?")
@@ -67,6 +66,9 @@ public class ModernConfigManager {
 	public static String terroristEquipmentConfiguration = "m4a1:1.0:M4A1Mag_2, m16a1:1.0:M4A1Mag_2, Remington870:1.0";
 
 
+
+	@ConfigSync(category = CATEGORY_SERVER, comment = "")
+	public static boolean oldPlayerDamage = true;
 
 	@ConfigSync(category = CATEGORY_SERVER, comment = "Should the explosion break blocks?")
 	public static boolean explosionBreak = true;

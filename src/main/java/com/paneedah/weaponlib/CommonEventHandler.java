@@ -8,6 +8,7 @@ import com.paneedah.weaponlib.compatibility.CompatibleExposureCapability;
 import com.paneedah.weaponlib.compatibility.CompatibleExtraEntityFlags;
 import com.paneedah.weaponlib.compatibility.CompatiblePlayerEntityTrackerProvider;
 import com.paneedah.weaponlib.config.BalancePackManager;
+import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.crafting.CraftingFileManager;
 import com.paneedah.weaponlib.electronics.ItemHandheld;
 import com.paneedah.mwc.network.messages.EntityInventorySyncMessage;
@@ -26,6 +27,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.RayTraceResult;
+import net.minecraftforge.common.ISpecialArmor;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -219,11 +221,16 @@ public class CommonEventHandler {
         final EntityLivingBase entityLiving = event.getEntityLiving();
         final EquipmentInventory equipmentInventory = EquipmentCapability.getInventory(entityLiving);
 
-        if (equipmentInventory != null && equipmentInventory.getStackInSlot(1).getItem() != Items.AIR) {
+        if (equipmentInventory != null && (equipmentInventory.getStackInSlot(2).getItem() != Items.AIR || ModernConfigManager.oldPlayerDamage)) {
             final NonNullList<ItemStack> stackList = NonNullList.create();
             final ItemStack[] itemStacks = new ItemStack[]{equipmentInventory.getStackInSlot(1)};
             stackList.addAll(Arrays.asList(itemStacks));
-            event.setAmount((float) (event.getAmount() * (1 - ((ItemVest) equipmentInventory.getStackInSlot(1).getItem()).getDamageBlocked())));
+            if (ModernConfigManager.oldPlayerDamage) {
+                float amt = ISpecialArmor.ArmorProperties.applyArmor(event.getEntityLiving(), stackList, event.getSource(), event.getAmount());
+                event.setAmount(amt);
+            } else {
+                event.setAmount((float) (event.getAmount() * (1 - ((ItemVest) equipmentInventory.getStackInSlot(1).getItem()).getDamageBlocked())));
+            }
         }
         final DamageSource source = event.getSource();
 
