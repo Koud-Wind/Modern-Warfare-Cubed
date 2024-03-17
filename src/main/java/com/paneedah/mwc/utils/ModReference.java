@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 public class ModReference {
 
     public static final String ID = Tags.ID;
-    public static final String NAME = "Modern Warfare Cubed";
+    public static final String NAME = "Modern Warfare Server";
     public static final String VERSION = Tags.VERSION;
     public static final Logger LOG = LogManager.getLogger(ID);
     public static final RedLogger RED_LOG = new RedLogger(NAME, "https://linkify.cz/MWCBugReport", LOG);

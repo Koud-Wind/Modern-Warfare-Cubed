@@ -1,3 +1,7 @@
+/*
+ * Modified By "https://github.com/Koud-Wind"
+ * The code originates from "https://github.com/Cubed-Development/Modern-Warfare-Cubed"
+ */
 package com.paneedah.mwc.asm;
 
 import net.minecraft.entity.Entity;

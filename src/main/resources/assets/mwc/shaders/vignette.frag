@@ -1,3 +1,7 @@
+/*
+ * Modified By "https://github.com/Koud-Wind"
+ * The code originates from "https://github.com/Cubed-Development/Modern-Warfare-Cubed"
+ */
 #version 120
 
 uniform sampler2D reticle;

@@ -1,13 +1,11 @@
 [
   {
     "modid": "${id}",
-    "name": "Modern Warfare Cubed",
-    "description": "Modern Warfare Cubed, a fork of Vic's Modern Warfare",
+    "name": "Modern Warfare Server",
+    "description": "Modern Warfare Server, a fork of Modern Warfare Cubed",
     "version": "${version}",
     "MCversion": "1.12.2",
-    "url": "https://github.com/Paneedah/Modern-Warfare-Cubed",
-    "authorList": ["Paneedah, Desoroxxx"],
-    "credits": "DavidRoseLincs, SticksDev, Skyy, Vic4Games, Vic4GamesTeam",
+    "url": "https://github.com/Koud-Wind/Modern-Warfare-Cubed",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
