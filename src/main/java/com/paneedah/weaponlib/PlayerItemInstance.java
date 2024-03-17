@@ -180,7 +180,6 @@ public class PlayerItemInstance<S extends ManagedState<S>> extends UniversalObje
     }
 
     protected void reconcile() {
-        LOG.warn("Reconciling PlayerItemInstance: {}, but this method is empty", this);
     }
 
 //    public View<?> createView() {
