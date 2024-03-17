@@ -1,3 +1,7 @@
+//
+// Modified By "https://github.com/Koud-Wind"
+// The code originates from "https://github.com/Cubed-Development/Modern-Warfare-Cubed"
+//
 //为方便使用平衡包, 一些武器类型可能与现实(百科)不符
 
 entity.mwc_bandit1.name=强盜

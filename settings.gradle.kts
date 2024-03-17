@@ -1,4 +1,4 @@
-rootProject.name = "Modern-Warfare-Cubed"
+rootProject.name = "Modern-Warfare-Server"
 
 pluginManagement {
     repositories {
