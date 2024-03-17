@@ -32,6 +32,7 @@ public class KeyBindings {
 	public static KeyBinding fireModeKey;
 
 	public static KeyBinding customInventoryKey;
+	public static KeyBinding configKey;
 
 	public static KeyBinding jDebugKey;
 	public static KeyBinding kDebugKey;
@@ -102,6 +103,8 @@ public class KeyBindings {
 
 		customInventoryKey = new KeyBinding("key.custom_inventory", Keyboard.KEY_X, "key.categories.weaponlib");
 
+		configKey = new KeyBinding("key.config", Keyboard.KEY_RSHIFT, "key.categories.weaponlib");
+
 		/*
 		 * periodKey = new KeyBinding("key.sight", Keyboard.KEY_PERIOD,
 		 * "key.categories.weaponlib");
@@ -142,6 +145,7 @@ public class KeyBindings {
 		ClientRegistry.registerKeyBinding(subtractKey);
 		ClientRegistry.registerKeyBinding(fireModeKey);
 		ClientRegistry.registerKeyBinding(proningSwitchKey);
+		ClientRegistry.registerKeyBinding(configKey);
 		ClientRegistry.registerKeyBinding(freecamLock);
 		ClientRegistry.registerKeyBinding(freecamRotate);
 		/*

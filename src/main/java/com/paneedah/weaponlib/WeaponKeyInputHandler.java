@@ -8,6 +8,7 @@ import com.paneedah.weaponlib.animation.AnimationModeProcessor;
 import com.paneedah.weaponlib.animation.DebugPositioner;
 import com.paneedah.weaponlib.animation.OpenGLSelectionHelper;
 import com.paneedah.weaponlib.compatibility.CompatibleExtraEntityFlags;
+import com.paneedah.weaponlib.config.VMWModConfigGUI;
 import com.paneedah.weaponlib.electronics.PlayerTabletInstance;
 import com.paneedah.weaponlib.inventory.GuiHandler;
 import com.paneedah.weaponlib.render.ModificationGUI;
@@ -24,6 +25,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.input.Keyboard;
 
 import java.util.function.Function;
@@ -41,6 +44,7 @@ public class WeaponKeyInputHandler {
         this.entityPlayerSupplier = entityPlayerSupplier;
     }
 
+    @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public final void onKeyInput(InputEvent.KeyInputEvent event) {
 
@@ -370,5 +374,9 @@ public class WeaponKeyInputHandler {
         else if (MC.isSingleplayer() && KeyBindings.proningSwitchKey.isPressed()) {
             CHANNEL.sendToServer(new EntityControlServerMessage(player, CompatibleExtraEntityFlags.PRONING | CompatibleExtraEntityFlags.FLIP, 0));
         }
+
+         else if (KeyBindings.configKey.isPressed()) {
+             MC.displayGuiScreen(new VMWModConfigGUI(null));
+         }
     }
 }
