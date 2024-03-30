@@ -764,7 +764,7 @@ public class Interceptors {
     public static void checkLayerRenderersHooks() {
     	layerRendererHookSetup = true;
     	
-    	layerRendererField = ReflectionHelper.findField(RenderLivingBase.class, "layerRenderers", "field_177097_h");
+    	layerRendererField = ForgeTransform.findField(RenderLivingBase.class, "layerRenderers", "field_177097_h");
     	translateItemField = ReflectionHelper.findMethod(LayerHeldItem.class, "translateToHand", "func_191361_a", EnumHandSide.class);
 		 }
     

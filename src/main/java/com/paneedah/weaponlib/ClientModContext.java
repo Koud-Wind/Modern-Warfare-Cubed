@@ -1,5 +1,6 @@
 package com.paneedah.weaponlib;
 
+import com.paneedah.mwc.asm.ForgeTransform;
 import com.paneedah.weaponlib.animation.ScreenShakingAnimationManager;
 import com.paneedah.weaponlib.command.DebugCommand;
 import com.paneedah.weaponlib.command.MainCommand;
@@ -73,7 +74,7 @@ public class ClientModContext extends CommonModContext {
 
         rendererRegistry.preInit();
 
-        List<IResourcePack> defaultResourcePacks = ObfuscationReflectionHelper.getPrivateValue(Minecraft.class, MC, "field_110449_ao");
+        List<IResourcePack> defaultResourcePacks = ForgeTransform.getPrivateValue(Minecraft.class, MC, "field_110449_ao");
         WeaponResourcePack weaponResourcePack = new WeaponResourcePack();
         defaultResourcePacks.add(weaponResourcePack);
         IResourceManager resourceManager = MC.getResourceManager();

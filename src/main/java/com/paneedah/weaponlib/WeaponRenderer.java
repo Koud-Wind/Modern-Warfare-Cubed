@@ -3885,9 +3885,6 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
 
 	@Override
 	public List<BakedQuad> getQuads(IBlockState state, EnumFacing side, long rand) {
-		// Todo: Actually make rendering compatible with Emissive Renderer
-		if (ForgeModContainer.allowEmissiveItems)
-			ForgeModContainer.allowEmissiveItems = false;
 
 		if (transformType == ItemCameraTransforms.TransformType.GROUND
 				|| transformType == ItemCameraTransforms.TransformType.GUI

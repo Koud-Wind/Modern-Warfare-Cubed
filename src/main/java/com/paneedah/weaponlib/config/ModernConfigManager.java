@@ -54,7 +54,7 @@ public class ModernConfigManager {
 	@RequiresMcRestart
 	@RangeDouble(min=0, max=2.0)
 	@ConfigSync(category = CATEGORY_ENTITIES, comment = "How much should terrorists spawn?")
-	public static double terroristSpawn = 0.1;
+	public static double terroristSpawn = 0.0;
 
 	@RequiresMcRestart
 	@RangeDouble(min=0.1, max=5.0)
@@ -106,10 +106,10 @@ public class ModernConfigManager {
 	public static boolean enableAllShaders = true;
 
 	@ConfigSync(category = CATEGORY_RENDERING, comment = "Setting this to false disables all world shaders, enabling allows to select which world shaders are used.")
-	public static boolean enableWorldShaders = true;
+	public static boolean enableWorldShaders = false;
 	
 	@ConfigSync(category = CATEGORY_RENDERING, comment = "Setting this to false disables all screen shaders, enabling allows to select which screen shaders are used.")
-	public static boolean enableScreenShaders = true;
+	public static boolean enableScreenShaders = false;
 	
 	@ConfigSync(category = CATEGORY_RENDERING, comment = "Enables gun shaders, so skinning & lighting")
 	public static boolean enableGunShaders = true;
@@ -125,7 +125,7 @@ public class ModernConfigManager {
 
 	@RequiresMcRestart
 	@ConfigSync(category = CATEGORY_RENDERING, comment = "Enables the HDR framebuffer, requires restart. The HDR is the cause of a lot of shader incompat")
-	public static boolean enableHDRFramebuffer = true;
+	public static boolean enableHDRFramebuffer = false;
 
 	@ConfigSync(category = CATEGORY_RENDERING, comment = "Enables the fancy MWC snow/rain")
 	public static boolean enableFancyRainAndSnow = true;

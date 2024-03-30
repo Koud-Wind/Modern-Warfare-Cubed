@@ -1,5 +1,6 @@
 package com.paneedah.weaponlib.render;
 
+import com.paneedah.mwc.asm.ForgeTransform;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.TexturedQuad;
 import net.minecraft.util.math.Vec3d;
@@ -99,7 +100,7 @@ public class ModelRenderTool {
 	
 	public static Triangle[] triangulate(ModelBox b, Matrix4f transform) {
 		if(quadListField == null){
-			quadListField = ReflectionHelper.findField(ModelBox.class, "quadList", "field_78254_i");
+			quadListField = ForgeTransform.findField(ModelBox.class, "quadList", "field_78254_i");
 		}
 		TexturedQuad[] quadList;
 		Triangle[] tris = new Triangle[12];

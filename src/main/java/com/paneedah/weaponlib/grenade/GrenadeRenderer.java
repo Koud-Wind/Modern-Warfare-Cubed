@@ -997,10 +997,6 @@ public class GrenadeRenderer extends ModelSource implements IBakedModel {
 
 	@Override
 	public List<BakedQuad> getQuads(IBlockState state, EnumFacing side, long rand) {
-		// Todo: Actually make rendering compatible with Emissive Renderer
-		if (net.minecraftforge.common.ForgeModContainer.allowEmissiveItems) {
-			return Collections.emptyList();
-		}
 
 		if(itemStack == null) return Collections.emptyList();
 		if(transformType == ItemCameraTransforms.TransformType.GROUND

@@ -158,7 +158,7 @@ public final class MWC {
     }
 
     public static void updateDebugHandler() {
-        if (DebugCommand.debugF3 || FMLLaunchHandler.isDeobfuscatedEnvironment())
+        if (DebugCommand.debugF3)
             MinecraftForge.EVENT_BUS.register(DebugHandler.class);
         else
             MinecraftForge.EVENT_BUS.unregister(DebugHandler.class);
