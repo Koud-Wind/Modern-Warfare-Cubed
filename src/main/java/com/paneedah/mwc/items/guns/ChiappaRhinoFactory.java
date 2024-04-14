@@ -42,7 +42,7 @@ public class ChiappaRhinoFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.15f)
         .withInaccuracy(3)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         
         .withScreenShaking(RenderableState.SHOOTING, 

@@ -41,7 +41,7 @@ public class M712Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.18f)
 //      .withShellCasingForwardOffset(0.001f)
         .withInaccuracy(1)
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
          
          .withScreenShaking(RenderableState.SHOOTING, 

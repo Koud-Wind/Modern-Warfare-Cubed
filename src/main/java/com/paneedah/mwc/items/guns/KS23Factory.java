@@ -47,8 +47,7 @@ public class KS23Factory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.05f)
         .withFlashOffsetY(() -> 0.09f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 5f, // x 
                 1f, // y

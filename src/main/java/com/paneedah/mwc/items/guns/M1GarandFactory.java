@@ -37,8 +37,7 @@ public class M1GarandFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.1f)
         .withShellCasingForwardOffset(0.05f)
         .withShellCasingVerticalOffset(-0.03f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  3f, // x 
                  2f, // y

@@ -30,6 +30,7 @@ public class ItemVehicle extends Item
 //        this.name = name;
         this.entityClass = entityClass;
         this.maxStackSize = 1;
+        this.setCreativeTab(null);
         this.setCreativeTab(CreativeTabs.TRANSPORTATION);
         this.setTranslationKey(name);
     }

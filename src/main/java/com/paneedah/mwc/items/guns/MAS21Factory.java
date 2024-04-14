@@ -39,8 +39,7 @@ public class MAS21Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.14f)
 //      .withShellCasingForwardOffset(0.001f)
         .withInaccuracy(3)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  2.5f, // x 
                  0.5f, // y

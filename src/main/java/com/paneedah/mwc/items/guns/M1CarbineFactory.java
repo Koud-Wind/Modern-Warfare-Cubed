@@ -35,8 +35,7 @@ public class M1CarbineFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.1f)
         .withInaccuracy(1f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  1f, // x 
                  1f, // y

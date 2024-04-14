@@ -19,10 +19,11 @@ public class OreBase extends BlockOre {
         setRegistryName(registryName);
         setTranslationKey(registryName);
 
+        setCreativeTab(null);
         setHardness(6F);
         setResistance(15F);
         setHarvestLevel("pickaxe", harvestLevel);
-        setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
+        ;
     }
 
     @Override

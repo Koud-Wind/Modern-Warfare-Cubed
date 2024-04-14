@@ -41,7 +41,6 @@ public class Glock19Factory implements GunFactory {
                 .withFlashOffsetX(() -> 0.14f)
                 .withFlashOffsetY(() -> 0.18f)
                 .withInaccuracy(2)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         45.0,

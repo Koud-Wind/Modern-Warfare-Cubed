@@ -50,7 +50,7 @@ public class Remington870Factory implements GunFactory {
                 1f, // y
                 10f) // z
         
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)

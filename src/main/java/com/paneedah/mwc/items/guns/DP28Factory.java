@@ -39,8 +39,7 @@ public class DP28Factory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.14f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  2.5f, // x 
                  2f, // y

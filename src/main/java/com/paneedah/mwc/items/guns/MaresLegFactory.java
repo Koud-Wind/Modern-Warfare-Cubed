@@ -44,8 +44,7 @@ public class MaresLegFactory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.13f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 4f, // x 
                 0.1f, // y

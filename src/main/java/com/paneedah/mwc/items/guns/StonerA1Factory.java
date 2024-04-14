@@ -39,8 +39,7 @@ public class StonerA1Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.15f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  2.5f, // x 
                  1f, // y

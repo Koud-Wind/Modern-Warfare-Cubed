@@ -41,7 +41,6 @@ public class Saiga12Factory {
                 .withShellCasingModelTexture("shotgun12gauge")
                 .withShellCasingForwardOffset(0.01f)
                 .withShellCasingVerticalOffset(-0.03f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         40.0,

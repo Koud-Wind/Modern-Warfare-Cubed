@@ -36,7 +36,6 @@ public class UziFactory implements GunFactory {
                 .withFlashOffsetX(() -> 0.17f)
                 .withFlashOffsetY(() -> 0.23f)
                 .withInaccuracy(3)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

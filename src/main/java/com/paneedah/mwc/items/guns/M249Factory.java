@@ -34,7 +34,6 @@ public class M249Factory {
                 .withFlashScale(() -> 0.6f)
                 .withFlashOffsetX(() -> 0.1f)
                 .withFlashOffsetY(() -> 0.15f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

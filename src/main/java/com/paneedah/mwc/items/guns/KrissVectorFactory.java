@@ -41,7 +41,6 @@ public class KrissVectorFactory {
                 .withFlashOffsetX(() -> 0.12f)
                 .withFlashOffsetY(() -> 0.22f)
                 .withInaccuracy(2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

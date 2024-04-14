@@ -329,8 +329,7 @@ public class CustomArmor extends ItemArmor implements ExposureProtection , ISpec
             armorHelmet.setRegistryName(ID, unlocalizedHelmetName.toLowerCase()); // temporary hack
             ForgeRegistries.ITEMS.register(armorHelmet);
 
-            if (creativeTab != null)
-                armorHelmet.setCreativeTab(creativeTab);
+            armorHelmet.setCreativeTab(null);
 
             COOKING_QUEUE.add(armorHelmet);
 
@@ -349,9 +348,7 @@ public class CustomArmor extends ItemArmor implements ExposureProtection , ISpec
 
             CraftingRegistry.registerHook(armorChest);
 
-
-            if(creativeTab != null)
-                armorChest.setCreativeTab(creativeTab);
+            armorChest.setCreativeTab(null);
 
             armorChest.setTranslationKey(unlocalizedChestName);
             armorChest.setRegistryName(ID, unlocalizedChestName.toLowerCase()); // temporary hack
@@ -383,8 +380,7 @@ public class CustomArmor extends ItemArmor implements ExposureProtection , ISpec
 
             CraftingRegistry.registerHook(armorBoots);
 
-            if (creativeTab != null)
-                armorBoots.setCreativeTab(creativeTab);
+            armorBoots.setCreativeTab(null);
 
             armorBoots.setTranslationKey(unlocalizedBootsName);
             armorBoots.setRegistryName(ID, unlocalizedBootsName.toLowerCase()); // temporary hack

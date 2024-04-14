@@ -35,7 +35,6 @@ public class DesertEagleFactory implements GunFactory {
                 .withFlashOffsetX(() -> 0.13f)
                 .withFlashOffsetY(() -> 0.14f)
                 .withInaccuracy(2)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         65.0,

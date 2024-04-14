@@ -35,8 +35,7 @@ public class BrenMkIIFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.1f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 2f, // x 
                 2f, // y

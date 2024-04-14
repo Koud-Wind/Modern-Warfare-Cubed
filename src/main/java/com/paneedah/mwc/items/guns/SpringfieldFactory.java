@@ -50,7 +50,7 @@ public class SpringfieldFactory implements GunFactory {
                  2f, // y
                  7f) // z
          
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         .withCompatibleAttachment(AuxiliaryAttachments.SpringfieldAction, true, (model) -> {
             if(model instanceof SpringfieldAction) {

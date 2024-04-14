@@ -43,8 +43,7 @@ public class M1873Factory implements GunFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.06f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 3f, // x 
                 0.1f, // y

@@ -40,7 +40,6 @@ public class MP5A5Factory {
                 .withFlashOffsetX(() -> 0.13f)
                 .withFlashOffsetY(() -> 0.17f)
                 .withInaccuracy(2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

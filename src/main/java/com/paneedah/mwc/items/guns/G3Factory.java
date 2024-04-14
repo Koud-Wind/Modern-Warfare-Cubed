@@ -38,7 +38,6 @@ public class G3Factory {
                 .withFlashScale(() -> 0.6f)
                 .withFlashOffsetX(() -> 0.13f)
                 .withFlashOffsetY(() -> 0.13f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

@@ -633,7 +633,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G11HandguardK1")
                 .build(MWC.modContext);
 
@@ -671,7 +670,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G11HandguardK2")
                 .build(MWC.modContext);
 
@@ -713,7 +711,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FABDefenseMount")
                 .build(MWC.modContext);
 
@@ -756,7 +753,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAS21Mount")
                 .build(MWC.modContext);
 
@@ -802,7 +798,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("P90swordfish")
                 .build(MWC.modContext);
 
@@ -840,7 +835,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("P90DefaultKit")
                 .build(MWC.modContext);
 
@@ -878,7 +872,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("P90Terminator")
                 .build(MWC.modContext);
 
@@ -919,7 +912,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarHandGuard")
                 .build(MWC.modContext);
 
@@ -960,7 +952,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarHHandGuard")
                 .build(MWC.modContext);
 
@@ -1002,7 +993,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarMidWestIndustriesHandGuard")
                 .build(MWC.modContext);
 
@@ -1043,7 +1033,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarMLOKHandguard")
                 .build(MWC.modContext);
 
@@ -1084,7 +1073,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIG556Handguard")
                 .build(MWC.modContext);
 
@@ -1126,7 +1114,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIG556HandguardRailed")
                 .build(MWC.modContext);
 
@@ -1168,7 +1155,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIG556HandguardKA")
                 .build(MWC.modContext);
 
@@ -1209,7 +1195,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIG556Grip")
                 .build(MWC.modContext);
 
@@ -1250,7 +1235,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarLReceiver")
                 .build(MWC.modContext);
 
@@ -1291,7 +1275,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KrissVectorReceiver")
                 .build(MWC.modContext);
 
@@ -1335,7 +1318,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KrissVector556Handguard")
                 .build(MWC.modContext);
 
@@ -1377,7 +1359,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VectorMk1ModularHandguard")
                 .build(MWC.modContext);
 
@@ -1419,7 +1400,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VectorCarbineHandguard")
                 .build(MWC.modContext);
 
@@ -1462,7 +1442,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VectorTapedGrip")
                 .build(MWC.modContext);
 
@@ -1506,7 +1485,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Origin12Handguard")
                 .build(MWC.modContext);
 
@@ -1546,7 +1524,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HKS20Handguard")
                 .build(MWC.modContext);
 
@@ -1584,7 +1561,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington700Chassis")
                 .build(MWC.modContext);
 
@@ -1622,7 +1598,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington700APACChassis")
                 .build(MWC.modContext);
 
@@ -1660,7 +1635,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington700MDTXRSChassis")
                 .build(MWC.modContext);
 
@@ -1699,7 +1673,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SSG08Chassis")
                 .build(MWC.modContext);
 
@@ -1741,7 +1714,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ARX160Chassis")
                 .build(MWC.modContext);
 
@@ -1782,7 +1754,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G2ContenderBarrelShort")
                 .build(MWC.modContext);
 
@@ -1824,7 +1795,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G2ContenderBarrelLong")
                 .build(MWC.modContext);
 
@@ -1863,7 +1833,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G2ContenderGrip")
                 .build(MWC.modContext);
 
@@ -1902,7 +1871,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G2ContenderStock")
                 .build(MWC.modContext);
 
@@ -1944,7 +1912,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Origin12Grip")
                 .build(MWC.modContext);
 
@@ -1982,7 +1949,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HKS20Grip")
                 .build(MWC.modContext);
 
@@ -2025,7 +1991,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Origin12Stock")
                 .build(MWC.modContext);
 
@@ -2064,7 +2029,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HKS20Stock")
                 .build(MWC.modContext);
 
@@ -2108,7 +2072,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRHandGuard")
                 .build(MWC.modContext);
 
@@ -2153,7 +2116,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRHandGuardBlack")
                 .build(MWC.modContext);
 
@@ -2195,7 +2157,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRWEMSKHandguardTan")
                 .build(MWC.modContext);
 
@@ -2236,7 +2197,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRPrecisionHandGuardTan")
                 .build(MWC.modContext);
 
@@ -2277,7 +2237,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRSBRHandGuardTan")
                 .build(MWC.modContext);
 
@@ -2318,7 +2277,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRPolymerHandguardTan")
                 .build(MWC.modContext);
 
@@ -2359,7 +2317,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRSquareDropHandguardTan")
                 .build(MWC.modContext);
 
@@ -2400,7 +2357,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Type20Handguard")
                 .build(MWC.modContext);
 
@@ -2441,7 +2397,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerHandguard")
                 .build(MWC.modContext);
 
@@ -2482,7 +2437,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerMatrixArmsHandguard")
                 .build(MWC.modContext);
 
@@ -2520,14 +2474,12 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M60HandGuard")
                 .build(MWC.modContext);
 
         M60MK43Handguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new M60MK43Handguard(), "m60.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M60MK43Handguard")
                 .build(MWC.modContext);
 
@@ -2565,7 +2517,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249HandGuard")
                 .build(MWC.modContext);
 
@@ -2604,7 +2555,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk48HandGuard")
                 .build(MWC.modContext);
 
@@ -2642,7 +2592,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249UpperHandGuard")
                 .build(MWC.modContext);
 
@@ -2683,7 +2632,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk48UpperHandGuard")
                 .build(MWC.modContext);
 
@@ -2723,7 +2671,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("StonerHANDGUARD")
                 .build(MWC.modContext);
 
@@ -2761,7 +2708,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGA1")
                 .build(MWC.modContext);
 
@@ -2800,7 +2746,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGA2handguard")
                 .build(MWC.modContext);
 
@@ -2839,7 +2784,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGA3handguard")
                 .build(MWC.modContext);
 
@@ -2878,7 +2822,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("EF88Handguard")
                 .build(MWC.modContext);
 
@@ -2916,7 +2859,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGDefaultKit")
                 .build(MWC.modContext);
 
@@ -2954,7 +2896,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGParaConversion")
                 .build(MWC.modContext);
 
@@ -2997,7 +2938,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGA3extGuard")
                 .build(MWC.modContext);
 
@@ -3035,7 +2975,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1CarbineBody")
                 .build(MWC.modContext);
 
@@ -3073,7 +3012,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1A1CarbineBody")
                 .build(MWC.modContext);
 
@@ -3111,7 +3049,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1CarbineHandguard")
                 .build(MWC.modContext);
 
@@ -3149,7 +3086,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1CarbineVentilatedHandguard")
                 .build(MWC.modContext);
 
@@ -3188,7 +3124,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1ScoutCarbineHandguard")
                 .build(MWC.modContext);
 
@@ -3230,7 +3165,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G3A1Handguard")
                 .build(MWC.modContext);
 
@@ -3275,7 +3209,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G3HandguardRailed")
                 .build(MWC.modContext);
 
@@ -3313,7 +3246,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DSR1Handguard")
                 .build(MWC.modContext);
 
@@ -3351,7 +3283,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DSR1HandguardRailed")
                 .build(MWC.modContext);
 
@@ -3389,7 +3320,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DSR1Barrel")
                 .build(MWC.modContext);
 
@@ -3427,7 +3357,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DSR1BarrelLong")
                 .build(MWC.modContext);
 
@@ -3470,7 +3399,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M14Body")
                 .build(MWC.modContext);
 
@@ -3514,7 +3442,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M14DMRSocomChassis")
                 .build(MWC.modContext);
 
@@ -3558,7 +3485,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk14TanBody")
                 .build(MWC.modContext);
 
@@ -3602,7 +3528,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk14SnowBody")
                 .build(MWC.modContext);
 
@@ -3646,7 +3571,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk14BlackBody")
                 .build(MWC.modContext);
 
@@ -3689,7 +3613,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M14Cover")
                 .build(MWC.modContext);
 
@@ -3735,7 +3658,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M14TriRailCover")
                 .build(MWC.modContext);
 
@@ -3777,7 +3699,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M14Rail")
                 .build(MWC.modContext);
 
@@ -3818,7 +3739,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarStock")
                 .build(MWC.modContext);
 
@@ -3859,7 +3779,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarRetractableStock")
                 .build(MWC.modContext);
 
@@ -3905,7 +3824,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarAdapterStock")
                 .build(MWC.modContext);
 
@@ -3946,7 +3864,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScarHStock")
                 .build(MWC.modContext);
 
@@ -3988,7 +3905,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VectorStock")
                 .build(MWC.modContext);
 
@@ -4031,7 +3947,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VectorStockAdapter")
                 .build(MWC.modContext);
 
@@ -4069,7 +3984,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UMP45Receiver")
                 .build(MWC.modContext);
 
@@ -4107,7 +4021,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UMP9Receiver")
                 .build(MWC.modContext);
 
@@ -4145,7 +4058,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UMP45Stock")
                 .build(MWC.modContext);
 
@@ -4186,7 +4098,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAC10Stock")
                 .build(MWC.modContext);
 
@@ -4228,7 +4139,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAC21Stock")
                 .build(MWC.modContext);
 
@@ -4269,7 +4179,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRStock")
                 .build(MWC.modContext);
 
@@ -4310,7 +4219,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRStockBlack")
                 .build(MWC.modContext);
 
@@ -4351,7 +4259,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRFixedStockTan")
                 .build(MWC.modContext);
 
@@ -4392,7 +4299,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRPRSStockTan")
                 .build(MWC.modContext);
 
@@ -4434,7 +4340,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRLongRangeStock")
                 .build(MWC.modContext);
 
@@ -4475,7 +4380,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ACRPDWStock")
                 .build(MWC.modContext);
 
@@ -4513,7 +4417,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1014Stock")
                 .build(MWC.modContext);
 
@@ -4551,7 +4454,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1014Grip")
                 .build(MWC.modContext);
 
@@ -4589,7 +4491,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4BenelliStock")
                 .build(MWC.modContext);
 
@@ -4627,7 +4528,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Spas12Stock")
                 .build(MWC.modContext);
 
@@ -4665,7 +4565,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249Stock")
                 .build(MWC.modContext);
 
@@ -4703,7 +4602,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249ParaStock")
                 .build(MWC.modContext);
 
@@ -4745,7 +4643,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249MilspecStock")
                 .build(MWC.modContext);
 
@@ -4787,7 +4684,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M249Hk416Stock")
                 .build(MWC.modContext);
 
@@ -4832,7 +4728,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UTGTriRailHandGuard")
                 .build(MWC.modContext);
 
@@ -4877,7 +4772,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5BMHandGuard")
                 .build(MWC.modContext);
 
@@ -4918,7 +4812,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MIMP5MHandGuard")
                 .build(MWC.modContext);
 
@@ -4963,7 +4856,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScorpionEVO3A1HandguardShort")
                 .build(MWC.modContext);
 
@@ -5005,7 +4897,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScorpionEVO3A1HandguardLong")
                 .build(MWC.modContext);
 
@@ -5047,7 +4938,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MIMP5TRRail")
                 .build(MWC.modContext);
 
@@ -5089,7 +4979,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MIMP5MRail")
                 .build(MWC.modContext);
 
@@ -5128,7 +5017,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ShotgunRail")
                 .build(MWC.modContext);
 
@@ -5167,7 +5055,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Kar98Krail")
                 .build(MWC.modContext);
 
@@ -5175,7 +5062,6 @@ public class Attachments {
                 .withCategory(AttachmentCategory.RAILING)
                 .withRenderablePart()
                 .withModel(new M60Mk43Rail(), "gun.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M60Mk43Rail")
                 .build(MWC.modContext);
 
@@ -5218,7 +5104,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16A1ScopeMount")
                 .build(MWC.modContext);
 
@@ -5261,7 +5146,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FamasF1ScopeMount")
                 .build(MWC.modContext);
 
@@ -5304,7 +5188,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16A1PicatinnyRail")
                 .build(MWC.modContext);
 
@@ -5349,7 +5232,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FamasF1PicatinnyRail")
                 .build(MWC.modContext);
 
@@ -5388,7 +5270,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("NGSWRRail")
                 .build(MWC.modContext);
 
@@ -5428,7 +5309,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RailRiser")
                 .build(MWC.modContext);
 
@@ -5439,7 +5319,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UziSightRail")
                 .build(MWC.modContext);
 
@@ -5479,7 +5358,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1911Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5518,7 +5396,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1911Body")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5526,7 +5403,6 @@ public class Attachments {
         M45A1CQBPBody = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.BACKGRIP)
                 .withModel(new M45A1(), "m45.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M45A1CQBPBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5536,7 +5412,6 @@ public class Attachments {
                 .withModel(new M45A1Slide(), "m45.png")
                 .withModel(new M1911FrontSight(), "m1911frontsight")
                 .withModel(new M1911rearsight(), "m1911rearsight")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M45A1CQBPSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5580,7 +5455,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M9A1Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5622,7 +5496,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M9A1Body")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5667,7 +5540,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SamuraiEdgeSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5710,7 +5582,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SamuraiEdgeBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5750,7 +5621,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SamuraiEdgeMount")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5789,7 +5659,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DesertEagleSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5828,7 +5697,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DesertEagleBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5867,7 +5735,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DesertEagleBodyGolden")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5906,7 +5773,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DesertEagleSlideGolden")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -5948,7 +5814,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19Body")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6001,7 +5866,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19XBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6043,7 +5907,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("GlockRazorbackBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6087,7 +5950,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6131,7 +5993,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock18CSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6175,7 +6036,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock18CCNCslide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6219,7 +6079,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19XSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6263,7 +6122,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("GlockRazorbackSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6307,7 +6165,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19RockslideOlive")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6351,7 +6208,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock19GhostPrecisionSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6393,7 +6249,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2Body")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6435,7 +6290,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2BodyTan")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6478,7 +6332,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2GripTape")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6522,7 +6375,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6566,7 +6418,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2BSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6610,7 +6461,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("P226Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6651,7 +6501,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FiveSevenSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6693,7 +6542,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MakarovBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6737,7 +6585,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MakarovPMSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6781,7 +6628,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MakarovPBSlide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6823,7 +6669,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP443Slide")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6868,7 +6713,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MakarovPBBody")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6910,7 +6754,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAC10Body")
                 .build(MWC.modContext);
 
@@ -6952,7 +6795,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAC10Action")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -6994,7 +6836,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5NavyHandGuard")
                 .build(MWC.modContext);
 
@@ -7035,7 +6876,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5A5HandGuard")
                 .build(MWC.modContext);
 
@@ -7077,7 +6917,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5SDHandGuard")
                 .build(MWC.modContext);
 
@@ -7118,7 +6957,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5HOGUEGrip")
                 .build(MWC.modContext);
 
@@ -7156,7 +6994,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("GlockHogueGrip")
                 .build(MWC.modContext);
 
@@ -7198,7 +7035,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("GlockHogueGripTan")
                 .build(MWC.modContext);
 
@@ -7240,7 +7076,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("APSGrip")
                 .build(MWC.modContext);
 
@@ -7282,7 +7117,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("APSStock")
                 .build(MWC.modContext);
 
@@ -7323,7 +7157,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MAC10Grip")
                 .build(MWC.modContext);
 
@@ -7364,7 +7197,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5Stock")
                 .build(MWC.modContext);
 
@@ -7405,7 +7237,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5A3Stock")
                 .build(MWC.modContext);
 
@@ -7446,7 +7277,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5A4Stock")
                 .build(MWC.modContext);
         // Todo: This one is sus it was actually using the dam thing
@@ -7493,7 +7323,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP5StockAdapter")
                 .build(MWC.modContext);
 
@@ -7538,7 +7367,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("LVOAVHandGuard")
                 .build(MWC.modContext);
 
@@ -7581,7 +7409,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AR15FN15Handguard")
                 .build(MWC.modContext);
 
@@ -7626,7 +7453,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M38HandGuard")
                 .build(MWC.modContext);
 
@@ -7671,7 +7497,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416HandGuardBlackAndTan")
                 .build(MWC.modContext);
 
@@ -7713,7 +7538,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK417Handguard")
                 .build(MWC.modContext);
 
@@ -7755,7 +7579,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK417HandguardTan")
                 .build(MWC.modContext);
 
@@ -7800,7 +7623,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk18HandGuard")
                 .build(MWC.modContext);
 
@@ -7845,7 +7667,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Mk18HandGuardBlack")
                 .build(MWC.modContext);
 
@@ -7891,7 +7712,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Block2SOCOMHandguard")
                 .build(MWC.modContext);
 
@@ -7936,7 +7756,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FSSTacLiteHandguard")
                 .build(MWC.modContext);
 
@@ -7977,7 +7796,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4MagpulHandGuard")
                 .build(MWC.modContext);
 
@@ -8018,7 +7836,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4MagpulHandGuardTan")
                 .build(MWC.modContext);
 
@@ -8060,7 +7877,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4Receiver")
                 .build(MWC.modContext);
 
@@ -8102,7 +7918,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416Receiver")
                 .build(MWC.modContext);
 
@@ -8141,7 +7956,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("C8SFWReceiver")
                 .build(MWC.modContext);
 
@@ -8183,7 +7997,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VLTORReceiver")
                 .build(MWC.modContext);
 
@@ -8222,7 +8035,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AR57Receiver")
                 .build(MWC.modContext);
 
@@ -8261,7 +8073,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK417Receiver")
                 .build(MWC.modContext);
 
@@ -8300,7 +8111,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK417ReceiverTan")
                 .build(MWC.modContext);
 
@@ -8342,7 +8152,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M110Receiver")
                 .build(MWC.modContext);
 
@@ -8426,7 +8235,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Beowulf50CalReceiver")
                 .build(MWC.modContext);
 
@@ -8464,7 +8272,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("S710Receiver")
                 .build(MWC.modContext);
 
@@ -8505,7 +8312,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("CZ805BrenReceiver")
                 .build(MWC.modContext);
 
@@ -8544,7 +8350,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerReceiver")
                 .build(MWC.modContext);
 
@@ -8583,7 +8388,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerReceiverBlack")
                 .build(MWC.modContext);
 
@@ -8622,7 +8426,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerKnightsReceiver")
                 .build(MWC.modContext);
 
@@ -8661,7 +8464,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerKnightsReceiverBlack")
                 .build(MWC.modContext);
 
@@ -8687,7 +8489,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Placeholder")
                 .build(MWC.modContext);
 
@@ -8713,7 +8514,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FamasPlaceholder")
                 .build(MWC.modContext);
 
@@ -8910,7 +8710,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4HandGuard")
                 .build(MWC.modContext);
 
@@ -8952,7 +8751,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AR57Handguard")
                 .build(MWC.modContext);
 
@@ -8991,7 +8789,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("NTW20Guard")
                 .build(MWC.modContext);
 
@@ -9032,7 +8829,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16HandGuard")
                 .build(MWC.modContext);
 
@@ -9073,7 +8869,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16A1Handguard")
                 .build(MWC.modContext);
 
@@ -9118,7 +8913,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4CarbineHandGuard")
                 .build(MWC.modContext);
 
@@ -9163,7 +8957,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16A4HandGuard")
                 .build(MWC.modContext);
 
@@ -9208,7 +9001,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M110Handguard")
                 .build(MWC.modContext);
 
@@ -9251,7 +9043,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Z10Handguard")
                 .build(MWC.modContext);
 
@@ -9296,7 +9087,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AR10SuperSASSHandguard")
                 .build(MWC.modContext);
 
@@ -9334,7 +9124,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("S710Handguard")
                 .build(MWC.modContext);
         SIGMCXHandguard = new AttachmentBuilder<Weapon>()
@@ -9377,7 +9166,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIGMCXHandguard")
                 .build(MWC.modContext);
 
@@ -9418,7 +9206,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIGMCXHandguardShort")
                 .build(MWC.modContext);
 
@@ -9460,7 +9247,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MPXHandguard")
                 .build(MWC.modContext);
 
@@ -9502,7 +9288,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MPXHandguardExtended")
                 .build(MWC.modContext);
 
@@ -9544,7 +9329,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MPXHandguardRailed")
                 .build(MWC.modContext);
 
@@ -9587,7 +9371,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("K2C1Handguard")
                 .build(MWC.modContext);
 
@@ -9628,7 +9411,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HeraArmsGrip")
                 .build(MWC.modContext);
 
@@ -9669,7 +9451,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4Grip")
                 .build(MWC.modContext);
 
@@ -9710,7 +9491,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4GripTan")
                 .build(MWC.modContext);
 
@@ -9749,7 +9529,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SOCOM_Grip")
                 .build(MWC.modContext);
 
@@ -9790,7 +9569,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4GripGray")
                 .build(MWC.modContext);
 
@@ -9831,7 +9609,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416Grip")
                 .build(MWC.modContext);
 
@@ -9872,7 +9649,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416GripTan")
                 .build(MWC.modContext);
 
@@ -9913,7 +9689,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M110Grip")
                 .build(MWC.modContext);
 
@@ -9951,7 +9726,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("S710TricunGrip")
                 .build(MWC.modContext);
 
@@ -9992,7 +9766,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("K2C1Grip")
                 .build(MWC.modContext);
 
@@ -10034,7 +9807,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK47Grip")
                 .build(MWC.modContext);
 
@@ -10075,7 +9847,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK101Grip")
                 .build(MWC.modContext);
 
@@ -10116,7 +9887,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKErgoGrip")
                 .build(MWC.modContext);
 
@@ -10157,7 +9927,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKErgoGripGreen")
                 .build(MWC.modContext);
 
@@ -10198,7 +9967,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKErgoGripTan")
                 .build(MWC.modContext);
 
@@ -10239,7 +10007,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12Grip")
                 .build(MWC.modContext);
 
@@ -10280,7 +10047,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12ErgoGrip")
                 .build(MWC.modContext);
 
@@ -10319,7 +10085,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerStock")
                 .build(MWC.modContext);
 
@@ -10358,7 +10123,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HoneyBadgerStockBlack")
                 .build(MWC.modContext);
 
@@ -10401,7 +10165,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G3Stock")
                 .build(MWC.modContext);
 
@@ -10444,7 +10207,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP7Stock")
                 .build(MWC.modContext);
 
@@ -10493,7 +10255,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP7MilSpecStock")
                 .build(MWC.modContext);
 
@@ -10539,7 +10300,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK47stock")
                 .build(MWC.modContext);
 
@@ -10585,7 +10345,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DragunovGripStock")
                 .build(MWC.modContext);
 
@@ -10630,7 +10389,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Dragunov98Stock")
                 .build(MWC.modContext);
 
@@ -10668,7 +10426,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RPKstock")
                 .build(MWC.modContext);
 
@@ -10709,7 +10466,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK101Stock")
                 .build(MWC.modContext);
 
@@ -10750,7 +10506,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK74Stock")
                 .build(MWC.modContext);
 
@@ -10791,7 +10546,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12Stock")
                 .build(MWC.modContext);
 
@@ -10832,7 +10586,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12ZenitcoStock")
                 .build(MWC.modContext);
 
@@ -10874,7 +10627,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSVintorezStock")
                 .build(MWC.modContext);
 
@@ -10916,7 +10668,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ASValStock")
                 .build(MWC.modContext);
 
@@ -10964,7 +10715,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSVintorezMilspecStock")
                 .build(MWC.modContext);
 
@@ -11006,7 +10756,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("CollapsableMOEStock")
                 .build(MWC.modContext);
 
@@ -11048,7 +10797,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("CollapsableMOEStockGreen")
                 .build(MWC.modContext);
 
@@ -11090,7 +10838,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MagpulCTRStock")
                 .build(MWC.modContext);
 
@@ -11132,7 +10879,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MagpulCTRStockTan")
                 .build(MWC.modContext);
 
@@ -11174,7 +10920,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MilSpecStock")
                 .build(MWC.modContext);
 
@@ -11216,7 +10961,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("CZ805BrenStock")
                 .build(MWC.modContext);
 
@@ -11258,7 +11002,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SIGMCXStock")
                 .build(MWC.modContext);
 
@@ -11339,7 +11082,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MilSpecStockTan")
                 .build(MWC.modContext);
 
@@ -11381,7 +11123,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HeraArmsStock")
                 .build(MWC.modContext);
 
@@ -11423,7 +11164,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416Stock")
                 .build(MWC.modContext);
 
@@ -11503,7 +11243,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16Stock")
                 .build(MWC.modContext);
 
@@ -11545,7 +11284,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416StockTan")
                 .build(MWC.modContext);
 
@@ -11587,7 +11325,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M110Stock")
                 .build(MWC.modContext);
 
@@ -11629,7 +11366,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ARPRSPrecisionStock")
                 .build(MWC.modContext);
 
@@ -11671,7 +11407,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK47HandleGuard")
                 .build(MWC.modContext);
 
@@ -11715,7 +11450,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DragunovHandguard")
                 .build(MWC.modContext);
 
@@ -11757,7 +11491,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Dragunov98Handguard")
                 .build(MWC.modContext);
 
@@ -11798,7 +11531,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK101HandGuard")
                 .build(MWC.modContext);
 
@@ -11839,7 +11571,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK74Handguard")
                 .build(MWC.modContext);
 
@@ -11880,7 +11611,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKMagpulHandleGuard")
                 .build(MWC.modContext);
 
@@ -11921,7 +11651,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKMagpulHandleGuardTan")
                 .build(MWC.modContext);
 
@@ -11964,7 +11693,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MLOKHandguard")
                 .build(MWC.modContext);
 
@@ -12007,7 +11735,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MLOKExtendedHandguard")
                 .build(MWC.modContext);
 
@@ -12049,7 +11776,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK15HandleGuard")
                 .build(MWC.modContext);
 
@@ -12091,7 +11817,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12kalHandguard")
                 .build(MWC.modContext);
 
@@ -12133,7 +11858,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RPK16handguard")
                 .build(MWC.modContext);
 
@@ -12174,7 +11898,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12Handguard")
                 .build(MWC.modContext);
 
@@ -12215,7 +11938,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12BHandguard")
                 .build(MWC.modContext);
 
@@ -12256,7 +11978,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KBP9A91Handguard")
                 .build(MWC.modContext);
 
@@ -12297,7 +12018,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KBP9A91CompactHandguard")
                 .build(MWC.modContext);
 
@@ -12338,7 +12058,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KBP9A91KulaTacHandguard")
                 .build(MWC.modContext);
 
@@ -12380,7 +12099,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSVintorezHandguard")
                 .build(MWC.modContext);
 
@@ -12421,28 +12139,24 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ASValHandguard")
                 .build(MWC.modContext);
 
         PP1901HandGuardMagpul = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new PP1901HandguardMagpul(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PP1901HandGuardMagpul")
                 .build(MWC.modContext);
 
         PP1901HandGuardB10 = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new PP1901HandguardB10(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PP1901HandGuardB10")
                 .build(MWC.modContext);
 
         PP1901HandGuard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new PP1901Handguard(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PP1901HandGuard")
                 .build(MWC.modContext);
 
@@ -12453,7 +12167,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G36CHandguard")
                 .build(MWC.modContext);
 
@@ -12464,7 +12177,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G36KHandguard")
                 .build(MWC.modContext);
 
@@ -12505,7 +12217,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSVintorezTriRailMount")
                 .build(MWC.modContext);
 
@@ -12546,7 +12257,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK47Dustcover")
                 .build(MWC.modContext);
 
@@ -12587,7 +12297,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DragunovDustCover")
                 .build(MWC.modContext);
 
@@ -12628,7 +12337,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Dragunov98DustCover")
                 .build(MWC.modContext);
 
@@ -12669,7 +12377,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKMDustcover")
                 .build(MWC.modContext);
 
@@ -12710,7 +12417,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK101DustCover")
                 .build(MWC.modContext);
 
@@ -12752,7 +12458,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VeprDustCover")
                 .build(MWC.modContext);
 
@@ -12794,7 +12499,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK15DustCover")
                 .build(MWC.modContext);
 
@@ -12835,7 +12539,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12DustCover")
                 .build(MWC.modContext);
 
@@ -12876,7 +12579,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12BDustCover")
                 .build(MWC.modContext);
 
@@ -12917,7 +12619,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSVintorezDustCover")
                 .build(MWC.modContext);
 
@@ -12958,7 +12659,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VSSMDustCover")
                 .build(MWC.modContext);
 
@@ -12996,7 +12696,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALDustCover")
                 .build(MWC.modContext);
 
@@ -13035,14 +12734,12 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SA58DustCover")
                 .build(MWC.modContext);
 
         RailMountB22 = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.RAILING)
                 .withModel(new RailMountB22(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RailMountB22")
                 .build(MWC.modContext);
 
@@ -13080,7 +12777,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALGrip")
                 .build(MWC.modContext);
 
@@ -13118,7 +12814,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALStock")
                 .build(MWC.modContext);
 
@@ -13156,7 +12851,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALHandguard")
                 .build(MWC.modContext);
 
@@ -13195,7 +12889,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALPARAHandguard")
                 .build(MWC.modContext);
 
@@ -13207,7 +12900,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("B51ScopeMountRail")
                 .build(MWC.modContext);
 
@@ -13218,7 +12910,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PKMBarrel")
                 .build(MWC.modContext);
 
@@ -13229,7 +12920,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PechenegBarrel")
                 .build(MWC.modContext);
 
@@ -13237,7 +12927,6 @@ public class Attachments {
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new B50PKPHandguard(), "gun.png")
                 .withRequiredAttachments(PechenegBarrel)
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("B50PKPHandguard")
                 .build(MWC.modContext);
 
@@ -13245,7 +12934,6 @@ public class Attachments {
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new B50PKMHandguard(), "gun.png")
                 .withRequiredAttachments(PKMBarrel)
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("B50PKMHandguard")
                 .build(MWC.modContext);
 
@@ -13290,7 +12978,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M4FrontSight")
                 .build(MWC.modContext);
 
@@ -13328,7 +13015,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M60FrontSight")
                 .build(MWC.modContext);
 
@@ -13371,7 +13057,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M38FrontSight")
                 .build(MWC.modContext);
 
@@ -13422,7 +13107,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416FrontSight")
                 .build(MWC.modContext);
 
@@ -13474,7 +13158,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MBUSFrontSight")
                 .build(MWC.modContext);
 
@@ -13536,7 +13219,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Leupold")
                 .build(MWC.modContext);
 
@@ -13605,7 +13287,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PSO1")
                 .build(MWC.modContext);
 
@@ -13664,7 +13345,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("okp7")
                 .build(MWC.modContext);
 
@@ -13717,7 +13397,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("fmg9carryhandle")
                 .build(MWC.modContext);
 
@@ -13789,7 +13468,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Reflex")
                 .build(MWC.modContext);
 
@@ -13860,7 +13538,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("BijiaReflex")
                 .build(MWC.modContext);
 
@@ -13938,7 +13615,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MicroReflex")
                 .build(MWC.modContext);
 
@@ -14026,7 +13702,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Acog")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -14100,7 +13775,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Specter")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -14174,7 +13848,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Holographic2")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -14248,7 +13921,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HolographicAlt")
                 .build(MWC.modContext);
 
@@ -14329,7 +14001,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("EotechHybrid2")
                 .build(MWC.modContext);
 
@@ -14401,7 +14072,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VortexSight")
                 .build(MWC.modContext);
 
@@ -14474,7 +14144,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MicroT1")
                 .build(MWC.modContext);
 
@@ -14547,7 +14216,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AimpointCompM2")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -14621,7 +14289,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AimpointCompM5")
                 .build(MWC.modContext);
 
@@ -14688,7 +14355,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RMRsight")
                 .build(MWC.modContext);
 
@@ -14713,7 +14379,6 @@ public class Attachments {
                         Vector556Handguard, DesertEagleSlide, DesertEagleSlideGolden, M1CarbineScoutHandguard, Origin12Grip, HKS20Grip,
                         M14TriRailCover, Mk14TanBody, Mk14SnowBody, Mk14BlackBody, MAS21Mount, APC9Placeholder,
                         MAC21Stock, VSSMDustCover, Dragunov98DustCover)
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("LeupoldDeltapointPro")
                 .build(MWC.modContext);
 
@@ -14786,7 +14451,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Kobra")
                 .build(MWC.modContext);
 
@@ -14859,7 +14523,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KobraGen3")
                 .build(MWC.modContext);
 
@@ -14918,7 +14581,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KobraMount")
                 .build(MWC.modContext);
 
@@ -14975,7 +14637,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HPScope")
                 .build(MWC.modContext);
 
@@ -15046,7 +14707,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("LeupoldRailScope")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -15076,7 +14736,6 @@ public class Attachments {
                 .withCrosshair("LP")
                 .withRenderablePart()
                 .withModel(new PMII525x56P4FLScope(), "s&bpmii525x56.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("S&BPMII5-25x56P4FLScope")
                 .withRotationPoint(-0.12079999459981924F, -1.4240000168085098F, -2.392400065904859F)
                 .build(MWC.modContext);
@@ -15147,7 +14806,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("NightRaiderScope")
                 .build(MWC.modContext);
 
@@ -15203,14 +14861,12 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("m2a1_sight")
                 .build(MWC.modContext);
 
         F2000Handguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new com.paneedah.mwc.models.weapons.F2000Handguard(), "f2000.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("F2000Handguard")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -15218,7 +14874,6 @@ public class Attachments {
         F2000TRHandguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new com.paneedah.mwc.models.weapons.F2000TRHandguard(), "f2000.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("F2000TRHandguard")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -15286,14 +14941,12 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("F2000Scope")
                 .build(MWC.modContext);
 
         F2000FrontSight = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.FRONTSIGHT)
                 .withModel(new F2000FrontSight(), "gun.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("F2000FrontSight")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -15301,7 +14954,6 @@ public class Attachments {
         F2000RearSight = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.SCOPE)
                 .withModel(new F2000RearSight(), "gun.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("F2000RearSight")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -15407,7 +15059,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGscope")
                 .build(MWC.modContext);
 
@@ -15451,7 +15102,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer556x45")
                 .build(MWC.modContext);
 
@@ -15495,7 +15145,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer545x39")
                 .build(MWC.modContext);
 
@@ -15539,7 +15188,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer762x39")
                 .build(MWC.modContext);
 
@@ -15579,7 +15227,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M32Barrel")
                 .build(MWC.modContext);
 
@@ -15619,7 +15266,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870Pump")
                 .build(MWC.modContext);
 
@@ -15659,7 +15305,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870MagpulPump")
                 .build(MWC.modContext);
 
@@ -15699,7 +15344,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870PoliceMagnumPump")
                 .build(MWC.modContext);
 
@@ -15748,7 +15392,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870FABDefensePump")
                 .build(MWC.modContext);
 
@@ -15787,7 +15430,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870Stock")
                 .build(MWC.modContext);
 
@@ -15826,7 +15468,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870PoliceMagnumStock")
                 .build(MWC.modContext);
 
@@ -15879,7 +15520,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870MilSpecStock")
                 .build(MWC.modContext);
 
@@ -15931,7 +15571,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870HK416StockStock")
                 .build(MWC.modContext);
 
@@ -15970,7 +15609,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870SawedGrip")
                 .build(MWC.modContext);
 
@@ -16018,7 +15656,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870Barrel")
                 .build(MWC.modContext);
 
@@ -16066,7 +15703,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870PoliceMagnumBarrel")
                 .build(MWC.modContext);
 
@@ -16114,7 +15750,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Remington870SawedBarrel")
                 .build(MWC.modContext);
 
@@ -16153,7 +15788,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KS23Stock")
                 .build(MWC.modContext);
 
@@ -16192,7 +15826,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KS23RaptorGrip")
                 .build(MWC.modContext);
 
@@ -16231,7 +15864,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KS23MStock")
                 .build(MWC.modContext);
 
@@ -16271,7 +15903,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KS23Barrel")
                 .build(MWC.modContext);
 
@@ -16311,7 +15942,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KS23ExtendedBarrel")
                 .build(MWC.modContext);
 
@@ -16360,7 +15990,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RPKbarrel")
                 .build(MWC.modContext);
 
@@ -16401,7 +16030,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKIron")
                 .build(MWC.modContext);
 
@@ -16442,7 +16070,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12Iron")
                 .build(MWC.modContext);
 
@@ -16487,7 +16114,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SilencerPBS")
                 .build(MWC.modContext);
 
@@ -16534,7 +16160,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer9mm")
                 .build(MWC.modContext);
 
@@ -16579,7 +16204,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SamuraiEdgeSuppressor")
                 .build(MWC.modContext);
 
@@ -16623,7 +16247,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer9x39mm")
                 .build(MWC.modContext);
 
@@ -16667,7 +16290,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("KBP9A91Suppressor")
                 .build(MWC.modContext);
 
@@ -16712,7 +16334,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer45ACP")
                 .build(MWC.modContext);
 
@@ -16752,7 +16373,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("silencer_eabh")
                 .build(MWC.modContext);
 
@@ -16796,7 +16416,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer762x54")
                 .build(MWC.modContext);
 
@@ -16840,7 +16459,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer762x51")
                 .build(MWC.modContext);
 
@@ -16884,7 +16502,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer50BMG")
                 .build(MWC.modContext);
 
@@ -16929,7 +16546,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer556x39")
                 .build(MWC.modContext);
 
@@ -16989,7 +16605,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKMIron")
                 .build(MWC.modContext);
 
@@ -17038,7 +16653,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("TritiumRearSights")
                 .build(MWC.modContext);
 
@@ -17088,7 +16702,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MBUSRearSights")
                 .build(MWC.modContext);
 
@@ -17137,7 +16750,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("HK416RearSights")
                 .build(MWC.modContext);
 
@@ -17175,7 +16787,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("FNFALRearSights")
                 .build(MWC.modContext);
 
@@ -17213,7 +16824,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M16A1RearSight")
                 .build(MWC.modContext);
 
@@ -17253,7 +16863,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("K2C1RearSight")
                 .build(MWC.modContext);
 
@@ -17291,7 +16900,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScorpionRearSight")
                 .build(MWC.modContext);
 
@@ -17329,7 +16937,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("ScorpionFrontSight")
                 .build(MWC.modContext);
 
@@ -17370,7 +16977,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP7IronSights")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -17412,7 +17018,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("MP7IronSightsStanding")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -17451,7 +17056,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Kar98Ksight")
                 .build(MWC.modContext);
 
@@ -17491,7 +17095,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK15ironsight")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -17532,7 +17135,6 @@ public class Attachments {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AK12ironsight")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -17577,7 +17179,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SilencerMP7")
                 .build(MWC.modContext);
 
@@ -17617,7 +17218,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer357")
                 .build(MWC.modContext);
 
@@ -17661,7 +17261,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer57x38")
                 .build(MWC.modContext);
 
@@ -17706,7 +17305,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer12Gauge")
                 .build(MWC.modContext);
 
@@ -17751,7 +17349,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer300AACBlackout")
                 .build(MWC.modContext);
 
@@ -17835,7 +17432,6 @@ public class Attachments {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Silencer65x39")
                 .build(MWC.modContext);
 
@@ -17909,7 +17505,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Laser")
                 .build(MWC.modContext);
 
@@ -17973,7 +17568,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Laser2")
                 .build(MWC.modContext);
 
@@ -18024,7 +17618,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("SCCYCPX2Laser")
                 .build(MWC.modContext);
 
@@ -18079,7 +17672,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("DanWessonLaser")
                 .build(MWC.modContext);
 
@@ -18124,7 +17716,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1928Grip")
                 .build(MWC.modContext);
 
@@ -18169,7 +17760,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("M1A1Grip")
                 .build(MWC.modContext);
 
@@ -18236,7 +17826,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Grip2")
                 .build(MWC.modContext);
 
@@ -18271,7 +17860,6 @@ public class Attachments {
                     i.setRecoil(i.getWeapon()
                 .getRecoil() * 0.6F);
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Grip2Tan")
                 .build(MWC.modContext);
 
@@ -18328,7 +17916,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("JunoGrip")
                 .build(MWC.modContext);
 
@@ -18351,7 +17938,6 @@ public class Attachments {
                     i.setRecoil(i.getWeapon()
                 .getRecoil() * 0.6F);
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("JunoGripTan")
                 .build(MWC.modContext);
 
@@ -18399,7 +17985,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Glock18Cstock")
                 .build(MWC.modContext);
 
@@ -18447,7 +18032,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VP70Stock")
                 .build(MWC.modContext);
 
@@ -18511,7 +18095,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AngledGrip")
                 .build(MWC.modContext);
 
@@ -18541,7 +18124,6 @@ public class Attachments {
                 .getRecoil() * 0.6F);
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AngledGripTan")
                 .build(MWC.modContext);
 
@@ -18613,7 +18195,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("StubbyGrip")
                 .build(MWC.modContext);
 
@@ -18645,7 +18226,6 @@ public class Attachments {
                     i.setRecoil(i.getWeapon()
                 .getRecoil() * 0.6F);
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("StubbyGripTan")
                 .build(MWC.modContext);
 
@@ -18713,7 +18293,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VGrip")
                 .build(MWC.modContext);
 
@@ -18747,7 +18326,6 @@ public class Attachments {
                 .getRecoil() * 0.6F);
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("VGripTan")
                 .build(MWC.modContext);
 
@@ -18809,7 +18387,6 @@ public class Attachments {
                         GL11.glScaled(0.6F, 0.6F, 0.6F);
                     }
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Bipod")
                 .build(MWC.modContext);
 
@@ -18855,7 +18432,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AUGgrip")
                 .build(MWC.modContext);
 
@@ -18867,7 +18443,6 @@ public class Attachments {
                     i.setRecoil(i.getWeapon()
                 .getRecoil() * 0.6F);
                 })
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PechenegBipod")
                 .build(MWC.modContext);
 
@@ -18913,7 +18488,6 @@ public class Attachments {
                     }
                 })
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("USPMatchCompensator")
                 .build(MWC.modContext);
 
@@ -18924,7 +18498,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 1),
                         new CraftingEntry(Blocks.PLANKS, 4))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UziWoodStock")
                 .build(MWC.modContext);
 
@@ -18935,7 +18508,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UziFoldingStockOpened")
                 .build(MWC.modContext);
 
@@ -18946,7 +18518,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UziFoldingStockClosed")
                 .build(MWC.modContext);
 
@@ -18957,7 +18528,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 4),
                         new CraftingEntry(MWCItems.steelIngot, 3))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("UziMLOKHandguard")
                 .build(MWC.modContext);
 
@@ -18965,7 +18535,6 @@ public class Attachments {
                 .withCategory(AttachmentCategory.RECEIVER)
                 .withModel(new InterventionCarryHandle(), "intervention.png")
                 .withRequiredAttachments(InterventionQTDRifleHandguard, InterventionHandguard)
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionCarryHandle")
                 .build(MWC.modContext);
 
@@ -18977,7 +18546,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 1),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionKeystoneHandle")
                 .build(MWC.modContext);
 
@@ -18988,7 +18556,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2),
                         new CraftingEntry(MWCItems.steelIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionHandguard")
                 .build(MWC.modContext);
 
@@ -18999,7 +18566,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2),
                         new CraftingEntry(MWCItems.steelIngot, 3))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionQTDRifleHandguard")
                 .build(MWC.modContext);
 
@@ -19011,14 +18577,12 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 4))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionRailSystemHandguard")
                 .build(MWC.modContext);
 
         InterventionStock = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.STOCK)
                 .withModel(new InterventionStock(), "intervention.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionStock")
                 .build(MWC.modContext);
 
@@ -19029,7 +18593,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 3))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionFJXLUX7Stock")
                 .build(MWC.modContext);
 
@@ -19040,28 +18603,24 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 1),
                         new CraftingEntry(MWCItems.steelIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("InterventionKiloTaCStock")
                 .build(MWC.modContext);
 
         Saiga12Handguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
                 .withModel(new Saiga12Handguard(), "gunmetaltexture.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Saiga12Handguard")
                 .build(MWC.modContext);
 
         Saiga12Stock = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.STOCK)
                 .withModel(new Saiga12Stock(), "gunmetaltexture.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Saiga12Stock")
                 .build(MWC.modContext);
 
         Saiga12Grip = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.BACKGRIP)
                 .withModel(new Saiga12Grip(), "gunmetaltexture.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Saiga12Grip")
                 .withRenderablePart()
                 .build(MWC.modContext);
@@ -19073,7 +18632,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G36CStock")
                 .build(MWC.modContext);
 
@@ -19084,7 +18642,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G36KVStock")
                 .build(MWC.modContext);
 
@@ -19095,7 +18652,6 @@ public class Attachments {
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 3),
                         new CraftingEntry(MWCItems.steelIngot, 1))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("G36CMGStock")
                 .build(MWC.modContext);
 
@@ -19105,7 +18661,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PKMGrip")
                 .build(MWC.modContext);
 
@@ -19115,7 +18670,6 @@ public class Attachments {
                 .withModernRecipe(
                         CraftingGroup.ATTACHMENT_MODIFICATION,
                         new CraftingEntry(MWCItems.gunmetalIngot, 2))
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RK3PGrip")
                 .build(MWC.modContext);
 
@@ -19123,7 +18677,6 @@ public class Attachments {
                 .withCategory(AttachmentCategory.STOCK)
                 .withModel(new PKMStock(), "pkm.png")
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PKMStock")
                 .build(MWC.modContext);
 
@@ -19131,35 +18684,30 @@ public class Attachments {
                 .withCategory(AttachmentCategory.STOCK)
                 .withModel(new PT2Stock(), "pkm.png")
                 .withRenderablePart()
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PT2Stock")
                 .build(MWC.modContext);
 
         DeltaTekMPIFlashhider = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.SILENCER)
                 .withModel(new DeltaTekMPIFlashHider(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("Delta_Tek_MPI_flashhider")
                 .build(MWC.modContext);
 
         AKSStock = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.STOCK)
                 .withModel(new AKSStock(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("AKSStock")
                 .build(MWC.modContext);
 
         PP1901Grip = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.BACKGRIP)
                 .withModel(new PP1901Grip(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("PP1901Grip")
                 .build(MWC.modContext);
 
         RK9Grip = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.BACKGRIP)
                 .withModel(new RK9Grip(), "pp1901.png")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
                 .withName("RK9Grip")
                 .build(MWC.modContext);
     }

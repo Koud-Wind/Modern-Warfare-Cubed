@@ -40,7 +40,7 @@ public class SSG08Factory implements GunFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.08f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
          
          .withScreenShaking(RenderableState.SHOOTING, 

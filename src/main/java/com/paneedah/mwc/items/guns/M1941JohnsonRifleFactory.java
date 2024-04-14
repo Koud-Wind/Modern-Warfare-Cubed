@@ -41,8 +41,7 @@ public class M1941JohnsonRifleFactory {
         .withFlashOffsetY(() -> 0.12f)
 //        .withShellCasingSideOffset(0f)
         .withShellCasingVerticalOffset(-0.1f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 3f, // x 
                 2f, // y

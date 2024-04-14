@@ -42,7 +42,6 @@ public class Beowulf50CalFactory implements GunFactory {
                 .withShellCasingForwardOffset(0.05f)
                 .withShellCasingVerticalOffset(-0.03f)
 
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         22.5,

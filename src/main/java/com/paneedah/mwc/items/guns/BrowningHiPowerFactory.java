@@ -42,8 +42,7 @@ public class BrowningHiPowerFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.12f)
 //      .withShellCasingForwardOffset(0.001f)
         .withInaccuracy(3)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  4f, // x 
                  0.1f, // y

@@ -40,7 +40,6 @@ public class MP7Factory {
                 .withFlashOffsetX(() -> 0.16f)
                 .withFlashOffsetY(() -> 0.23f)
                 .withInaccuracy(2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

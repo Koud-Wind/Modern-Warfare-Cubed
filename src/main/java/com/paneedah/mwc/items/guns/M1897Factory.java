@@ -47,14 +47,13 @@ public class M1897Factory implements GunFactory {
 		.withFlashScale(() -> 0.8f)
 		.withFlashOffsetX(() -> 0.08f)
 		.withFlashOffsetY(() -> 0.13f)
-		.withCreativeTab(MWC.WEAPONS_TAB)
-		 
+				 
 		 .withScreenShaking(RenderableState.SHOOTING, 
 	                5f, // x 
 	                1f, // y
 	                10f) // z
 		 
-	        .withCreativeTab(MWC.WEAPONS_TAB)
+	
 
 	        .withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
 	            if(model instanceof AKMiron1) {

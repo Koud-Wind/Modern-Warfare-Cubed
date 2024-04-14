@@ -41,7 +41,6 @@ public class AK74Factory {
                 .withFlashOffsetX(() -> 0.12f)
                 .withFlashOffsetY(() -> 0.16f)
                 .withShellCasingVerticalOffset(-0.05f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

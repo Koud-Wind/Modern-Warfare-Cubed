@@ -43,8 +43,7 @@ public class Remington700Factory implements GunFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.14f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  2f, // x 
                  6f, // y

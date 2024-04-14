@@ -41,7 +41,6 @@ public class M9A1Factory implements GunFactory {
                 .withFlashOffsetX(() -> 0.13f)
                 .withFlashOffsetY(() -> 0.14f)
                 .withInaccuracy(2)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         45.0,

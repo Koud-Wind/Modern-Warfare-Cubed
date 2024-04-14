@@ -34,7 +34,6 @@ public class MP40Factory {
                 .withFlashOffsetX(() -> 0.1f)
                 .withFlashOffsetY(() -> 0.13f)
                 .withInaccuracy(2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

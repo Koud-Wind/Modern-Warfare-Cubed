@@ -41,7 +41,6 @@ public class AK12Factory {
                 .withFlashOffsetY(() -> 0.16f)
                 .withShellCasingVerticalOffset(-0.05f)
                 .withInaccuracy(1f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

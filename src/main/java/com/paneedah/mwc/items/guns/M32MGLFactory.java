@@ -47,7 +47,7 @@ public class M32MGLFactory implements GunFactory {
                 3f, // y
                 2f) // z
         
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         .withCompatibleAttachment(Bullets.Grenade40mm, (model) -> {})
         .withCompatibleAttachment(Attachments.Placeholder, true, (model) -> {

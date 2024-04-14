@@ -45,7 +45,7 @@ public class SupernovaFactory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.05f)
         .withFlashOffsetY(() -> 0.12f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         
         .withScreenShaking(RenderableState.SHOOTING, 

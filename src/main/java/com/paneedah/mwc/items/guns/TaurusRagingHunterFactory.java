@@ -35,8 +35,7 @@ public class TaurusRagingHunterFactory implements GunFactory {
 				.withFlashOffsetY(() -> 0.15f)
 				.withInaccuracy(2)
 				.withShellCasingEjectEnabled(false)
-				.withCreativeTab(MWC.WEAPONS_TAB)
-				.useNewSystem()
+								.useNewSystem()
 				.withRecoilParam(new RecoilParam(
 						85.0,
 						13.125,

@@ -37,8 +37,7 @@ public class KedrFactory {
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.18f)
         .withInaccuracy(2f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 2f, // x 
                 0.1f, // y

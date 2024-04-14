@@ -32,7 +32,6 @@ public class M60E4Factory {
                 .withFlashOffsetX(() -> 0.1f)
                 .withFlashOffsetY(() -> 0.16f)
                 .withInaccuracy(1f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         25.0,

@@ -41,7 +41,6 @@ public class PKMFactory {
                 .withShellCasingEjectEnabled(false)
                 .withInaccuracy(1f)
                 .hasFlashPedals()
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         25.0,

@@ -38,7 +38,6 @@ public class FamasF1Factory {
                 .withFlashScale(() -> 0.5f)
                 .withFlashOffsetX(() -> 0.09f)
                 .withFlashOffsetY(() -> 0.2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

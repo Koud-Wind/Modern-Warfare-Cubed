@@ -39,8 +39,7 @@ public class G2ContenderFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.09f)
         
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 3f, // x 
                 2f, // y

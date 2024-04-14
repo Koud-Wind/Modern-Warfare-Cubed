@@ -42,8 +42,7 @@ public class DSR1Factory implements GunFactory {
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.08f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 3f, // x 
                 2f, // y

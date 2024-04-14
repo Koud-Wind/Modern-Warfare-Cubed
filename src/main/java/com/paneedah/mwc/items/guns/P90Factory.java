@@ -41,7 +41,6 @@ public class P90Factory {
                 .withFlashOffsetY(() -> 0.27f)
                 .withShellCasingEjectEnabled(false)
                 .withInaccuracy(2f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

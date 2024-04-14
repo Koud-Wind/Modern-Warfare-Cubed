@@ -37,7 +37,6 @@ public class Type20Factory implements GunFactory {
                 .withFlashScale(() -> 0.6f)
                 .withFlashOffsetX(() -> 0.14f)
                 .withFlashOffsetY(() -> 0.16f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,
@@ -60,7 +59,6 @@ public class Type20Factory implements GunFactory {
                         CraftingEntry(MWCItems.gunmetalPlate, 12), new
                         CraftingEntry(MWCItems.steelIngot, 3))
 
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
                 .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
                 .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)

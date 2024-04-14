@@ -37,8 +37,7 @@ public class G43GewehrFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.13f)
         .withInaccuracy(1f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  3f, // x 
                  2f, // y

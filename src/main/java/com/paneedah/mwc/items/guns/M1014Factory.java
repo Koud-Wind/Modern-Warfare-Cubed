@@ -51,8 +51,7 @@ public class M1014Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.11f)
         .withShellCasingModel(new Shotgun12Gauge())
         .withShellCasingModelTexture("shotgun12gauge")
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 5f, // x 
                 1f, // y

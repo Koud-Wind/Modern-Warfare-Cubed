@@ -34,7 +34,6 @@ public class M134Factory implements GunFactory {
                 .withInaccuracy(2.5f)
                 .hasFlashPedals()
                 .withBleedingCoefficient(7f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         10.0,

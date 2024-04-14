@@ -30,7 +30,6 @@ public class M79Factory implements GunFactory {
                 .withFlashOffsetY(() -> 0.101f)
                 .withShellCasingEjectEnabled(false)
                 .withDestroyingBlocks(false)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         10.0,

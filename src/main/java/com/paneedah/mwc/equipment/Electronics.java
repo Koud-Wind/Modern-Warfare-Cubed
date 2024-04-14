@@ -23,7 +23,6 @@ public class Electronics {
                     GL11.glScalef(scale, scale / MWC.modContext.getAspectRatio(), scale);
                     GL11.glTranslatef(-0.12f, 0.56f, 0.01f);
                 })
-                .withCreativeTab(MWC.EQUIPMENT_TAB)
                 .withCrosshair("HP")
                 .withModel(new TabletModel(), "IPad.png")
                 //.withModel(new com.paneedah.mwc.models.LPscope(), "HP2.png")
@@ -83,7 +82,6 @@ public class Electronics {
         new ItemWirelessCamera.Builder()
 
         .withName("wcam")
-        .withCreativeTab(MWC.EQUIPMENT_TAB)
         .withModel(new CameraModel(), "gun")
         .withFirstPersonPositioning(() -> {
             // GL11.glTranslatef(0.5F, -1.5F, -0.7F);
@@ -146,7 +144,6 @@ public class Electronics {
             GL11.glScalef(scale, scale / MWC.modContext.getAspectRatio(), scale);
             GL11.glTranslatef(0.017f, 0.16f, 0.17f);
         })
-        .withCreativeTab(MWC.EQUIPMENT_TAB)
         .withCrosshair("HP")
         .withModel(new GasDetector(), "gasdetector.png")
         .withFirstPersonPositioning(() -> {

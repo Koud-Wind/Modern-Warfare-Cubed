@@ -40,7 +40,6 @@ public class MP443Factory implements GunFactory {
                 .withFlashOffsetX(() -> 0.11f)
                 .withFlashOffsetY(() -> 0.13f)
                 .withInaccuracy(2)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         45.0,

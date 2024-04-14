@@ -41,8 +41,7 @@ public class Kar98KFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.16f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-        
+
         .withScreenShaking(RenderableState.SHOOTING, 
                 3f, // x 
                 2f, // y

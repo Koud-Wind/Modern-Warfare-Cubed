@@ -49,7 +49,7 @@ public class KragJorgensenFactory implements GunFactory {
                 2f, // y
                 7f) // z
         
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         .withCompatibleAttachment(AuxiliaryAttachments.KragAction1, true, (model) -> {
             if(model instanceof KragJorgensenAction1) {

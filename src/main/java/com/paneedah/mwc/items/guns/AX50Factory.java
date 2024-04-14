@@ -39,7 +39,6 @@ public class AX50Factory implements GunFactory {
                 .withFlashOffsetX(() -> 0.1f)
                 .withFlashOffsetY(() -> 0.14f)
                 .withShellCasingEjectEnabled(false)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         85.0,

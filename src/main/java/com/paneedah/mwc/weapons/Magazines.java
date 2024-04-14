@@ -153,7 +153,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("FuelCell")
                 .withModel(new ChainsawFuel(), "ChainsawFuel.png")
                 .withMaxStackSize(6)
@@ -182,7 +181,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("NinthSinMag")
 
                 .withCreativeTab(MWC.AmmoTab)
@@ -214,7 +212,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("BrenMag")
                 .withModel(new BrenMkIIMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -244,7 +241,6 @@ public class Magazines {
                     GL11.glRotatef(10F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("JohnsonMAG")
                 .withModel(new JohnsonLMGMAG(), "gun.png")
                 .withMaxStackSize(6)
@@ -274,7 +270,6 @@ public class Magazines {
                     GL11.glRotatef(-30F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("VectorMag")
                 .withRotationPoint(-0.12000000357627871F, 1.0400000309944155F, -2.0400000607967383F)
                 .withModel(new KrissVectorMagazine(), "krissvector.png")
@@ -303,7 +298,6 @@ public class Magazines {
                     GL11.glRotatef(-30F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("VectorDrumMag")
                 .withRotationPoint(-0.12000000357627871F, 1.0400000309944155F, -2.0400000607967383F)
                 .withModel(new KrissVectorMagazineDrum(), "krissvector.png")
@@ -332,7 +326,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M4A1Mag_2")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new M4A1Mag(), "M4A1Magazine.png")
@@ -364,7 +357,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("NGSWR_Mag")
                 .withRotationPoint(-0.16000000476837162F, -0.44000001311302195F, -1.4800000441074375F)
                 .withModel(new NGSWRMag(), "ngswr.png")
@@ -392,7 +384,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("FamasF1Mag")
                 .withRotationPoint(-0.12000000357627871F, 1.0400000309944155F, -2.0400000607967383F)
                 .withRequiredAttachments(Attachments.FamasPlaceholder, Attachments.Vector556Handguard)
@@ -421,7 +412,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("BeowulfMag")
                 .withModel(new Beowulf50CalMagazine(), "Beowulf50CalMagazine.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver,
@@ -451,7 +441,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AUG9mmMag")
                 .withModel(new AUG9mmMag(), "aug.png")
                 .withRequiredAttachments(Attachments.AUGParaConversion)
@@ -482,7 +471,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("S710TricunMag")
                 .withModel(new S710TricunMag(), "S710Tricun.png")
                 .withRequiredAttachments(Attachments.S710Receiver)
@@ -513,7 +501,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M134Mag")
                 .withModel(new M134Mag(), "m134.png")
                 .withMaxStackSize(6)
@@ -543,7 +530,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M60Mag")
                 .withModel(new M60Mag(), "m60.png")
                 .withMaxStackSize(6)
@@ -573,7 +559,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M249Mag")
                 .withRotationPoint(0.8812000082910061F, 0.8648000418066975F, -1.40640004143715F)
                 .withModel(new M249Mag(), "m249.png")
@@ -586,7 +571,6 @@ public class Magazines {
         Magazines.PKMMag = new ItemMagazine.Builder()
                 .withCapacity(120)
                 .withCompatibleBullet(Bullets.Bullet762x54)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("PKMMag")
                 .withRotationPoint(0.8812000082910061F, 0.8648000418066975F, -1.40640004143715F)
                 .withModel(new PKMMag(), "pkm.png")
@@ -617,7 +601,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("StonerMag")
                 .withModel(new StonerA1MAG(), "m249.png")
                 .withMaxStackSize(6)
@@ -647,7 +630,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("HoneyBadgerMag_2")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new M4A1Mag(), "M4A1Mag.png")
@@ -676,7 +658,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M38Mag_2")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new M38Mag(), "M38Mag.png")
@@ -709,7 +690,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("socom_mag")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new SOCOM_Mag(), "socom_mag.png")
@@ -741,7 +721,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("hk417_mag")
                 .withModel(new HK417Mag(), "HK417mag.png")
                 .withRequiredAttachments(Attachments.HK417Receiver, Attachments.HK417ReceiverTan)
@@ -769,7 +748,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("C8Mag")
                 .withModel(new C8Mag(), "c8mag.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver,
@@ -798,7 +776,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Stanag50")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new Stanag50(), "gun.png")
@@ -831,7 +808,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Stanag60")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new Stanag60(), "gun.png")
@@ -863,7 +839,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Stanag100")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new NATODrum100(), "betacmag.png")
@@ -895,7 +870,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("G36CMag_2")
                 .withRotationPoint(-0.040000001192092904F, -0.28000000834465033F, -1.4400000429153446F)
                 .withModel(new G36CMag(), "g36c.png")
@@ -923,7 +897,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK101Mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK101Mag(), "ak101mag.png")
@@ -951,7 +924,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK74Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK74Mag(), "ak74mag.png")
@@ -979,7 +951,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK74Mag60")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK60Mag(), "gun.png")
@@ -1007,7 +978,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK60Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK60Mag(), "gun.png")
@@ -1035,7 +1005,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK15Mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK15Mag(), "gun.png")
@@ -1063,7 +1032,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK12Mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK15Mag(), "gun.png")
@@ -1091,7 +1059,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK75Mag545x39")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new Mag75rnd(), "gun.png")
@@ -1119,7 +1086,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK12Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.36000001072883614F, -1.9200000572204599F)
                 .withModel(new AK12Magazine(), "gun.png")
@@ -1147,7 +1113,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK47PMAGTan")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AK15Mag(), "tan.png")
@@ -1175,7 +1140,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK47Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.880000056028367F)
                 .withModel(new Magazine762x39(), "ak47mag.png")
@@ -1203,7 +1167,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK50Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new Drum50AK(), "gun.png")
@@ -1231,7 +1194,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK75Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new Mag75rnd(), "gun.png")
@@ -1259,7 +1221,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AK100Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.8800000560283665F)
                 .withModel(new AKDrum100(), "gun.png")
@@ -1287,7 +1248,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("DragunovMag")
                 .withRotationPoint(-0.12000000357627871F, 0.28000000834465033F, -1.880000056028367F)
                 .withModel(new DragunovMag(), "dragunov.png")
@@ -1315,7 +1275,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("SaigaMag_2")
                 .withModel(new Saiga12Mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -1324,7 +1283,6 @@ public class Magazines {
         Magazines.SaigaMagExtended = new ItemMagazine.Builder()
                 .withCapacity(12)
                 .withCompatibleBullet(Bullets.Shotgun12Guage)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("SaigaMag_3")
                 .withModel(new Saiga12ExtenMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -1351,7 +1309,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Origin12Mag")
                 .withRotationPoint(-0.12000000357627871F, 1.0000000298023226F, -1.9200000572204607F)
                 .withModel(new Origin12Mag(), "Origin12.png")
@@ -1379,7 +1336,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Origin12DrumMag")
                 .withRotationPoint(-0.12000000357627871F, 1.0000000298023226F, -1.9200000572204607F)
                 .withModel(new Origin12DrumMag(), "Origin12DrumMag.png")
@@ -1407,7 +1363,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M9Mag_2")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new M9A1mag(), "m9a1.png")
@@ -1436,7 +1391,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("FiveSevenMag")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new FiveSevenMagazine(), "fiveseven.png")
@@ -1464,7 +1418,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("SamuraiEdgeMag")
                 .withModel(new M9A1mag(), "m9a1.png")
                 .withRequiredAttachments(Attachments.SamuraiEdgeBody)
@@ -1492,7 +1445,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("sccycpx2mag")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new SCCYCPX2Mag(), "sccycpx2.png")
@@ -1520,7 +1472,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("sccycpx2magext")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new SCCYCPX2MagExt(), "sccycpx2.png")
@@ -1530,7 +1481,6 @@ public class Magazines {
         Magazines.PP1901Mag = new ItemMagazine.Builder()
                 .withCapacity(30)
                 .withCompatibleBullet(Bullets.Bullet9x19mm)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("PP1901Mag")
                 .withModel(new PP1901Mag(), "pp1901.png")
                 .withMaxStackSize(6)
@@ -1557,7 +1507,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("DesertEagleMag")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new DesertEagleMag(), "gun.png")
@@ -1588,7 +1537,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M9Mag30")
                 .withModel(new M9Mag30(), "gun.png")
                 .withMaxStackSize(6)
@@ -1615,7 +1563,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M9DrumMag")
                 .withModel(new M9DrumMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -1642,7 +1589,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MP443Mag_2")
                 .withRotationPoint(-0.20000000596046452F, 0.48000001430511485F, 0.040000001192092904F)
                 .withModel(new MP443Magazine(), "MP443.png")
@@ -1652,7 +1598,6 @@ public class Magazines {
         Magazines.M1911Mag = new ItemMagazine.Builder()
                 .withCapacity(7)
                 .withCompatibleBullet(Bullets.Bullet45ACP)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M1911Mag")
                 .withModel(new M1911Mag(), "m1911.png")
                 .withMaxStackSize(6)
@@ -1662,7 +1607,6 @@ public class Magazines {
         Magazines.M1911Mag15 = new ItemMagazine.Builder()
                 .withCapacity(15)
                 .withCompatibleBullet(Bullets.Bullet45ACP)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M1911Mag_2")
                 .withModel(new M1911Mag15(), "m1911.png")
                 .withMaxStackSize(6)
@@ -1690,7 +1634,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M17Mag")
                 .withRotationPoint(-0.16000000476837162F, 0.5600000166893007F, 0.040000001192092904F)
                 .withModel(new M17Mag(), "m17.png")
@@ -1718,7 +1661,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MakarovMag")
                 .withRequiredAttachments(Attachments.MakarovSlide, Attachments.MakarovPBBody)
                 .withModel(new MakarovMag(), "makarovpm.png")
@@ -1746,7 +1688,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("USP45Mag")
                 .withModel(new USP45Mag(), "USP45.png")
                 .withMaxStackSize(6)
@@ -1773,7 +1714,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("HiPowerMag")
                 .withModel(new GlockMagazine(), "gun.png")
                 .withMaxStackSize(6)
@@ -1803,7 +1743,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("FrommerStopMag")
                 .withModel(new M9A1mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -1833,7 +1772,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("APSMag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.48000001430511485F, 0)
                 .withModel(new APSmag(), "aps.png")
@@ -1861,7 +1799,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("GlockMag13")
                 .withModel(new Glock13rndMagazine(), "glock18c.png")
                 .withMaxStackSize(6)
@@ -1888,7 +1825,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Glock18Cmag_2")
                 .withModel(new Glock18Cmag(), "glock18c.png")
                 .withMaxStackSize(6)
@@ -1915,7 +1851,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("GlockMag50")
                 .withModel(new M9DrumMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -1942,7 +1877,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AS50Mag_2")
                 .withModel(new AS50mag(), "as50.png")
                 .withMaxStackSize(6)
@@ -1972,7 +1906,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M82Mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.40000001192092904F, -2.4800000739097605F)
                 .withModel(new M82Mag(), "m82.png")
@@ -2000,7 +1933,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("NTW20Mag")
                 .withModel(new NTW20MAG(), "gun.png")
 
@@ -2032,7 +1964,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("KBP9A91Mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.36000001072883614F, -1.9600000584125523F)
                 .withModel(new KBP9A91Mag(), "kbp9a91.png")
@@ -2060,7 +1991,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("KedrMag_2")
                 .withModel(new KedrMag(), "kedr.png")
                 .withMaxStackSize(6)
@@ -2087,7 +2017,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("L96A1Mag_2")
                 .withModel(new L115Mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -2117,7 +2046,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("DSR1Mag")
                 .withModel(new DSR1Mag(), "dsr1.png")
                 .withMaxStackSize(6)
@@ -2147,7 +2075,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("DSR1MagExt")
                 .withModel(new DSR1MagExt(), "dsr1.png")
                 .withMaxStackSize(6)
@@ -2177,7 +2104,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("InterventionMag")
                 .withModel(new InterventionMag(), "intervention.png")
                 .withMaxStackSize(6)
@@ -2186,7 +2112,6 @@ public class Magazines {
         Magazines.InterventionMagExtend = new ItemMagazine.Builder()
                 .withCapacity(10)
                 .withCompatibleBullet(Bullets.Bullet408CT)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("InterventionMagExtend")
                 .withModel(new InterventionMagExtend(), "intervention.png")
                 .withMaxStackSize(6)
@@ -2214,7 +2139,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M40A6Mag_2")
                 .withModel(new M40A6Mag(), "gunwerkshamr.png")
                 .withMaxStackSize(6)
@@ -2226,7 +2150,6 @@ public class Magazines {
         Magazines.AX50Mag = new ItemMagazine.Builder()
                 .withCapacity(5)
                 .withCompatibleBullet(Bullets.Bullet50BMG)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("AX50Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.40000001192092904F, -2.4800000739097605F)
                 .withModel(new AX50Mag(), "ax50.png")
@@ -2254,7 +2177,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("R700Mag")
                 .withModel(new Remington700Mag(), "remington700.png")
                 .withMaxStackSize(6)
@@ -2284,7 +2206,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("R700Mag10rnd")
                 .withModel(new Remington700Mag10rnd(), "remington700.png")
                 .withMaxStackSize(6)
@@ -2314,7 +2235,6 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("SSG08Mag")
                 .withModel(new SSG08Magazine(), "gun.png")
                 .withMaxStackSize(6)
@@ -2326,7 +2246,6 @@ public class Magazines {
         Magazines.HecateIIMag = new ItemMagazine.Builder()
                 .withCapacity(7)
                 .withCompatibleBullet(Bullets.Bullet50BMG)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("HecateIIMag")
                 .withModel(new PGMHecateIIMag(), "pgmhecateii.png")
                 .withMaxStackSize(6)
@@ -2356,7 +2275,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M110Mag_2")
                 .withModel(new M110Mag(), "m110.png")
                 .withMaxStackSize(6)
@@ -2383,7 +2301,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Z10Mag")
                 .withRotationPoint(-0.1F, 0, -1.4000000000000001F)
                 .withModel(new Z10Mag(), "z10.png")
@@ -2411,7 +2328,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M1928Mag")
                 .withModel(new M1928ThompsonMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -2441,7 +2357,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M1A1Mag")
                 .withModel(new M1A1mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -2471,7 +2386,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M712mag_2")
                 .withModel(new M712mag(), "m712.png")
                 .withMaxStackSize(6)
@@ -2501,7 +2415,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MG42Mag_2")
                 .withModel(new MG42mag(), "mg42mag.png")
                 .withMaxStackSize(6)
@@ -2531,7 +2444,6 @@ public class Magazines {
                     GL11.glRotatef(-50F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("DP28Mag")
                 .withModel(new DP28Mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -2561,7 +2473,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M1CarbineMag")
                 .withModel(new Mk14EBRmag(), "m14dmr.png")
                 .withMaxStackSize(6)
@@ -2591,7 +2502,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("FNFALMag")
                 .withRotationPoint(-0.12000000357627871F, -0.6800000202655794F, -2.36000007033348F)
                 .withModel(new FNFALMag(), "fnfal.png")
@@ -2619,7 +2529,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("G3Mag")
                 .withRotationPoint(0, -0.6400000190734865F, -1.4000000417232517F)
                 .withModel(new G3Mag(), "G3.png")
@@ -2647,7 +2556,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Mk14EBRmag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.5600000166893007F, -3.000000089406967F)
                 .withModel(new Mk14EBRmag(), "m14dmr.png")
@@ -2675,7 +2583,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("M14Drum50")
                 .withRotationPoint(-0.12000000357627871F, 0.5600000166893007F, -3.000000089406967F)
                 .withModel(new M14Drum50(), "gun.png")
@@ -2703,7 +2610,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MP40Mag_2")
                 .withModel(new MP40MagACTUAL(), "mp40.png")
                 .withMaxStackSize(6)
@@ -2733,7 +2639,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MP5A5Mag")
                 .withRotationPoint(0, 0.20000000596046452F, -1.5600000464916233F)
                 .withModel(new HKMP5Mag(), "mp5.png")
@@ -2761,7 +2666,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("HK50Drum")
                 .withRotationPoint(0, 0.20000000596046452F, -1.5600000464916233F)
                 .withModel(new HK50Drum(), "mp5.png")
@@ -2789,7 +2693,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MP7Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.6400000190734865F, -0.08000000238418581F)
                 .withModel(new MP7Mag(), "mp7.png")
@@ -2818,7 +2721,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MP7Mag20")
                 .withRotationPoint(-0.12000000357627871F, 0.6400000190734865F, -0.08000000238418581F)
                 .withModel(new MP7Mag20(), "mp7.png")
@@ -2847,7 +2749,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("UMP45Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.32000000953674324F, -1.280000038146973F)
                 .withRequiredAttachments(Attachments.UMP45Receiver)
@@ -2876,7 +2777,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("UMP9Mag")
                 .withRotationPoint(-0.12000000357627871F, 0.32000000953674324F, -1.280000038146973F)
                 .withRequiredAttachments(Attachments.UMP9Receiver)
@@ -2905,7 +2805,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MPXMag")
                 .withRotationPoint(-0.040000001192092904F, 0.44000001311302195F, -1.24000003695488F)
                 .withModel(new MPXMag(), "mpx.png")
@@ -2933,7 +2832,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("APC9Mag")
                 .withModel(new APC9Mag(), "apc9.png")
                 .withMaxStackSize(6)
@@ -2963,7 +2861,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("ScorpionMag")
                 .withRotationPoint(-0.12000000357627871F, 1.0000000298023226F, -1.680000050067902F)
                 .withModel(new ScorpionEVO3A1Magazine(), "scorpionevo3a1.png")
@@ -2991,7 +2888,6 @@ public class Magazines {
                     GL11.glRotatef(5F, 0f, 0f, 1f);
                     GL11.glScaled(0.5F, 0.5F, 0.5f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("P90Mag")
                 .withRotationPoint(-0.12000000357627871F, -1.1200000333786013F, 1.8400000548362736F)
                 .withModel(new P90Mag(), "p90.png")
@@ -3020,7 +2916,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("P90TerminatorMag")
                 .withModel(new M4A1Mag(), "M4A1Mag.png")
                 .withRequiredAttachments(Attachments.P90Terminator)
@@ -3051,7 +2946,6 @@ public class Magazines {
                     GL11.glRotatef(5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("MAC10Mag")
                 .withRotationPoint(0.08000000238418581F, 0.5200000154972078F, -0.5600000166893007F)
                 .withModel(new MAC10Mag(), "mac10.png")
@@ -3079,7 +2973,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.5F, 0.5F, 0.5f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("G11Mag")
                 .withRotationPoint(-0.12000000357627871F, -1.5200000452995304F, -3.8800001156330115F)
                 .withModel(new G11Mag(), "gun.png")
@@ -3110,7 +3003,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.0F, 1.0F, 1.0f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("ScarHMag_2")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new ScarHMag(), "scarh.png")
@@ -3138,7 +3030,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Scar40Mag")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new Scar40Mag(), "gun.png")
@@ -3166,7 +3057,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("Scar60Mag")
                 .withRotationPoint(-0.16000000476837162F, -0.16000000476837162F, -1.5200000452995304F)
                 .withModel(new Stanag50(), "gun.png")
@@ -3194,7 +3084,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("VSSVintorezMag_2")
                 .withRotationPoint(-0.040000001192092904F, -0.28000000834465033F, -1.3600000405311587F)
                 .withModel(new VSSVintorezMag(), "vssvintorez.png")
@@ -3222,7 +3111,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("ASValMag")
                 .withRotationPoint(-0.040000001192092904F, -0.28000000834465033F, -1.3600000405311587F)
                 .withModel(new ASValMag(), "vssvintorez.png")
@@ -3250,7 +3138,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("STG44Mag_2")
                 .withModel(new STG44Mag(), "gun.png")
                 .withMaxStackSize(6)
@@ -3280,7 +3167,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("g43_gewehr_mag")
                 .withModel(new G43GewehrMag(), "gun.png")
                 .withMaxStackSize(6)
@@ -3310,7 +3196,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("SV98Mag_2")
                 .withModel(new SV98Mag(), "sv98.png")
                 .withMaxStackSize(6)
@@ -3340,7 +3225,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("UziMag_2")
                 .withRotationPoint(-0.040000001192092904F, 0.7200000214576723F, -0.40000001192092904F)
                 .withModel(new UziMag(), "uzi.png")
@@ -3353,7 +3237,6 @@ public class Magazines {
         Magazines.UziMag45 = new ItemMagazine.Builder()
                 .withCapacity(45)
                 .withCompatibleBullet(Bullets.Bullet9x19mm)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("UziMag_3")
                 .withRotationPoint(-0.040000001192092904F, 0.7200000214576723F, -0.40000001192092904F)
                 .withModel(new UziMag45(), "uzi.png")
@@ -3366,7 +3249,6 @@ public class Magazines {
         Magazines.UziDrumMag = new ItemMagazine.Builder()
                 .withCapacity(60)
                 .withCompatibleBullet(Bullets.Bullet9x19mm)
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("UziMag_4")
                 .withRotationPoint(-0.040000001192092904F, 0.7200000214576723F, -0.40000001192092904F)
                 .withModel(new UziDrumMag(), "uzi.png")
@@ -3398,7 +3280,6 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withCreativeTab(MWC.AMMUNITION_AND_MAGAZINES_TAB)
                 .withName("VP70mag_2")
                 .withRotationPoint(-0.12000000357627871F, 0.24000000715255743F, 0.08000000238418581F)
                 .withModel(new VP70mag(), "gun.png")

@@ -45,7 +45,6 @@ public class Origin12Factory {
                 .withShellCasingModelTexture("shotgun12gauge")
                 .withInaccuracy(12f)
                 .withPellets(10)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         32.5,

@@ -40,7 +40,6 @@ public class APSFactory implements GunFactory {
                 .withFlashOffsetX(() -> 0.12f)
                 .withFlashOffsetY(() -> 0.19f)
                 .withInaccuracy(3)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         45.0,

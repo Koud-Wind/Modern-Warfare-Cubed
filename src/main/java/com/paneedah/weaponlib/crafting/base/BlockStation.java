@@ -37,7 +37,6 @@ public abstract class BlockStation extends Block {
 		setHardness(2.0f);
 		setTranslationKey(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MISC);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 	

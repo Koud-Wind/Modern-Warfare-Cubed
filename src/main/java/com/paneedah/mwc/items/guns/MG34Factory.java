@@ -39,8 +39,7 @@ public class MG34Factory {
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.14f)
         .withInaccuracy(1f)
-        .withCreativeTab(MWC.WEAPONS_TAB)
-         
+ 
          .withScreenShaking(RenderableState.SHOOTING, 
                  3f, // x 
                  2f, // y

@@ -43,7 +43,7 @@ public class SW500MagnumFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.2f)
         .withInaccuracy(2)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         
         .withScreenShaking(RenderableState.SHOOTING, 

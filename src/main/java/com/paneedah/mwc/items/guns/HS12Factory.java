@@ -46,7 +46,7 @@ public class HS12Factory implements GunFactory {
                  1f, // y
                  10f) // z
          
-        .withCreativeTab(MWC.WEAPONS_TAB)
+
 
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         .withCompatibleAttachment(Attachments.Placeholder, true, (model) -> {

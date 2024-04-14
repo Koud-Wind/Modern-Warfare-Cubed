@@ -37,7 +37,6 @@ public class M1911Factory implements GunFactory {
                 .withFlashOffsetY(() -> 0.12f)
                 .withInaccuracy(1)
                 .useNewSystem()
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .withScreenShaking(RenderableState.SHOOTING,
                         4f,
                         0.1f,

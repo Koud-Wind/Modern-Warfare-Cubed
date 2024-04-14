@@ -38,7 +38,6 @@ public class VSSVintorezFactory {
                 .withFlashOffsetX(() -> 0.1f)
                 .withFlashOffsetY(() -> 0.11f)
                 .withShootSoundVolume(1f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         15.0,

@@ -33,7 +33,6 @@ public class AS50Factory implements GunFactory {
                 .withFlashScale(() -> 0.6f)
                 .withFlashOffsetX(() -> 0.08f)
                 .withFlashOffsetY(() -> 0.11f)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         35.0,

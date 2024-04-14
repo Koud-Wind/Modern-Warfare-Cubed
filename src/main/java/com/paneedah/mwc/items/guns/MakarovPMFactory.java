@@ -40,7 +40,6 @@ public class MakarovPMFactory implements GunFactory {
                 .withFlashOffsetX(() -> 0.12f)
                 .withFlashOffsetY(() -> 0.19f)
                 .withInaccuracy(2)
-                .withCreativeTab(MWC.WEAPONS_TAB)
                 .useNewSystem()
                 .withRecoilParam(new RecoilParam(
                         45.0,

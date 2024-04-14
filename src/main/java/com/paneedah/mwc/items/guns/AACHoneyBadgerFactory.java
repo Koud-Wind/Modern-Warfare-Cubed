@@ -37,7 +37,7 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 .withFlashOffsetY(() -> 0.17f) // Flash offset Y
                 .withShellCasingForwardOffset(0.1f) // Shell casing forward offset
                 .withShellCasingVerticalOffset(-0.05f) // Shell casing vertical offset
-                .withCreativeTab(MWC.WEAPONS_TAB) // Creative tab
+                 // Creative tab
                 .useNewSystem() // Use new system
                 .withRecoilParam(new RecoilParam( // Recoil param
                         // The weapons power
