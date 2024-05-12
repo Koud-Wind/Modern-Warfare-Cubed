@@ -1,5 +1,6 @@
 package com.paneedah.weaponlib;
 
+import com.paneedah.mwc.MWC;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import com.paneedah.weaponlib.crafting.CraftingGroup;
 import com.paneedah.weaponlib.crafting.IModernCraftingRecipe;
@@ -69,7 +70,7 @@ public class ItemAttachment<T> extends Item implements ModelSource, IModernCraft
 //		if(model != null) {
 //			this.texturedModels.add(new Tuple<ModelBase, String>(model, textureName));
 //		}
-		this.textureName = textureName.toLowerCase();
+		this.textureName = textureName != null ? textureName.toLowerCase() : null;
 		this.crosshair = crosshair != null ? ID + ":" + "textures/crosshairs/" + crosshair + ".png" : null;
 		this.apply = apply;
 		this.remove = remove;
@@ -77,10 +78,7 @@ public class ItemAttachment<T> extends Item implements ModelSource, IModernCraft
 
 	protected ItemAttachment(AttachmentCategory category, String crosshair,
 			ApplyHandler<T> apply, ApplyHandler<T> remove) {
-		this.category = category;
-		this.crosshair = crosshair != null ? ID + ":" + "textures/crosshairs/" + crosshair + ".png" : null;
-		this.apply = apply;
-		this.remove = remove;
+		this(category, null, null, crosshair, apply, remove);
 	}
 
 	@Override
