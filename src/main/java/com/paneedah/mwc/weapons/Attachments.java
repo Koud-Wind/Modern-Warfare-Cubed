@@ -4016,14 +4016,14 @@ public class Attachments {
 
         F2000Handguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
-                .withModel(new F2000Handguard(), "f2000.png")
+                .withModel(new com.paneedah.mwc.models.weapons.F2000Handguard(), "f2000.png")
                 .withName("F2000Handguard")
                 .withRenderablePart()
                 .build();
 
         F2000TRHandguard = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.GUARD)
-                .withModel(new F2000TRHandguard(), "f2000.png")
+                .withModel(new com.paneedah.mwc.models.weapons.F2000TRHandguard(), "f2000.png")
                 .withName("F2000TRHandguard")
                 .withRenderablePart()
                 .build();
@@ -4043,8 +4043,6 @@ public class Attachments {
                         new CraftingEntry(MWCItems.gunmetalIngot, 4),
                         new CraftingEntry(MWCItems.steelIngot, 3))
                 .withName("F2000Scope")
-
-                .withTextureName("Dummy.png")
                 .build();
 
         F2000FrontSight = new AttachmentBuilder<Weapon>()
