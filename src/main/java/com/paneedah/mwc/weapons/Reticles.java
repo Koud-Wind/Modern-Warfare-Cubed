@@ -21,4 +21,6 @@ public final class Reticles {
     public static final Reticle RETICLE_ACOG = new Reticle("reticle_acog");
     public static final Reticle RETICLE_PSO1 = new Reticle("pso1");
     public static final Reticle RETICLE_NIGHT_RAIDER = new Reticle("night_raider");
+
+    public static final Reticle RETICLE_F2000 = new Reticle("f2000");
 }

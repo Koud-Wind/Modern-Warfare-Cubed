@@ -4029,6 +4029,7 @@ public class Attachments {
                 .build();
 
         F2000Scope = new ItemScope.Builder()
+                .withSniperReticle(Reticles.RETICLE_F2000)
                 .withOpticalZoom()
                 .withZoomRange(0.22f, 0.0125f)
                 .withViewfinderPositioning(() -> {
