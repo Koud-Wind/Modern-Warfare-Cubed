@@ -99,6 +99,16 @@ public class AX50Factory implements GunFactory {
                         GL11.glScaled(0F, 0F, 0F);
                     }
                 })
+                .withCompatibleAttachment(Attachments.MBUSFrontSight, true, (model) -> {
+                    GL11.glTranslatef(-0.15F, -1.8F, -5.7F);
+                    GL11.glScaled(0.35F, 0.35F, 0.35F);
+                })
+                .withCompatibleAttachment(Attachments.MBUSRearSights, true, (model) -> {
+                    if (model instanceof MBUSRearSight) {
+                        GL11.glTranslatef(-0.15F, -1.8F, -1.2F);
+                        GL11.glScaled(0.35F, 0.35F, 0.35F);
+                    }
+                })
                 .withCompatibleAttachment(Attachments.PMII525x56P4FLScope, (player, itemStack) -> {
                     GL11.glTranslatef(-0.16F, -1.83F, -1F);
                     GL11.glScaled(0.55F, 0.55F, 0.55F);

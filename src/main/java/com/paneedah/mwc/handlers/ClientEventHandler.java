@@ -19,7 +19,6 @@ import static com.paneedah.mwc.equipment.inventory.EquipmentSlot.EMPTY_BELT_SLOT
 import static com.paneedah.mwc.equipment.inventory.EquipmentSlot.EMPTY_VEST_SLOT_TEXTURE;
 import static com.paneedah.mwc.proxies.ClientProxy.MC;
 
-@SideOnly(Side.CLIENT)
 public class ClientEventHandler {
 
     // TODO: This is a hack, more info on the hack page of the doc, it's named "Who let her cook" - Luna Lage (Desoroxxx) 2024-03-27
@@ -46,6 +45,8 @@ public class ClientEventHandler {
 
     @SubscribeEvent
     public static void onRenderGameOverlayEvent(RenderGameOverlayEvent.Pre renderGameOverlayEvent) {
+        if (true)
+            return;
         if (cooked)
             return;
 
