@@ -74,6 +74,9 @@ public class ModernConfigManager {
 	@ConfigSync(category = CATEGORY_SERVER, comment = "")
 	public static boolean oldPlayerDamage = true;
 
+	@ConfigSync(category = CATEGORY_SERVER, comment = "")
+	public static boolean hitSoundEffect = true;
+
 	@ConfigSync(category = CATEGORY_SERVER, comment = "Should the explosion break blocks?")
 	public static boolean explosionBreak = true;
 
@@ -169,6 +172,8 @@ public class ModernConfigManager {
 	public static double ammoCounterSize = 0.50;
 
 
+	@ConfigSync(category = CATEGORY_CLIENT, comment = "")
+	public static boolean sprintAfterAim = false;
 
 	@ConfigSync(category = CATEGORY_CLIENT, comment = "If true, hold to aim. If false, toggle to aim.")
 	public static boolean holdToAim = true;
