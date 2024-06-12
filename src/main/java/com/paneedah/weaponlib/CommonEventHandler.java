@@ -240,11 +240,13 @@ public class CommonEventHandler {
 
         if (source.getImmediateSource() instanceof EntityProjectile) {
             final RayTraceResult hit = HitUtil.traceProjectilehit(source.getImmediateSource(), entityLiving);
+            boolean isHeadShot = false;
             if (hit != null && hit.hitVec.distanceTo(entityLiving.getPositionEyes(1.0f)) < 0.6f) {
                 event.setAmount((float) (event.getAmount() * BalancePackManager.getHeadshotMultiplier()));
-                if (source.getTrueSource() instanceof EntityPlayer)
-                    CHANNEL.sendTo(new HeadshotSFXMessage(), (EntityPlayerMP) source.getTrueSource());
+                isHeadShot = true;
             }
+            if (ModernConfigManager.hitSoundEffect && source.getTrueSource() instanceof EntityPlayer)
+                CHANNEL.sendTo(new HeadshotSFXMessage(isHeadShot), (EntityPlayerMP) source.getTrueSource());
         }
     }
 

@@ -230,7 +230,7 @@ public final class ClientTickerController {
 
             final PlayerWeaponInstance mainHandHeldWeaponInstance = MWC.modContext.getMainHeldWeapon();
             if (mainHandHeldWeaponInstance != null && (ModernConfigManager.holdToAim && (item instanceof Weapon && mainHandHeldWeaponInstance.isAimed()))) {
-                if (ClientValueRepo.shouldContinueRunning) {
+                if (ModernConfigManager.sprintAfterAim || ClientValueRepo.shouldContinueRunning) {
                     player.setSprinting(true);
                     ClientValueRepo.shouldContinueRunning = false;
                 }
