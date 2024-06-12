@@ -22,6 +22,8 @@ public abstract class AbstractEntityGrenade extends EntityBounceable {
     protected AbstractEntityGrenade(ModContext modContext, ItemGrenade itemGrenade, EntityLivingBase thrower, float velocity, float gravityVelocity, float rotationSlowdownFactor) {
         super(modContext, thrower.world, thrower, velocity, gravityVelocity, rotationSlowdownFactor);
         this.itemGrenade = itemGrenade;
+        if (thrower.getHeldItemMainhand().hasDisplayName())
+            setCustomNameTag(thrower.getHeldItemMainhand().getDisplayName());
     }
 
     public AbstractEntityGrenade(World world) {

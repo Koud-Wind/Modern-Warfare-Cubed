@@ -37,8 +37,8 @@ public class SmokeGrenadeFactory implements GrenadeFactory {
                 .withThrowSound("grenadethrow")
                 .withSafetyPinOffSound("safetypinoff")
                 .withCompatibleAttachment(Grenades.GrenadeSafetyPin, (p, s) -> {})
-                .withVelocity(() -> 0.8f)
-                .withFarVelocity(() -> 1.3f)
+                .withVelocity(() -> 1.0f)
+                .withFarVelocity(() -> 2.0f)
                 .withGravityVelocity(() -> 0.06f)
                 .withRotationSlowdownFactor(() -> 0.99f)
                 .withModernRecipe(

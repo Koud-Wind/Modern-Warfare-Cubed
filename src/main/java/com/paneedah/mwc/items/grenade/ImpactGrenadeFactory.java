@@ -31,7 +31,7 @@ public class ImpactGrenadeFactory implements GrenadeFactory {
                 .withFragmentCount(1500)
                 .withFragmentDamage(30f)
                 .withVelocity(() -> 1.3f)
-                .withGravityVelocity(() -> 0.06f)
+                .withGravityVelocity(() -> 2.0f)
                 .withRotationSlowdownFactor(() -> 0.99f)
                 .withExplosionOnImpact()
                 .withDestroyingBlocks(false)
